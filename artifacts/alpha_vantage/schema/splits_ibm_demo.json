@@ -1,0 +1,89 @@
+{
+  "endpoint_id": "splits_ibm",
+  "generated_at_utc": "2026-06-15T12:25:08.986719+00:00",
+  "key_kind": "demo",
+  "schema": {
+    "fields": {
+      "$": {
+        "appearance_count": 1,
+        "examples": [
+          "{\"symbol\": \"IBM\", \"data\": [{\"effective_date\": \"2021-11-04\", \"split_factor\": \"1.0460\"}, {\"effective_date\": \"1999-05-27\", \"split_factor\": \"..."
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.data": {
+        "appearance_count": 1,
+        "examples": [
+          "[{\"effective_date\": \"2021-11-04\", \"split_factor\": \"1.0460\"}, {\"effective_date\": \"1999-05-27\", \"split_factor\": \"2.0000\"}]"
+        ],
+        "json_types": [
+          "array"
+        ],
+        "semantic_types": [
+          "array"
+        ]
+      },
+      "$.data[]": {
+        "appearance_count": 2,
+        "examples": [
+          "{\"effective_date\": \"2021-11-04\", \"split_factor\": \"1.0460\"}",
+          "{\"effective_date\": \"1999-05-27\", \"split_factor\": \"2.0000\"}"
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.data[].effective_date": {
+        "appearance_count": 2,
+        "examples": [
+          "\"2021-11-04\"",
+          "\"1999-05-27\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "date_yyyy_mm_dd"
+        ]
+      },
+      "$.data[].split_factor": {
+        "appearance_count": 2,
+        "examples": [
+          "\"1.0460\"",
+          "\"2.0000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.symbol": {
+        "appearance_count": 1,
+        "examples": [
+          "\"IBM\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      }
+    },
+    "format": "json",
+    "root_keys": [
+      "data",
+      "symbol"
+    ]
+  }
+}

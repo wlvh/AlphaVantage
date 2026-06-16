@@ -1,0 +1,20 @@
+{
+  "api_key_used": false,
+  "completed_at_utc": "2026-06-15T14:25:15.385714+00:00",
+  "mode": "from_raw",
+  "network_calls_made": 0,
+  "next_run_queue_count": 0,
+  "outputs": [
+    "artifacts/alpha_vantage/schema/listing_status_demo.json",
+    "artifacts/alpha_vantage/reparse_log.jsonl",
+    "artifacts/alpha_vantage/reparse_state.json",
+    "reports/alpha_vantage_observed_schema.md",
+    "reports/alpha_vantage_observed_schema.json",
+    "reports/alpha_vantage_next_run_queue.json"
+  ],
+  "planned_schema_count": 15,
+  "raw_response_count": 17,
+  "source": "existing Alpha Vantage raw responses only",
+  "status": "complete",
+  "usable_schema_count": 15
+}

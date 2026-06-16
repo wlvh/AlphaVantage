@@ -1,0 +1,794 @@
+{
+  "endpoint_id": "income_statement_ibm",
+  "generated_at_utc": "2026-06-15T12:23:15.311253+00:00",
+  "key_kind": "demo",
+  "schema": {
+    "fields": {
+      "$": {
+        "appearance_count": 1,
+        "examples": [
+          "{\"symbol\": \"IBM\", \"annualReports\": [{\"fiscalDateEnding\": \"2025-12-31\", \"reportedCurrency\": \"USD\", \"grossProfit\": \"40185000000\", \"totalRev..."
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.annualReports": {
+        "appearance_count": 1,
+        "examples": [
+          "[{\"fiscalDateEnding\": \"2025-12-31\", \"reportedCurrency\": \"USD\", \"grossProfit\": \"40185000000\", \"totalRevenue\": \"67535000000\", \"costOfRevenu..."
+        ],
+        "json_types": [
+          "array"
+        ],
+        "semantic_types": [
+          "array"
+        ]
+      },
+      "$.annualReports[]": {
+        "appearance_count": 10,
+        "examples": [
+          "{\"fiscalDateEnding\": \"2025-12-31\", \"reportedCurrency\": \"USD\", \"grossProfit\": \"40185000000\", \"totalRevenue\": \"67535000000\", \"costOfRevenue...",
+          "{\"fiscalDateEnding\": \"2024-12-31\", \"reportedCurrency\": \"USD\", \"grossProfit\": \"35551000000\", \"totalRevenue\": \"62753000000\", \"costOfRevenue...",
+          "{\"fiscalDateEnding\": \"2023-12-31\", \"reportedCurrency\": \"USD\", \"grossProfit\": \"34300000000\", \"totalRevenue\": \"61860000000\", \"costOfRevenue..."
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.annualReports[].comprehensiveIncomeNetOfTax": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.annualReports[].costOfRevenue": {
+        "appearance_count": 10,
+        "examples": [
+          "\"27350000000\"",
+          "\"27201000000\"",
+          "\"27560000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].costofGoodsAndServicesSold": {
+        "appearance_count": 10,
+        "examples": [
+          "\"27350000000\"",
+          "\"27201000000\"",
+          "\"27560000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].depreciation": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.annualReports[].depreciationAndAmortization": {
+        "appearance_count": 10,
+        "examples": [
+          "\"5021000000\"",
+          "\"4667000000\"",
+          "\"4395000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].ebit": {
+        "appearance_count": 10,
+        "examples": [
+          "\"12263000000\"",
+          "\"7509000000\"",
+          "\"7514000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].ebitda": {
+        "appearance_count": 10,
+        "examples": [
+          "\"17284000000\"",
+          "\"12176000000\"",
+          "\"7514000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].fiscalDateEnding": {
+        "appearance_count": 10,
+        "examples": [
+          "\"2025-12-31\"",
+          "\"2024-12-31\"",
+          "\"2023-12-31\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "date_yyyy_mm_dd"
+        ]
+      },
+      "$.annualReports[].grossProfit": {
+        "appearance_count": 10,
+        "examples": [
+          "\"40185000000\"",
+          "\"35551000000\"",
+          "\"34300000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].incomeBeforeTax": {
+        "appearance_count": 10,
+        "examples": [
+          "\"10328000000\"",
+          "\"5797000000\"",
+          "\"8690000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].incomeTaxExpense": {
+        "appearance_count": 10,
+        "examples": [
+          "\"-242000000\"",
+          "\"-218000000\"",
+          "\"1176000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].interestAndDebtExpense": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.annualReports[].interestExpense": {
+        "appearance_count": 10,
+        "examples": [
+          "\"1935000000\"",
+          "\"1712000000\"",
+          "\"1607000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].interestIncome": {
+        "appearance_count": 10,
+        "examples": [
+          "\"645000000\"",
+          "\"747000000\"",
+          "\"591000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].investmentIncomeNet": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.annualReports[].netIncome": {
+        "appearance_count": 10,
+        "examples": [
+          "\"10593000000\"",
+          "\"6023000000\"",
+          "\"7502000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].netIncomeFromContinuingOperations": {
+        "appearance_count": 10,
+        "examples": [
+          "\"10571000000\"",
+          "\"6015000000\"",
+          "\"7099000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].netInterestIncome": {
+        "appearance_count": 10,
+        "examples": [
+          "\"-1290000000\"",
+          "\"-965000000\"",
+          "\"-924000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].nonInterestIncome": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.annualReports[].operatingExpenses": {
+        "appearance_count": 10,
+        "examples": [
+          "\"29860000000\"",
+          "\"25478000000\"",
+          "\"26786000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].operatingIncome": {
+        "appearance_count": 10,
+        "examples": [
+          "\"10325000000\"",
+          "\"10074000000\"",
+          "\"7514000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].otherNonOperatingIncome": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\"",
+          "\"-873000000\"",
+          "\"-861000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none",
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].reportedCurrency": {
+        "appearance_count": 10,
+        "examples": [
+          "\"USD\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.annualReports[].researchAndDevelopment": {
+        "appearance_count": 10,
+        "examples": [
+          "\"8320000000\"",
+          "\"7479000000\"",
+          "\"6631000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].sellingGeneralAndAdministrative": {
+        "appearance_count": 10,
+        "examples": [
+          "\"18285000000\"",
+          "\"16737000000\"",
+          "\"17952000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].totalRevenue": {
+        "appearance_count": 10,
+        "examples": [
+          "\"67535000000\"",
+          "\"62753000000\"",
+          "\"61860000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports": {
+        "appearance_count": 1,
+        "examples": [
+          "[{\"fiscalDateEnding\": \"2026-03-31\", \"reportedCurrency\": \"USD\", \"grossProfit\": \"8950000000\", \"totalRevenue\": \"15917000000\", \"costOfRevenue..."
+        ],
+        "json_types": [
+          "array"
+        ],
+        "semantic_types": [
+          "array"
+        ]
+      },
+      "$.quarterlyReports[]": {
+        "appearance_count": 10,
+        "examples": [
+          "{\"fiscalDateEnding\": \"2026-03-31\", \"reportedCurrency\": \"USD\", \"grossProfit\": \"8950000000\", \"totalRevenue\": \"15917000000\", \"costOfRevenue\"...",
+          "{\"fiscalDateEnding\": \"2025-12-31\", \"reportedCurrency\": \"USD\", \"grossProfit\": \"12119000000\", \"totalRevenue\": \"19686000000\", \"costOfRevenue...",
+          "{\"fiscalDateEnding\": \"2025-09-30\", \"reportedCurrency\": \"USD\", \"grossProfit\": \"9591000000\", \"totalRevenue\": \"16331000000\", \"costOfRevenue\"..."
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.quarterlyReports[].comprehensiveIncomeNetOfTax": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.quarterlyReports[].costOfRevenue": {
+        "appearance_count": 10,
+        "examples": [
+          "\"6967000000\"",
+          "\"7567000000\"",
+          "\"6740000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].costofGoodsAndServicesSold": {
+        "appearance_count": 10,
+        "examples": [
+          "\"6967000000\"",
+          "\"7567000000\"",
+          "\"6740000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].depreciation": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.quarterlyReports[].depreciationAndAmortization": {
+        "appearance_count": 10,
+        "examples": [
+          "\"1274000000\"",
+          "\"1297000000\"",
+          "\"1283000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].ebit": {
+        "appearance_count": 10,
+        "examples": [
+          "\"1860000000\"",
+          "\"4622000000\"",
+          "\"2922000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].ebitda": {
+        "appearance_count": 10,
+        "examples": [
+          "\"3134000000\"",
+          "\"5919000000\"",
+          "\"4205000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].fiscalDateEnding": {
+        "appearance_count": 10,
+        "examples": [
+          "\"2026-03-31\"",
+          "\"2025-12-31\"",
+          "\"2025-09-30\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "date_yyyy_mm_dd"
+        ]
+      },
+      "$.quarterlyReports[].grossProfit": {
+        "appearance_count": 10,
+        "examples": [
+          "\"8950000000\"",
+          "\"12119000000\"",
+          "\"9591000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].incomeBeforeTax": {
+        "appearance_count": 10,
+        "examples": [
+          "\"1387000000\"",
+          "\"4144000000\"",
+          "\"2430000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].incomeTaxExpense": {
+        "appearance_count": 10,
+        "examples": [
+          "\"172000000\"",
+          "\"-1435000000\"",
+          "\"686000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].interestAndDebtExpense": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.quarterlyReports[].interestExpense": {
+        "appearance_count": 10,
+        "examples": [
+          "\"473000000\"",
+          "\"478000000\"",
+          "\"492000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].interestIncome": {
+        "appearance_count": 10,
+        "examples": [
+          "\"152000000\"",
+          "\"132000000\"",
+          "\"150000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].investmentIncomeNet": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.quarterlyReports[].netIncome": {
+        "appearance_count": 10,
+        "examples": [
+          "\"1216000000\"",
+          "\"5600000000\"",
+          "\"1744000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].netIncomeFromContinuingOperations": {
+        "appearance_count": 10,
+        "examples": [
+          "\"1216000000\"",
+          "\"5579000000\"",
+          "\"1744000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].netInterestIncome": {
+        "appearance_count": 10,
+        "examples": [
+          "\"-321000000\"",
+          "\"-346000000\"",
+          "\"-342000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].nonInterestIncome": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.quarterlyReports[].operatingExpenses": {
+        "appearance_count": 10,
+        "examples": [
+          "\"7590000000\"",
+          "\"7954000000\"",
+          "\"6931000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].operatingIncome": {
+        "appearance_count": 10,
+        "examples": [
+          "\"1360000000\"",
+          "\"4165000000\"",
+          "\"2660000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].otherNonOperatingIncome": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.quarterlyReports[].reportedCurrency": {
+        "appearance_count": 10,
+        "examples": [
+          "\"USD\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.quarterlyReports[].researchAndDevelopment": {
+        "appearance_count": 10,
+        "examples": [
+          "\"2173000000\"",
+          "\"2187000000\"",
+          "\"2082000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].sellingGeneralAndAdministrative": {
+        "appearance_count": 10,
+        "examples": [
+          "\"5089000000\"",
+          "\"5462000000\"",
+          "\"4478000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].totalRevenue": {
+        "appearance_count": 10,
+        "examples": [
+          "\"15917000000\"",
+          "\"19686000000\"",
+          "\"16331000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.symbol": {
+        "appearance_count": 1,
+        "examples": [
+          "\"IBM\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      }
+    },
+    "format": "json",
+    "root_keys": [
+      "annualReports",
+      "quarterlyReports",
+      "symbol"
+    ]
+  }
+}

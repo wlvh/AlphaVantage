@@ -1,0 +1,28 @@
+{
+  "endpoint_id": "earnings_calendar_ibm_12month",
+  "fetched_at_utc": "2026-06-15T12:26:18.009660+00:00",
+  "headers": {
+    "CF-RAY": "a0c18ff80a40d4d3-NRT",
+    "Connection": "close",
+    "Content-Length": "164",
+    "Content-Type": "application/x-download",
+    "Date": "Mon, 15 Jun 2026 12:26:18 GMT",
+    "Server": "cloudflare",
+    "Server-Timing": "cfEdge;dur=5,cfOrigin;dur=154",
+    "allow": "GET, HEAD, OPTIONS",
+    "cf-cache-status": "DYNAMIC",
+    "content-disposition": "attachment; filename=earnings_calendar.csv",
+    "cross-origin-opener-policy": "same-origin",
+    "nel": "{\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}",
+    "referrer-policy": "same-origin",
+    "report-to": "{\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=QhZyrbP4QILwBBOHS1Qe6DOAa%2FcAa3W39ad0o7AJXf8%3D\\u0026sid=1b10b0ff-8a76-4548-befa-353fc6c6c045\\u0026ts=1781526378\"}],\"max_age\":3600}",
+    "reporting-endpoints": "heroku-nel=\"https://nel.heroku.com/reports?s=QhZyrbP4QILwBBOHS1Qe6DOAa%2FcAa3W39ad0o7AJXf8%3D&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&ts=1781526378\"",
+    "vary": "Cookie, Origin",
+    "via": "2.0 heroku-router",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "DENY"
+  },
+  "key_kind": "demo",
+  "request_url": "https://www.alphavantage.co/query?function=EARNINGS_CALENDAR&symbol=IBM&horizon=12month&apikey=REDACTED",
+  "status": 200
+}

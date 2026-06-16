@@ -1,0 +1,2076 @@
+{
+    "items": "50",
+    "sentiment_score_definition": "x <= -0.35: Bearish; -0.35 < x <= -0.15: Somewhat-Bearish; -0.15 < x < 0.15: Neutral; 0.15 <= x < 0.35: Somewhat_Bullish; x >= 0.35: Bullish",
+    "relevance_score_definition": "0 < x <= 1, with a higher score indicating higher relevance.",
+    "feed": [
+        {
+            "title": "Wedbush initiates EPAM Systems stock at Neutral on growth concerns",
+            "url": "https://www.investing.com/news/analyst-ratings/wedbush-initiates-epam-systems-stock-at-neutral-on-growth-concerns-93CH-4741832",
+            "time_published": "20260615T113431",
+            "authors": [
+                "Investing.com"
+            ],
+            "summary": "Wedbush initiated coverage on EPAM Systems (NYSE:EPAM) with a Neutral rating and a $99.00 price target, citing concerns about slowing growth, competitive pressures, and AI cannibalization risk. The firm acknowledged EPAM's strong technical positioning from its software engineering history and early AI adoption but noted that competitors also pursue similar opportunities. Despite these concerns, InvestingPro analysis suggests EPAM may be undervalued, with 12 analysts recently revising earnings upward; however, Goldman Sachs recently downgraded the stock due to spending headwinds.",
+            "banner_image": "https://i-invdn-com.investing.com/news/moved_LYNXMPEM4519D_1200_L.jpg",
+            "source": "Investing.com",
+            "category_within_source": "General",
+            "source_domain": "Investing.com",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.925180"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.803498"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.723318"
+                }
+            ],
+            "overall_sentiment_score": -0.15628,
+            "overall_sentiment_label": "Somewhat-Bearish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "EPAM",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "-0.223303",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "GS",
+                    "relevance_score": "0.638820",
+                    "ticker_sentiment_score": "-0.344893",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "AMZN",
+                    "relevance_score": "0.636203",
+                    "ticker_sentiment_score": "0.147425",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Micron, Nebius surge premarket; Traws Pharma tumbles By Investing.com",
+            "url": "https://au.investing.com/news/stock-market-news/micron-nebius-surge-premarket-traws-pharma-tumbles-4487038",
+            "time_published": "20260615T112642",
+            "authors": [
+                "Pranav Kashyap"
+            ],
+            "summary": "U.S. stock index futures rose sharply on Monday following news of a preliminary peace agreement between Washington and Tehran. Technology and AI-linked stocks, including Micron Technology and Nebius Group, led premarket gains, while Traws Pharma tumbled after a negative review of its lead antiviral candidate. Investors also reacted to ON Semiconductor's catalyst watch and MicroStrategy's continued Bitcoin acquisition strategy.",
+            "banner_image": "https://i-invdn-com.investing.com/news/SP500StandardandPoors500Index_800x533_L_1657544297.jpg",
+            "source": "Investing.com Australia",
+            "category_within_source": "General",
+            "source_domain": "Investing.com Australia",
+            "topics": [
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.934831"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.806376"
+                },
+                {
+                    "topic": "life_sciences",
+                    "relevance_score": "0.701681"
+                },
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.624990"
+                },
+                {
+                    "topic": "blockchain",
+                    "relevance_score": "0.647108"
+                }
+            ],
+            "overall_sentiment_score": 0.165956,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "TRAW",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "-0.715370",
+                    "ticker_sentiment_label": "Bearish"
+                },
+                {
+                    "ticker": "MU",
+                    "relevance_score": "0.812907",
+                    "ticker_sentiment_score": "0.617532",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "ON",
+                    "relevance_score": "0.732354",
+                    "ticker_sentiment_score": "0.445334",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "MS",
+                    "relevance_score": "0.619524",
+                    "ticker_sentiment_score": "0.330321",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Walmart expands online marketplace offering for customers in Mexico",
+            "url": "https://retail-systems.com/rs/Walmart_Expands_Online_Marketplace_Offering_For_Customers_In_Mexico.php",
+            "time_published": "20260615T111959",
+            "authors": [
+                "Dalvinder Kular"
+            ],
+            "summary": "Walmart has expanded its online marketplace in Mexico, allowing customers access to hundreds of thousands of additional products from its website. This move is part of Walmart's international marketplace expansion strategy, offering a wider range of items including fashion, home, and electronics, with orders fulfilled through its existing logistics network. The company is providing upfront pricing, including duties and taxes, and a limited-time free shipping offer on eligible orders.",
+            "banner_image": "https://www.retail-systems.com/rs/../../rs/images/GB-SERVICE-INTERNATIONAL-728X90-21-05-2026.jpg",
+            "source": "Retail Systems",
+            "category_within_source": "General",
+            "source_domain": "Retail Systems",
+            "topics": [
+                {
+                    "topic": "retail_wholesale",
+                    "relevance_score": "0.947288"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.738031"
+                }
+            ],
+            "overall_sentiment_score": 0.418925,
+            "overall_sentiment_label": "Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "WMT",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.420064",
+                    "ticker_sentiment_label": "Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Can SpaceX Help Save Earth From The Critical Mineral Crunch?",
+            "url": "https://www.benzinga.com/markets/commodities/26/06/53189905/can-spacex-help-save-earth-from-the-critical-mineral-crunch",
+            "time_published": "20260615T110600",
+            "authors": [
+                "Stjepan Kalinic"
+            ],
+            "summary": "The global demand for critical minerals is rapidly increasing due to various factors including the energy transition, electric vehicles, and AI, leading to a \"structural reconfiguration\" of mineral markets according to a UNCTAD report. Governments are implementing policies like export taxes to gain more domestic value from these resources, while the mining sector struggles with declining ore grades and longer development timelines. The article suggests that space mining, facilitated by companies like SpaceX, could offer a long-term solution to Earth's critical mineral crunch, particularly for materials like nickel, iron, and platinum-group metals found in asteroids and lunar deposits.",
+            "banner_image": "https://cdn.benzinga.com/cdn-cgi/image/width=1300,format=auto,quality=85/files/images/story/2025/07/24/article-header-background-image.png",
+            "source": "Benzinga",
+            "category_within_source": "General",
+            "source_domain": "Benzinga",
+            "topics": [
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.831235"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.738437"
+                },
+                {
+                    "topic": "ipo",
+                    "relevance_score": "0.740826"
+                },
+                {
+                    "topic": "energy_transportation",
+                    "relevance_score": "0.621422"
+                }
+            ],
+            "overall_sentiment_score": 0.320571,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "ALB",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.313219",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Electronic Arts Introduces EA Advertising, Launching Brands Directly Into Gameplay and Live Experiences",
+            "url": "https://sg.finance.yahoo.com/news/electronic-arts-introduces-ea-advertising-110000845.html",
+            "time_published": "20260615T110029",
+            "authors": [],
+            "summary": "Electronic Arts (EA) has launched EA Advertising, a new platform designed to integrate brands directly into its games and live experiences. This initiative connects brands with highly engaged audiences through an exclusive EA SPORTS Partner Program, in-game integrations, and scalable advertising capabilities across EA's global portfolio. The platform aims to enhance the player experience by making brands part of the game environment, as demonstrated by partnerships with companies like Visa, Lowe's, Red Bull, Xfinity, Peacock, and Mountain Dew.",
+            "banner_image": "https://s.yimg.com/ny/api/res/1.2/LdF1q0sVwXIDulkoIP_i8A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTk2MA--/https://media.zenfs.com/en/business-wire.com/b144e3e570c7a79435ffe43049f62081",
+            "source": "Yahoo Finance Singapore",
+            "category_within_source": "General",
+            "source_domain": "Yahoo Finance Singapore",
+            "topics": [
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.943296"
+                }
+            ],
+            "overall_sentiment_score": 0.477953,
+            "overall_sentiment_label": "Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "EA",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.485313",
+                    "ticker_sentiment_label": "Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Matternet Announces Participation in Bank of America’s A Transforming World Conference",
+            "url": "https://www.businesswire.com/news/home/20260615107208/en/Matternet-Announces-Participation-in-Bank-of-Americas-A-Transforming-World-Conference",
+            "time_published": "20260615T110010",
+            "authors": [],
+            "summary": "Matternet, a leading autonomous aerial logistics technology company, announced its participation in Bank of America's \"A Transforming World 2026\" conference in New York City. CEO and Founder, Andreas Raptopoulos, will discuss \"Autonomous Drone Delivery: The Next Logistics Network\" on June 16, 2026. The company, known for its FAA Type-Certified drone delivery platform, has a decade of commercial flight operations in urban and suburban environments in the U.S. and Europe.",
+            "banner_image": "https://mms.businesswire.com/media/20260615107208/en/2830816/4/matternet-vector-logo.jpg",
+            "source": "Business Wire",
+            "category_within_source": "General",
+            "source_domain": "Business Wire",
+            "topics": [
+                {
+                    "topic": "technology",
+                    "relevance_score": "1.000000"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.807007"
+                },
+                {
+                    "topic": "energy_transportation",
+                    "relevance_score": "0.702777"
+                }
+            ],
+            "overall_sentiment_score": 0.241077,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "BAC",
+                    "relevance_score": "0.936291",
+                    "ticker_sentiment_score": "0.121035",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "UPS",
+                    "relevance_score": "0.635466",
+                    "ticker_sentiment_score": "0.344930",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "5,551 Shares in Intel Corporation $INTC Purchased by Whalerock Point Partners LLC",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-5551-shares-in-intel-corporation-intc-purchased-by-whalerock-point-partners-llc-2026-06-15/",
+            "time_published": "20260615T105954",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "Whalerock Point Partners LLC recently acquired 5,551 shares of Intel Corporation (NASDAQ:INTC) valued at approximately $205,000, initiating a new position in the company. Institutional investors, including Vanguard Group Inc. and State Street Corp, significantly increased their stakes in Intel, with 64.53% of the stock now held by hedge funds and other institutions. Despite mixed news, Bank of America upgraded Intel to \"Buy,\" contributing to a consensus \"Hold\" rating among analysts with a target price of $87.31.",
+            "banner_image": "https://www.marketbeat.com/logos/intel-co-logo-1200x675.png?v=20250605133156",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.928886"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "1.000000"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.913335"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.823095"
+                }
+            ],
+            "overall_sentiment_score": 0.26153,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "INTC",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.266490",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "BAC",
+                    "relevance_score": "0.583440",
+                    "ticker_sentiment_score": "0.345435",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "MS",
+                    "relevance_score": "0.583883",
+                    "ticker_sentiment_score": "0.101082",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "New Generac plant in Illinois to supply data centers, add more than 100 jobs",
+            "url": "https://www.stocktitan.net/news/GNRC/generac-acquires-belvidere-illinois-facility-to-expand-large-cq48l8yj5t9e.html",
+            "time_published": "20260615T105945",
+            "authors": [],
+            "summary": "Generac Holdings Inc. acquired a new facility in Belvidere, Illinois, to significantly expand its packaging capacity for large-megawatt generators, catering to the growing demand from data centers and other mission-critical applications. This strategic investment builds on a previous acquisition of Enercon Engineering and is expected to create over 100 new jobs when the plant opens in Q1 2027. The facility will strengthen Generac's domestic manufacturing footprint and logistics efficiency for large-scale equipment.",
+            "banner_image": "https://mmx.prnewswire.com/media/MS1060110/Generac-Logo.jpg?id=OA2713979",
+            "source": "Stock Titan",
+            "category_within_source": "General",
+            "source_domain": "Stock Titan",
+            "topics": [
+                {
+                    "topic": "mergers_and_acquisitions",
+                    "relevance_score": "0.902223"
+                },
+                {
+                    "topic": "manufacturing",
+                    "relevance_score": "0.814254"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.742369"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.629405"
+                },
+                {
+                    "topic": "economy_macro",
+                    "relevance_score": "0.628134"
+                }
+            ],
+            "overall_sentiment_score": 0.4925,
+            "overall_sentiment_label": "Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "GNRC",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.451173",
+                    "ticker_sentiment_label": "Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Electronic Arts Introduces EA Advertising, Launching Brands Directly Into Gameplay and Live Experiences",
+            "url": "https://www.stocktitan.net/news/EA/electronic-arts-introduces-ea-advertising-launching-brands-directly-eg485t5rt7t9.html",
+            "time_published": "20260615T105933",
+            "authors": [],
+            "summary": "Electronic Arts (EA) has launched EA Advertising, a new platform designed to integrate brands directly into its games and live experiences. The platform aims to connect brands with EA's vast audience of over 120 million monthly players through dynamic in-game placements, custom content, and partner programs. This initiative seeks to enhance the player experience by making brands a native part of the game world, reflecting real-world advertising, and offers advanced targeting and measurement capabilities for advertisers.",
+            "banner_image": null,
+            "source": "Stock Titan",
+            "category_within_source": "General",
+            "source_domain": "Stock Titan",
+            "topics": [
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.848362"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.706690"
+                }
+            ],
+            "overall_sentiment_score": 0.30886,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "EA",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.317028",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "V",
+                    "relevance_score": "0.625401",
+                    "ticker_sentiment_score": "0.309608",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "LOW",
+                    "relevance_score": "0.633557",
+                    "ticker_sentiment_score": "0.333775",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Why is ON Semiconductor stock rallying today?",
+            "url": "https://www.investing.com/news/stock-market-news/why-is-on-semiconductor-stock-rallying-today-93CH-4741698",
+            "time_published": "20260615T105825",
+            "authors": [
+                "Senad Karaahmetovic"
+            ],
+            "summary": "ON Semiconductor Corporation's stock surged 4.8% in pre-open trading after Citi initiated a 90-day catalyst watch, reiterating a Neutral rating and a $120 price target. This follows recent price target increases from Wells Fargo and Mizuho, reflecting growing conviction in the company's recovery trajectory after strong Q1 2026 results. The positive sentiment is further supported by a constructive broader market, including the semiconductor sector's recovery and accommodative Fed expectations.",
+            "banner_image": "https://i-invdn-com.investing.com/news/SP500StandardandPoors500Index_800x533_L_1657544297.jpg",
+            "source": "Investing.com",
+            "category_within_source": "General",
+            "source_domain": "Investing.com",
+            "topics": [
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.941810"
+                },
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.848437"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.731545"
+                },
+                {
+                    "topic": "economy_monetary",
+                    "relevance_score": "0.625653"
+                },
+                {
+                    "topic": "ipo",
+                    "relevance_score": "0.628104"
+                }
+            ],
+            "overall_sentiment_score": 0.305607,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "ON",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.486746",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "WFC",
+                    "relevance_score": "0.634039",
+                    "ticker_sentiment_score": "0.208185",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "C",
+                    "relevance_score": "0.612004",
+                    "ticker_sentiment_score": "0.283859",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "NVDA",
+                    "relevance_score": "0.561791",
+                    "ticker_sentiment_score": "0.348098",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Why Is AMD Stock Gaining Monday?",
+            "url": "https://www.benzinga.com/markets/tech/26/06/53189543/why-is-amd-stock-gaining-monday-2",
+            "time_published": "20260615T105000",
+            "authors": [
+                "Anusuya Lahiri"
+            ],
+            "summary": "Advanced Micro Devices (AMD) stock is rising due to a broader market rally pushing semiconductor stocks higher, fueled by a peace agreement between the US and Iran. Analyst upgrades from Citigroup and Bank of America have strengthened the bullish outlook, with Citigroup specifically noting AMD's growing presence in the GPU market. The stock also exhibits a strong technical setup and significant exposure in tech ETFs, ahead of its anticipated August 4th earnings report.",
+            "banner_image": "https://cdn.benzinga.com/cdn-cgi/image/width=1300,format=auto,quality=85/files/images/story/2025/07/24/article-header-background-image.png",
+            "source": "Benzinga",
+            "category_within_source": "General",
+            "source_domain": "Benzinga",
+            "topics": [
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.912196"
+                },
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.829444"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.704282"
+                }
+            ],
+            "overall_sentiment_score": 0.378407,
+            "overall_sentiment_label": "Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AMD",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.467722",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "META",
+                    "relevance_score": "0.601944",
+                    "ticker_sentiment_score": "0.339915",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Morgan Stanley Raises Price Target on Seagate Technology Holdings to $1,035 From $767, Keeps Overweight Rating",
+            "url": "https://www.marketscreener.com/news/morgan-stanley-raises-price-target-on-seagate-technology-holdings-to-1-035-from-767-keeps-overwei-ce7f5cdedb80fe2d",
+            "time_published": "20260615T104639",
+            "authors": [
+                "MT Newswires"
+            ],
+            "summary": "Morgan Stanley has increased its price target for Seagate Technology Holdings (STX) to $1,035 from $767, while maintaining an \"Overweight\" rating on the stock. This adjustment reflects a positive outlook from the analyst firm on the data storage company's future performance. The article also provides a company profile, highlighting Seagate's position as a leading manufacturer of data storage systems and its product breakdown.",
+            "banner_image": null,
+            "source": "www.marketscreener.com",
+            "category_within_source": "General",
+            "source_domain": "www.marketscreener.com",
+            "topics": [
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.948457"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.842685"
+                }
+            ],
+            "overall_sentiment_score": 0.482648,
+            "overall_sentiment_label": "Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "STX",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.453265",
+                    "ticker_sentiment_label": "Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Tamar Securities LLC Decreases Stock Holdings in PayPal Holdings, Inc. $PYPL",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-tamar-securities-llc-decreases-stock-holdings-in-paypal-holdings-inc-pypl-2026-06-15/",
+            "time_published": "20260615T104330",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "Tamar Securities LLC decreased its stake in PayPal Holdings, Inc. by 26.6% in the fourth quarter, selling over 73,000 shares. Despite this, PayPal reported strong quarterly results with EPS of $1.34 and revenue of $8.35 billion, also announcing a quarterly dividend of $0.14 per share. Analysts currently rate PayPal as a consensus Hold with an average target price of $55.85, while insiders have also made significant stock sales.",
+            "banner_image": "https://www.marketbeat.com/logos/paypal-holdings-inc-logo-1200x675.png?v=20231214083652",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.942843"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.846346"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.734072"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.607507"
+                }
+            ],
+            "overall_sentiment_score": 0.10565,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "PYPL",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.100151",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Public Employees Retirement Association of Colorado Decreases Stock Holdings in Take-Two Interactive Software, Inc. $TTWO",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-public-employees-retirement-association-of-colorado-decreases-stock-holdings-in-take-two-interactive-software-inc-ttwo-2026-06-15/",
+            "time_published": "20260615T104147",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "The Public Employees Retirement Association of Colorado significantly reduced its stake in Take-Two Interactive Software by 20.1% in Q4, selling 28,100 shares. Despite this, other institutional investors increased their holdings, and 95.46% of the stock is now owned by hedge funds and institutions. Analysts maintain a \"Moderate Buy\" rating with an average price target of $287.06, even though CEO Strauss Zelnick and another insider recently sold substantial amounts of shares.",
+            "banner_image": "https://www.marketbeat.com/logos/take-two-interactive-software-inc-logo-1200x675.jpg?v=20221107151438",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.934107"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.813821"
+                },
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.710390"
+                }
+            ],
+            "overall_sentiment_score": 0.129161,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "TTWO",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.118979",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Canaccord initiates Twist Bioscience stock coverage with buy rating",
+            "url": "https://www.investing.com/news/analyst-ratings/canaccord-initiates-twist-bioscience-stock-coverage-with-buy-rating-93CH-4741591",
+            "time_published": "20260615T104039",
+            "authors": [
+                "Investing.com"
+            ],
+            "summary": "Canaccord Genuity initiated coverage on Twist Bioscience (NASDAQ:TWST) with a buy rating and a price target of $90.00, citing the company's proprietary silicon-based miniaturized lab-on-a-chip method and increasing use of AI in drug discovery. Despite the stock trading near its 52-week high and InvestingPro analysis suggesting it's overvalued, Canaccord believes the current share price does not reflect its long-term growth potential. Other firms like TD Cowen, Piper Sandler, and Leerink have also recently raised price targets or initiated coverage with positive ratings, based on the company's strong revenue performance and expansion plans into AI-enabled biology and nucleic acid therapeutics.",
+            "banner_image": "https://i-invdn-com.investing.com/news/moved_LYNXMPEM3Q0V4_1200_L.jpg",
+            "source": "Investing.com",
+            "category_within_source": "General",
+            "source_domain": "Investing.com",
+            "topics": [
+                {
+                    "topic": "life_sciences",
+                    "relevance_score": "1.000000"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.944189"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.747980"
+                },
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.800615"
+                }
+            ],
+            "overall_sentiment_score": 0.414414,
+            "overall_sentiment_label": "Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "TWST",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.414415",
+                    "ticker_sentiment_label": "Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Truist Financial Upgrades Datadog(DDOG.US) to Buy Rating, Raises Target Price to $300",
+            "url": "https://www.moomoo.com/news/post/71529725/truist-financial-upgrades-datadog-ddogus-to-buy-rating-raises-target",
+            "time_published": "20260615T103143",
+            "authors": [],
+            "summary": "Truist Financial has upgraded Datadog (DDOG.US) from a Hold to a Buy rating, indicating increased confidence in the company's stock performance. Concurrently, the firm raised its target price for Datadog to $300, suggesting a significant upside potential for investors. This upgrade and price target increase reflect a positive outlook from Truist Financial on Datadog's future prospects.",
+            "banner_image": null,
+            "source": "Moomoo",
+            "category_within_source": "General",
+            "source_domain": "Moomoo",
+            "topics": [
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.927193"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.829782"
+                }
+            ],
+            "overall_sentiment_score": 0.288257,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "TFC",
+                    "relevance_score": "0.744814",
+                    "ticker_sentiment_score": "0.180899",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "DDOG",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.405501",
+                    "ticker_sentiment_label": "Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Akamai Unveils Agentic Security Framework to Power Trusted AI-Driven Interactions and Commerce",
+            "url": "https://www.globenewswire.com/news-release/2026/06/15/3311619/0/en/Akamai-Unveils-Agentic-Security-Framework-to-Power-Trusted-AI-Driven-Interactions-and-Commerce.html",
+            "time_published": "20260615T102904",
+            "authors": [],
+            "summary": "Akamai has introduced a new agentic security framework for its Bot & Agent Control solutions, designed to secure and scale AI-driven interactions. This framework leverages verified identity, user-centric authentication, and adaptive trust analysis through partnerships with companies like Visa, Experian, and Skyfire. It aims to address critical questions of identity, intent, and trust in the rapidly evolving AI-driven economy, ensuring secure and monetized digital commerce at the edge.",
+            "banner_image": "https://ml.globenewswire.com/media/MTVkOWU3NDEtNzZjMi00MGIwLTkwZGQtODg1OWNlYTUxNDI5LTEwMTYxMTAtMjAyNi0wNi0xNS1lbg==/tiny/Akamai-Technologies-Inc-.png",
+            "source": "GlobeNewswire",
+            "category_within_source": "General",
+            "source_domain": "GlobeNewswire",
+            "topics": [
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.901163"
+                }
+            ],
+            "overall_sentiment_score": 0.333379,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AKAM",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.475692",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "V",
+                    "relevance_score": "0.600863",
+                    "ticker_sentiment_score": "0.335160",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "EFX",
+                    "relevance_score": "0.567742",
+                    "ticker_sentiment_score": "0.276122",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "AI ‘shoppers’ online: Akamai builds identity checks for agent traffic",
+            "url": "https://www.stocktitan.net/news/AKAM/akamai-unveils-agentic-security-framework-to-power-trusted-ai-driven-kkg1mkunpvj5.html",
+            "time_published": "20260615T102859",
+            "authors": [],
+            "summary": "Akamai (NASDAQ: AKAM) has introduced a new agentic security framework for its Bot & Agent Control solutions to secure and scale AI-driven interactions and commerce. This framework integrates identity, observability, trust, and edge security into a real-time decisioning layer, supported by six pillars and collaborations with partners like Visa, Experian, Skyfire, Auth0, Ping Identity, and TollBit. It aims to address critical questions of identity, intent, and trust as AI agents increasingly conduct transactions on behalf of users.",
+            "banner_image": "https://ml.globenewswire.com/media/MTVkOWU3NDEtNzZjMi00MGIwLTkwZGQtODg1OWNlYTUxNDI5LTEwMTYxMTAtMjAyNi0wNi0xNS1lbg==/tiny/Akamai-Technologies-Inc-.png",
+            "source": "Stock Titan",
+            "category_within_source": "General",
+            "source_domain": "Stock Titan",
+            "topics": [
+                {
+                    "topic": "technology",
+                    "relevance_score": "1.000000"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.739826"
+                }
+            ],
+            "overall_sentiment_score": 0.015041,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AKAM",
+                    "relevance_score": "0.325359",
+                    "ticker_sentiment_score": "0.004630",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Akamai Unveils Agentic Security Framework to Power Trusted AI-Driven Interactions and Commerce",
+            "url": "https://ca.finance.yahoo.com/news/akamai-unveils-agentic-security-framework-102900620.html",
+            "time_published": "20260615T102859",
+            "authors": [],
+            "summary": "Akamai has introduced a new agentic security framework designed to secure and scale AI-driven interactions and commerce by addressing identity, intent, and trust issues. This unified framework integrates identity, observability, trust, and edge security into a real-time decisioning layer through partnerships with companies like Visa, Experian, Skyfire, Auth0, Ping Identity, and TollBit. It aims to enable safe and scalable AI-driven transactions, ensure user-centric authentication, and provide content monetization opportunities for publishers.",
+            "banner_image": "https://s.yimg.com/ny/api/res/1.2/MJj6OsPZOPk6gu5365kuAw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTQyMDtoPTIwNw--/https://media.zenfs.com/en/globenewswire.com/3924b518559c65f5261ffda806a2f9a565",
+            "source": "Yahoo! Finance Canada",
+            "category_within_source": "General",
+            "source_domain": "Yahoo! Finance Canada",
+            "topics": [
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.906991"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.613594"
+                }
+            ],
+            "overall_sentiment_score": 0.305514,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AKAM",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.471564",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "V",
+                    "relevance_score": "0.708916",
+                    "ticker_sentiment_score": "0.334671",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "EFX",
+                    "relevance_score": "0.644724",
+                    "ticker_sentiment_score": "0.291774",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "MSFT",
+                    "relevance_score": "0.599331",
+                    "ticker_sentiment_score": "0.190496",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Panagora Asset Management Inc. Purchases 207,562 Shares of Expedia Group, Inc. $EXPE",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-panagora-asset-management-inc-purchases-207562-shares-of-expedia-group-inc-expe-2026-06-15/",
+            "time_published": "20260615T102748",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "Panagora Asset Management Inc. significantly increased its stake in Expedia Group by purchasing an additional 207,562 shares, bringing its total holdings to 345,449 shares valued at $97.9 million. Institutional interest in Expedia remains high, with 90.76% of shares owned by institutions. Despite beating recent earnings expectations, analysts currently rate EXPE as a consensus \"Hold\" with an average price target of $284.42.",
+            "banner_image": "https://www.marketbeat.com/logos/expedia-group-inc-logo-1200x675.jpg?v=20221104141431",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.934779"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.834478"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.724650"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.636209"
+                }
+            ],
+            "overall_sentiment_score": 0.161643,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "EXPE",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.253856",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "BKNG",
+                    "relevance_score": "0.617598",
+                    "ticker_sentiment_score": "0.048867",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "PARK CIRCLE Co Has $6.98 Million Stock Holdings in Verizon Communications Inc. $VZ",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-park-circle-co-has-698-million-stock-holdings-in-verizon-communications-inc-vz-2026-06-15/",
+            "time_published": "20260615T101810",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "PARK CIRCLE Co significantly increased its stake in Verizon Communications Inc., boosting its holdings by 24.9% to 171,340 shares, now valued at $6.98 million. This makes Verizon its fourth-largest position, comprising 6.0% of its portfolio. Verizon recently reported better-than-expected earnings and raised its FY2026 EPS guidance, maintaining a \"Moderate Buy\" consensus rating among analysts with an average price target of $50.59.",
+            "banner_image": "https://www.marketbeat.com/logos/verizonwireless-1200x675.jpg",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.946256"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.925817"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.746400"
+                },
+                {
+                    "topic": "economy_macro",
+                    "relevance_score": "0.632365"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.644049"
+                }
+            ],
+            "overall_sentiment_score": 0.338842,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "VZ",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.340638",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Accenture downgraded to Equal Weight from Overweight at Morgan Stanley",
+            "url": "https://www.tipranks.com/news/the-fly/accenture-downgraded-to-equal-weight-from-overweight-at-morgan-stanley-thefly-news",
+            "time_published": "20260615T101724",
+            "authors": [],
+            "summary": "Morgan Stanley analyst James Faucette downgraded Accenture (ACN) to Equal Weight from Overweight, reducing the price target from $240 to $177. The downgrade is attributed to Accenture's AI spend rationalization not yielding expected results, a less supportive interest rate environment for budget growth, and increasing costs for acquisitions. The firm also anticipates flat total IT budget growth by 2026, despite rising AI prioritization, suggesting AI pilots have yet to demonstrate significant returns.",
+            "banner_image": null,
+            "source": "TipRanks",
+            "category_within_source": "General",
+            "source_domain": "TipRanks",
+            "topics": [
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.921357"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.702729"
+                }
+            ],
+            "overall_sentiment_score": 0.029983,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "MS",
+                    "relevance_score": "0.313338",
+                    "ticker_sentiment_score": "0.020681",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Panagora Asset Management Inc. Buys 476,277 Shares of eBay Inc. $EBAY",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-panagora-asset-management-inc-buys-476277-shares-of-ebay-inc-ebay-2026-06-15/",
+            "time_published": "20260615T101541",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "Panagora Asset Management Inc. significantly increased its stake in eBay Inc. by 62.7% during the fourth quarter, purchasing an additional 476,277 shares to bring its total holdings to 1,236,326 shares valued at approximately $107.7 million. This move is part of a broader trend of high institutional ownership in eBay, with 87.48% of the stock held by hedge funds and other institutions. The article also highlights numerous analyst ratings, eBay's strong financial performance including beating quarterly earnings expectations, and recent insider trading activity.",
+            "banner_image": "https://www.marketbeat.com/logos/ebay-inc-logo-1200x675.png",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.934590"
+                },
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.806550"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.710892"
+                },
+                {
+                    "topic": "retail_wholesale",
+                    "relevance_score": "0.606444"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.609089"
+                }
+            ],
+            "overall_sentiment_score": 0.323506,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "EBAY",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.316543",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "SS Innovations (NASDAQ: SSII) doubles 2025 revenue and lifts margins",
+            "url": "https://www.stocktitan.net/sec-filings/SSII/8-k-ss-innovations-international-inc-reports-material-event-d69e359e14d6.html",
+            "time_published": "20260615T101047",
+            "authors": [],
+            "summary": "SS Innovations International (NASDAQ: SSII) reported a significant increase in revenue for 2025, reaching $42.5 million from $20.6 million in 2024, alongside an improved gross margin of 46.0%. The company's SSi Mantra robotic system has seen widespread adoption with 210 systems installed across 186 hospitals globally, performing over 11,000 surgeries, and is now targeting EU CE marking in Q4 2026 and potential FDA clearance in Q4 2026–Q1 2027. Despite narrowing net losses, the company remains unprofitable, with a notable concentration of its 2025 revenue (87%) from India, highlighting its reliance on this foundational market.",
+            "banner_image": null,
+            "source": "Stock Titan",
+            "category_within_source": "General",
+            "source_domain": "Stock Titan",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "1.000000"
+                },
+                {
+                    "topic": "life_sciences",
+                    "relevance_score": "0.945112"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.811947"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.735706"
+                }
+            ],
+            "overall_sentiment_score": 0.470595,
+            "overall_sentiment_label": "Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "SSII",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.482005",
+                    "ticker_sentiment_label": "Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Short Interest in Similarweb Ltd. (NYSE:SMWB) Drops By 37.8%",
+            "url": "https://www.marketbeat.com/instant-alerts/short-interest-in-similarweb-ltd-nysesmwb-drops-by-378-2026-06-15/",
+            "time_published": "20260615T101007",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "Similarweb Ltd. (NYSE:SMWB) experienced a significant 37.8% decrease in short interest during May, bringing the total to 444,701 shares, which represents about 0.5% of shares outstanding. The days-to-cover ratio is now very low at 0.5 days. The company reported quarterly EPS matching expectations and slightly beat revenue estimates, though it still has negative margins and return on equity. Insider buying activity has been notable, with CEO Or Offer and Director Tamar Rapaport-Dagim recently purchasing shares, while analysts maintain an average \"Hold\" rating with a $7.07 price target.",
+            "banner_image": "https://www.marketbeat.com/logos/similarweb-ltd-logo-1200x675.png?v=20240515131127",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.923724"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.815334"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.702078"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.635306"
+                }
+            ],
+            "overall_sentiment_score": 0.04894,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "SMWB",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.036869",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "SK Telecom (NYSE: SKM) Q1 2026 books 4.39T Won revenue, 538B profit",
+            "url": "https://www.stocktitan.net/sec-filings/SKM/6-k-sk-telecom-co-ltd-current-report-foreign-issuer-f1bb82c1a686.html",
+            "time_published": "20260615T100530",
+            "authors": [],
+            "summary": "SK Telecom (NYSE: SKM) reported consolidated operating revenue of 4.39 trillion Won and an operating profit of 538 billion Won for the first quarter of 2026. Wireless services were the primary revenue driver, accounting for 74% of consolidated sales, with SK Broadband showing significant growth in high-speed internet and B2B data centers. As of March 31, 2026, the company had 17.80 million 5G subscribers, representing 81% of its total subscriber base, and maintained a strong financial position with 30.02 trillion Won in total assets.",
+            "banner_image": "https://www.stocktitan.net/img/logo/stock-titan-logo-header-free.png",
+            "source": "Stock Titan",
+            "category_within_source": "General",
+            "source_domain": "Stock Titan",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.900245"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.820113"
+                }
+            ],
+            "overall_sentiment_score": 0.428622,
+            "overall_sentiment_label": "Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "SKM",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.424120",
+                    "ticker_sentiment_label": "Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Potentia Wealth Takes $259,000 Position in Advanced Micro Devices, Inc. $AMD",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-potentia-wealth-takes-259000-position-in-advanced-micro-devices-inc-amd-2026-06-15/",
+            "time_published": "20260615T100206",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "Potentia Wealth has initiated a new position in Advanced Micro Devices (AMD), purchasing 1,211 shares valued at approximately $259,000 in Q4. Wall Street analysts show strong positive sentiment towards AMD, with a \"Moderate Buy\" consensus and an average price target of $424.59. Despite recent insider share sales under pre-arranged plans, the semiconductor manufacturer reported strong Q2 earnings that surpassed estimates, fueled by positive news regarding its AI GPU and server chip prospects.",
+            "banner_image": "https://www.marketbeat.com/logos/advanced-micro-devices-inc-logo-1200x675.gif",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.918537"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.932272"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.879641"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.739427"
+                }
+            ],
+            "overall_sentiment_score": 0.279359,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AMD",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.483465",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "INTC",
+                    "relevance_score": "0.648902",
+                    "ticker_sentiment_score": "0.118610",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "NVDA",
+                    "relevance_score": "0.636323",
+                    "ticker_sentiment_score": "0.291019",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Public Employees Retirement Association of Colorado Purchases 18,934 Shares of Intel Corporation $INTC",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-public-employees-retirement-association-of-colorado-purchases-18934-shares-of-intel-corporation-intc-2026-06-15/",
+            "time_published": "20260615T100151",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "The Public Employees Retirement Association of Colorado recently increased its stake in Intel Corporation by 3.4%, acquiring an additional 18,934 shares to bring its total holding to 580,107 shares valued at $21.4 million. This move is part of a broader trend of significant institutional interest in Intel, with major firms like Vanguard and Norges Bank also building substantial positions, resulting in institutional investors owning 64.53% of the company's stock. Intel's stock has seen a sharp rally, opening at $124.57, and the company has surpassed quarterly earnings and revenue expectations, reporting a 7.4% year-over-year revenue growth.",
+            "banner_image": "https://www.marketbeat.com/logos/intel-co-logo-1200x675.png?v=20250605133156",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.903780"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.912563"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.810074"
+                }
+            ],
+            "overall_sentiment_score": 0.33856,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "INTC",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.404807",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "AVGO",
+                    "relevance_score": "0.603715",
+                    "ticker_sentiment_score": "0.315980",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "QCOM",
+                    "relevance_score": "0.625206",
+                    "ticker_sentiment_score": "0.348254",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "AMD",
+                    "relevance_score": "0.610467",
+                    "ticker_sentiment_score": "0.340824",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "NVDA",
+                    "relevance_score": "0.644190",
+                    "ticker_sentiment_score": "0.332193",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "American Express ordered to fix security gaps after customer was spied on",
+            "url": "https://www.smh.com.au/business/banking-and-finance/american-express-ordered-to-fix-security-gaps-after-customer-was-spied-on-20260612-p606ei.html",
+            "time_published": "20260615T100008",
+            "authors": [
+                "Harriet Alexander",
+                "Julie Lewis"
+            ],
+            "summary": "Australia's Privacy Commissioner, Carly Kind, has ordered American Express to resolve security vulnerabilities in five of its data systems due to \"insider threats\" and to issue a written apology to a customer who initiated the complaint four years ago. The decision highlights Amex's failure to implement adequate security measures to prevent employee access to sensitive customer data, especially given prior similar incidents. While the full determination was not made public, raising concerns about transparency, Amex has acknowledged the decision and committed to addressing the recommendations.",
+            "banner_image": "https://static.ffx.io/images/$zoom_0.366%2C$multiply_0.5515%2C$ratio_1.777778%2C$width_1059%2C$x_317%2C$y_253/t_crop_custom/q_86%2Cf_auto/aa790456a5eb56e2c44c5e9745ba6103774284bb",
+            "source": "SMH.com.au",
+            "category_within_source": "General",
+            "source_domain": "SMH.com.au",
+            "topics": [
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.824854"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.824526"
+                }
+            ],
+            "overall_sentiment_score": -0.407188,
+            "overall_sentiment_label": "Bearish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AXP",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "-0.449317",
+                    "ticker_sentiment_label": "Bearish"
+                }
+            ]
+        },
+        {
+            "title": "Performance Comparison: Apple And Competitors In Technology Hardware, Storage & Peripherals Industry",
+            "url": "https://www.benzinga.com/insights/news/26/06/53188423/performance-comparison-apple-and-competitors-in-technology-hardware-storage-amp-peripherals-industr",
+            "time_published": "20260615T095909",
+            "authors": [
+                "Benzinga Staff Writer"
+            ],
+            "summary": "This article provides a comprehensive financial comparison of Apple (NASDAQ: AAPL) against its competitors in the Technology Hardware, Storage & Peripherals industry. It highlights Apple's strong financial position with a low debt-to-equity ratio and high profitability metrics like ROE, EBITDA, and gross profit. However, it also notes Apple's lower revenue growth compared to its peers, which could be a concern for future performance.",
+            "banner_image": "https://cdn.benzinga.com/cdn-cgi/image/width=1300,format=auto,quality=85/files/images/story/2025/07/24/article-header-background-image.png",
+            "source": "Benzinga",
+            "category_within_source": "General",
+            "source_domain": "Benzinga",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.942368"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.830072"
+                }
+            ],
+            "overall_sentiment_score": -0.017936,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.328898",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "WDC",
+                    "relevance_score": "0.741335",
+                    "ticker_sentiment_score": "-0.114390",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "STX",
+                    "relevance_score": "0.737441",
+                    "ticker_sentiment_score": "-0.105360",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "HPE",
+                    "relevance_score": "0.621895",
+                    "ticker_sentiment_score": "-0.147329",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Industry Comparison: Evaluating Analog Devices Against Competitors In Semiconductors & Semiconductor",
+            "url": "https://www.benzinga.com/insights/news/26/06/53188434/industry-comparison-evaluating-analog-devices-against-competitors-in-semiconductors-amp-semiconduct",
+            "time_published": "20260615T095900",
+            "authors": [
+                "Benzinga Staff Writer"
+            ],
+            "summary": "This article provides an industry comparison of Analog Devices (NASDAQ: ADI) against its competitors in the Semiconductors & Semiconductor Equipment sector, focusing on financial indicators such as the debt-to-equity ratio, P/E, P/B, P/S, ROE, EBITDA, gross profit, and revenue growth. While Analog Devices shows potential undervaluation based on its ratios, its lower operational metrics like ROE, EBITDA, and revenue growth suggest weaker financial performance compared to industry averages and peers. The analysis highlights that Analog Devices has a stronger financial position regarding its debt-to-equity ratio but lags in profitability and growth.",
+            "banner_image": "https://cdn.benzinga.com/cdn-cgi/image/width=1300,format=auto,quality=85/files/images/story/2025/07/24/article-header-background-image.png",
+            "source": "Benzinga",
+            "category_within_source": "General",
+            "source_domain": "Benzinga",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.915826"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.840792"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.704278"
+                }
+            ],
+            "overall_sentiment_score": 0.036025,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "ADI",
+                    "relevance_score": "0.307323",
+                    "ticker_sentiment_score": "0.028191",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Amazon (AMZN) Moves To Unlock An Entire Continent, How Big Is The Target Market?",
+            "url": "https://www.insidermonkey.com/blog/amazon-amzn-moves-to-unlock-an-entire-continent-how-big-is-the-target-market-1781412/",
+            "time_published": "20260615T094207",
+            "authors": [
+                "Jabran Kundi"
+            ],
+            "summary": "Amazon recently launched its Prime service in South Africa, marking a significant step in its global expansion strategy focused on the African continent. The company is offering Prime memberships at competitive prices, providing services like fast delivery, Prime Video, and gaming perks. This move aims to increase Amazon's market share in South Africa's growing e-commerce sector, building on its presence established two years prior.",
+            "banner_image": "https://d2w7kw43nye0pi.cloudfront.net/QoPaG_f8NnjnUvNpCo4Xs8E_Fm0W0d4casfdUUYtRso/resize:fit:480:269:0/plain/https://imonkeyblog.s3.us-east-1.amazonaws.com/blog/wp-content/uploads/2023/12/09113206/CTIB-insidermonkey-1702139524196.jpg",
+            "source": "Insider Monkey",
+            "category_within_source": "General",
+            "source_domain": "Insider Monkey",
+            "topics": [
+                {
+                    "topic": "retail_wholesale",
+                    "relevance_score": "0.915749"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.806696"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.636996"
+                }
+            ],
+            "overall_sentiment_score": 0.442197,
+            "overall_sentiment_label": "Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AMZN",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.446832",
+                    "ticker_sentiment_label": "Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Tower Semiconductor Climbs on Silicon Photonics Expansion Deal",
+            "url": "https://www.benzinga.com/markets/large-cap/26/06/53188491/tower-semiconductor-climbs-on-silicon-photonics-expansion-deal",
+            "time_published": "20260615T094038",
+            "authors": [
+                "Lekha Gupta"
+            ],
+            "summary": "Tower Semiconductor (NASDAQ: TSEM) has announced a multi-year deal with IQE for Indium Phosphide (InP) epiwafers, boosting its silicon photonics capabilities crucial for AI-driven data centers. The company's stock showed a 5.16% increase in premarket trading, reflecting strong market confidence. Analysts maintain a Buy rating with an average target of $276.75, and TSEM exhibits a growth-heavy profile with strong momentum and quality scores.",
+            "banner_image": "https://cdn.benzinga.com/cdn-cgi/image/width=1300,format=auto,quality=85/files/images/story/2025/07/24/article-header-background-image.png",
+            "source": "Benzinga",
+            "category_within_source": "General",
+            "source_domain": "Benzinga",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.837813"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.949717"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.900223"
+                }
+            ],
+            "overall_sentiment_score": 0.510999,
+            "overall_sentiment_label": "Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "TSEM",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.519217",
+                    "ticker_sentiment_label": "Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Tower Semiconductor (TSEM) and IQE strike InP supply pact and settle IP dispute",
+            "url": "https://www.stocktitan.net/sec-filings/TSEM/6-k-tower-semiconductor-ltd-current-report-foreign-issuer-306978ecd7ee.html",
+            "time_published": "20260615T094037",
+            "authors": [],
+            "summary": "Tower Semiconductor and IQE have entered a multi-year agreement for IQE to supply Indium Phosphide (InP) epiwafers to Tower for its silicon photonics platforms, crucial for AI data-center optical connectivity. This pact includes minimum purchase and volume commitments and also resolves previous intellectual property disputes by granting IQE a royalty-free license to Tower's porous silicon patents. The collaboration aims to develop optical components for current 200Gb/s and future 400Gb/s per-lane applications.",
+            "banner_image": "https://www.sec.gov/Archives/edgar/data/0000928876/000117891326003180/image_005.jpg",
+            "source": "Stock Titan",
+            "category_within_source": "General",
+            "source_domain": "Stock Titan",
+            "topics": [
+                {
+                    "topic": "technology",
+                    "relevance_score": "1.000000"
+                },
+                {
+                    "topic": "mergers_and_acquisitions",
+                    "relevance_score": "0.814154"
+                }
+            ],
+            "overall_sentiment_score": 0.400584,
+            "overall_sentiment_label": "Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "TSEM",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.419004",
+                    "ticker_sentiment_label": "Bullish"
+                }
+            ]
+        },
+        {
+            "title": "New Trip.Biz Research Finds 53% of Business Travellers Book Outside Approved Channels Due to Lack of Content",
+            "url": "https://sg.finance.yahoo.com/news/trip-biz-research-finds-53-093000715.html",
+            "time_published": "20260615T093941",
+            "authors": [],
+            "summary": "New research from Trip.Biz reveals that 53% of business travelers book outside approved channels primarily due to a lack of content, rather than intentional non-compliance or poor user experience. This \"invisible spend\" leads to reduced compliance, weakened duty of care, and increased reconciliation burdens for companies. The study highlights the need for broader access to integrated content sources and the potential role of AI in improving adoption and maximizing travel data.",
+            "banner_image": "https://s.yimg.com/ny/api/res/1.2/XhYf1Syl_TJHSLBeNf44jA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNTtoPTM5Nw--/https://media.zenfs.com/en/prnewswire_sg_868/edcbc2926e5fd0bab3cc6058b60593de",
+            "source": "Yahoo Finance Singapore",
+            "category_within_source": "General",
+            "source_domain": "Yahoo Finance Singapore",
+            "topics": [
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.845948"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.649778"
+                }
+            ],
+            "overall_sentiment_score": -0.051002,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "TCOM",
+                    "relevance_score": "0.335885",
+                    "ticker_sentiment_score": "0.049396",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "BKNG",
+                    "relevance_score": "0.632214",
+                    "ticker_sentiment_score": "-0.140849",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Is Axon Enterprise Stock Underperforming the S&P 500?",
+            "url": "https://www.barchart.com/story/news/2467726/is-axon-enterprise-stock-underperforming-the-s-p-500",
+            "time_published": "20260615T093907",
+            "authors": [
+                "Aritra Gangopadhyay"
+            ],
+            "summary": "Axon Enterprise, a big-cap stock in public safety technology, has underperformed the S&P 500 over the past three months and the last 52 weeks. Despite a Q1 2026 revenue beat, its stock has declined significantly from its 52-week high. Analysts, however, hold a \"Strong Buy\" consensus for AXON, with a substantial upside potential.",
+            "banner_image": "https://media.barchart.com/contributors-admin/common-images/images/S%26P%20500%20Companies/Industrials%20(names%20A%20-%20I)/Automatic%20machine%20tool%20industrial%20manufacture%20factory%20by%20xiaoliangge%20via%20Adobe%20Stock.jpeg",
+            "source": "Barchart.com",
+            "category_within_source": "General",
+            "source_domain": "Barchart.com",
+            "topics": [
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.923144"
+                },
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.834947"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.733737"
+                }
+            ],
+            "overall_sentiment_score": 0.073836,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AXON",
+                    "relevance_score": "0.997241",
+                    "ticker_sentiment_score": "-0.210326",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "LHX",
+                    "relevance_score": "0.732822",
+                    "ticker_sentiment_score": "0.128915",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "FSLR",
+                    "relevance_score": "0.617259",
+                    "ticker_sentiment_score": "0.325269",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Perryman Financial Advisory Inc. AD Invests $4.48 Million in Netflix, Inc. $NFLX",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-perryman-financial-advisory-inc-ad-invests-448-million-in-netflix-inc-nflx-2026-06-15/",
+            "time_published": "20260615T093811",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "Perryman Financial Advisory Inc. AD has invested $4.48 million in Netflix, Inc. (NASDAQ:NFLX), purchasing 47,813 shares during the fourth quarter. This new position highlights strong institutional interest in Netflix, with 80.93% of the stock now owned by institutional investors. Netflix also reported strong Q4 earnings, beating analyst expectations with $1.23 EPS on $12.25 billion in revenue.",
+            "banner_image": "https://www.marketbeat.com/logos/netflix-inc-logo-1200x675.png?v=20231213130542",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.942780"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.830952"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.734262"
+                }
+            ],
+            "overall_sentiment_score": 0.121185,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "NFLX",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.277359",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "PSKY",
+                    "relevance_score": "0.574912",
+                    "ticker_sentiment_score": "0.016979",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "WBD",
+                    "relevance_score": "0.560251",
+                    "ticker_sentiment_score": "0.016857",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "QCOM",
+                    "relevance_score": "0.539887",
+                    "ticker_sentiment_score": "0.027139",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "MSFT",
+                    "relevance_score": "0.556929",
+                    "ticker_sentiment_score": "0.227010",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "The Zacks Analyst Blog Highlights Apple, Netflix and Disney",
+            "url": "https://www.theglobeandmail.com/investing/markets/stocks/DIS/pressreleases/2467357/the-zacks-analyst-blog-highlights-apple-netflix-and-disney/",
+            "time_published": "20260615T093659",
+            "authors": [
+                "Zacks Investment Research"
+            ],
+            "summary": "The Zacks Analyst Blog highlights Apple, Netflix, and Disney, discussing Apple's expanding Services business, which achieved record revenues in Q2 fiscal 2026, driven by AI enhancements and new offerings. The article also notes strong competition from Netflix and Disney, which are expanding their streaming and gaming footprints, with Disney's streaming segment achieving profitability. Apple's stock performance and valuation are also discussed.",
+            "banner_image": "https://staticx-tuner.zacks.com/images/articles/main/83/1163.jpg",
+            "source": "The Globe and Mail",
+            "category_within_source": "General",
+            "source_domain": "The Globe and Mail",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.938273"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.843605"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.709405"
+                }
+            ],
+            "overall_sentiment_score": 0.325044,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.985425",
+                    "ticker_sentiment_score": "0.428098",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "NFLX",
+                    "relevance_score": "0.826784",
+                    "ticker_sentiment_score": "0.268517",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "DIS",
+                    "relevance_score": "0.766146",
+                    "ticker_sentiment_score": "0.305588",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "The Zacks Analyst Blog Highlights Apple, Netflix and Disney",
+            "url": "https://www.theglobeandmail.com/investing/markets/stocks/AAPL/pressreleases/2467357/the-zacks-analyst-blog-highlights-apple-netflix-and-disney/",
+            "time_published": "20260615T091801",
+            "authors": [
+                "Zacks Investment Research"
+            ],
+            "summary": "This Zacks Analyst Blog discusses Apple's expanding Services business, which contributed 27.9% of total net sales in Q2 fiscal 2026, driven by new AI features and ecosystem expansion. Despite strong growth, Apple faces competition from Netflix and Disney, both of which are also expanding aggressively in streaming and gaming. The article notes Apple's stock underperformed the tech sector year-to-date and carries a premium valuation.",
+            "banner_image": "https://staticx-tuner.zacks.com/images/articles/main/83/1163.jpg",
+            "source": "The Globe and Mail",
+            "category_within_source": "General",
+            "source_domain": "The Globe and Mail",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.921104"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.828854"
+                }
+            ],
+            "overall_sentiment_score": 0.287224,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.964496",
+                    "ticker_sentiment_score": "0.261906",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "NFLX",
+                    "relevance_score": "0.838356",
+                    "ticker_sentiment_score": "0.228869",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "DIS",
+                    "relevance_score": "0.745153",
+                    "ticker_sentiment_score": "0.346561",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Johnson & Johnson CEO Joaquin Duato on Fighting Cancer, AI and Medical Innovation",
+            "url": "https://www.wsj.com/video/series/wsj-leadership-institute-leaders/johnson-johnson-ceo-joaquin-duato-on-fighting-cancer-ai-and-medical-innovation/4E90A329-95A7-4BBC-A2CA-31DA72638C70?mod=WSJvidctr_businessnews_pos0",
+            "time_published": "20260615T091509",
+            "authors": [
+                "WSJ Leadership Institute"
+            ],
+            "summary": "Johnson & Johnson Chairman and CEO Joaquin Duato was interviewed by WSJ Leadership Institute President Alan Murray at the 2026 WSJ CEO Council Summit in London. They discussed J&J's efforts in tackling complex healthcare challenges, advancements in cancer treatment, the future of longevity, and how artificial intelligence is accelerating medical innovation. This Leaders episode is part of a podcast series featuring conversations with top executives on leadership in turbulent times.",
+            "banner_image": "https://images.wsj.net/im-05937621?width=1260&size=1.7778",
+            "source": "WSJ",
+            "category_within_source": "General",
+            "source_domain": "WSJ",
+            "topics": [
+                {
+                    "topic": "life_sciences",
+                    "relevance_score": "1.000000"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.823824"
+                }
+            ],
+            "overall_sentiment_score": 0.42508,
+            "overall_sentiment_label": "Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "JNJ",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.435820",
+                    "ticker_sentiment_label": "Bullish"
+                }
+            ]
+        },
+        {
+            "title": "MML Investors Services LLC Has $103.22 Million Stake in Netflix, Inc. $NFLX",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-mml-investors-services-llc-has-10322-million-stake-in-netflix-inc-nflx-2026-06-15/",
+            "time_published": "20260615T090817",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "MML Investors Services LLC significantly increased its stake in Netflix, Inc. ($NFLX) by 979.7% in the fourth quarter, reaching over $103 million. Other major institutions also sharply raised their holdings, collectively owning 80.93% of the company's shares. Despite recent market fluctuations, analysts have a \"Moderate Buy\" rating for Netflix, with expectations of continued growth and strong financial performance.",
+            "banner_image": "https://www.marketbeat.com/logos/netflix-inc-logo-1200x675.png?v=20231213130542",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.906830"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.939783"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.836717"
+                }
+            ],
+            "overall_sentiment_score": 0.256674,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "NFLX",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.437918",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "PSKY",
+                    "relevance_score": "0.633300",
+                    "ticker_sentiment_score": "0.110696",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "AT&T Inc. $T Holdings Increased by MYDA Advisors LLC",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-att-inc-t-holdings-increased-by-myda-advisors-llc-2026-06-15/",
+            "time_published": "20260615T090254",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "MYDA Advisors LLC significantly increased its stake in AT&T Inc. ($T) by 136.7% in the fourth quarter, now holding 355,069 shares valued at $8.82 million. This move is part of a broader trend where several institutional investors boosted their positions, leading to 57.10% of AT&T shares being institutionally held. The company also reported strong quarterly earnings, beating expectations, and offers a substantial 4.7% dividend yield.",
+            "banner_image": "https://www.marketbeat.com/logos/139387-attlogo-1200x675.jpg",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.902536"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.843661"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.720983"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.630147"
+                }
+            ],
+            "overall_sentiment_score": 0.40194,
+            "overall_sentiment_label": "Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "T",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.418305",
+                    "ticker_sentiment_label": "Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Intuit hires Mother to humanize the QuickBooks maker’s AI pitch",
+            "url": "https://adage.com/agencies/accounts-in-review/aa-intuit-hires-mother-as-creative-strategy-partner/",
+            "time_published": "20260615T090003",
+            "authors": [
+                "Ewan Larkin"
+            ],
+            "summary": "Intuit, the company behind TurboTax and QuickBooks, has appointed Mother New York as its creative and strategy partner. This collaboration aims to humanize Intuit's artificial intelligence (AI) initiatives, suggesting a focus on making AI more relatable and accessible to its users. The announcement highlights the growing trend of companies leveraging creative agencies to shape their public perception of technological advancements.",
+            "banner_image": "https://adage.com/resizer/v2/VSFFPJZC3NHD5NCDXBXFE3VLLM.jpg?smart=true&auth=f4046c8639caca7649a939554dc0334963c8c41f1c6413e8361dbfc2bc7c790e&width=3075&height=1729",
+            "source": "Ad Age",
+            "category_within_source": "General",
+            "source_domain": "Ad Age",
+            "topics": [
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.828370"
+                }
+            ],
+            "overall_sentiment_score": 0.236235,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "INTU",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.247053",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Vending meets inventory control: how Fastenal FASTStock machines anchor its flagship offer",
+            "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/vending-meets-inventory-control-how-fastenal-faststock-machines-anchor/69543081",
+            "time_published": "20260615T085853",
+            "authors": [],
+            "summary": "Fastenal's FASTStock industrial vending machines are central to its strategy, offering an integrated solution for inventory control that combines hardware, software, and services for manufacturers. These machines dispense everyday consumables, track usage in real-time, and automate replenishment, helping customers reduce stockouts and waste. This model generates recurring revenue for Fastenal, making vending a key growth driver and a strategic pillar for long-term customer retention and revenue growth.",
+            "banner_image": "https://mdb.ad-hoc-news.de/bild/bild-2471700_1100_0.webp",
+            "source": "AD HOC NEWS",
+            "category_within_source": "General",
+            "source_domain": "AD HOC NEWS",
+            "topics": [
+                {
+                    "topic": "retail_wholesale",
+                    "relevance_score": "0.935952"
+                },
+                {
+                    "topic": "manufacturing",
+                    "relevance_score": "0.817800"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.707622"
+                }
+            ],
+            "overall_sentiment_score": 0.480689,
+            "overall_sentiment_label": "Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "FAST",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.452328",
+                    "ticker_sentiment_label": "Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Financial Gravity Asset Management Inc. Boosts Position in Netflix, Inc. $NFLX",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-financial-gravity-asset-management-inc-boosts-position-in-netflix-inc-nflx-2026-06-15/",
+            "time_published": "20260615T085128",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "Financial Gravity Asset Management Inc. significantly increased its stake in Netflix (NASDAQ:NFLX) by 976.0% during the fourth quarter, now holding 38,704 shares valued at $3.63 million. Several other institutional investors also adjusted their positions in NFLX. The article also covers key news impacting Netflix, including positive sentiment from analysts and forecasts, as well as insider selling activity and analyst rating changes.",
+            "banner_image": "https://www.marketbeat.com/logos/netflix-inc-logo-1200x675.png?v=20231213130542",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.925559"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.811003"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.734130"
+                }
+            ],
+            "overall_sentiment_score": -0.067854,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "NFLX",
+                    "relevance_score": "0.962349",
+                    "ticker_sentiment_score": "0.281576",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "WBD",
+                    "relevance_score": "0.649562",
+                    "ticker_sentiment_score": "-0.322281",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                }
+            ]
+        },
+        {
+            "title": "Fieldview Capital Management LLC Invests $1.20 Million in Microchip Technology Incorporated $MCHP",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-fieldview-capital-management-llc-invests-120-million-in-microchip-technology-incorporated-mchp-2026-06-15/",
+            "time_published": "20260615T085124",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "Fieldview Capital Management LLC recently acquired a new position in Microchip Technology Incorporated (NASDAQ:MCHP), investing approximately $1.20 million by purchasing 18,765 shares during the fourth quarter. This move is part of broader institutional interest, with other major firms also adjusting their stakes in the semiconductor company. The article also details recent analyst ratings, financial performance, and insider trading activity for Microchip Technology.",
+            "banner_image": "https://www.marketbeat.com/logos/microchip-technology-inc-logo-1200x675.png",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.949013"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.842280"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.830786"
+                }
+            ],
+            "overall_sentiment_score": 0.399319,
+            "overall_sentiment_label": "Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "MCHP",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.402265",
+                    "ticker_sentiment_label": "Bullish"
+                }
+            ]
+        },
+        {
+            "title": "U.S. Stocks Move | Micron Technology surges over 8% in pre-market trading after two investment banks significantly raised their price targets.",
+            "url": "https://news.futunn.com/en/post/74589926/us-stocks-move-micron-technology-surges-over-8-in-pre",
+            "time_published": "20260615T084626",
+            "authors": [],
+            "summary": "Micron Technology (MU) surged over 8% in pre-market trading after two investment banks, Morgan Stanley and Bank of America, significantly raised their price targets for the semiconductor company. This positive sentiment from analysts suggests a strong outlook regarding Micron's performance, leading to increased investor confidence and a notable stock rally. The increased price targets indicate expectations of future growth and profitability for the company.",
+            "banner_image": null,
+            "source": "富途牛牛",
+            "category_within_source": "General",
+            "source_domain": "富途牛牛",
+            "topics": [
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.924114"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.825289"
+                }
+            ],
+            "overall_sentiment_score": 0.746991,
+            "overall_sentiment_label": "Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "MU",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.709642",
+                    "ticker_sentiment_label": "Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Constellation Energy (CEG) Passes Another Regulatory Hurdle For Three Mile Island Nuclear Plant",
+            "url": "https://www.insidermonkey.com/blog/constellation-energy-ceg-passes-another-regulatory-hurdle-for-three-mile-island-nuclear-plant-1781430/",
+            "time_published": "20260615T084218",
+            "authors": [
+                "Jabran Kundi"
+            ],
+            "summary": "Constellation Energy (CEG) has cleared a regulatory hurdle for its Three Mile Island nuclear plant, moving forward with plans to restart it and transfer grid rights from its Eddystone plant. This development supports a 20-year agreement to supply power to Microsoft's data center, alongside another 20-year power purchase agreement with Meta Platforms. The company anticipates generating over $20 billion in free cash flow by 2029, bolstered by these long-term agreements and reduced regulatory obstacles.",
+            "banner_image": "https://d2w7kw43nye0pi.cloudfront.net/Urt5V4fgagDKfMZ1_GtwWJpgih0PkbChU803C7ihouA/resize:fit:480:271:0/plain/https://imonkeyblog.s3.us-east-1.amazonaws.com/blog/wp-content/uploads/2026/01/08220824/Screenshot-2026-01-09-at-11.08.02%E2%80%AFAM.png",
+            "source": "Insider Monkey",
+            "category_within_source": "General",
+            "source_domain": "Insider Monkey",
+            "topics": [
+                {
+                    "topic": "energy_transportation",
+                    "relevance_score": "0.904398"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.833265"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.737273"
+                },
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.642230"
+                }
+            ],
+            "overall_sentiment_score": 0.431668,
+            "overall_sentiment_label": "Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "CEG",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.406195",
+                    "ticker_sentiment_label": "Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Why Tower Semiconductor Shares Are Trading Higher By Around 5%; Here Are 20 Stocks Moving Premarket",
+            "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53187861/why-tower-semiconductor-shares-are-trading-higher-by-around-5-here-are-20-stocks-moving-premarket",
+            "time_published": "20260615T084038",
+            "authors": [
+                "Avi Kapoor"
+            ],
+            "summary": "Tower Semiconductor shares are trading higher by approximately 5% in pre-market due to a multi-year Indium Phosphide (InP) epiwafer supply agreement with IQE for AI-driven data centers, which also resolved previous IP disputes. The article also lists several other stocks showing notable movements in pre-market trading, including both gainers and losers, along with reasons for their fluctuations.",
+            "banner_image": "https://cdn.benzinga.com/cdn-cgi/image/width=1300,format=auto,quality=85/files/images/story/2025/07/24/article-header-background-image.png",
+            "source": "Benzinga",
+            "category_within_source": "General",
+            "source_domain": "Benzinga",
+            "topics": [
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "1.000000"
+                },
+                {
+                    "topic": "life_sciences",
+                    "relevance_score": "0.719650"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.642250"
+                }
+            ],
+            "overall_sentiment_score": 0.489585,
+            "overall_sentiment_label": "Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "TSEM",
+                    "relevance_score": "0.954502",
+                    "ticker_sentiment_score": "0.495456",
+                    "ticker_sentiment_label": "Bullish"
+                }
+            ]
+        },
+        {
+            "title": "BBVA, Banco Santander and CaixaBank launch Fraudfense Check to strengthen the banking sector’s fight against financial crime",
+            "url": "https://www.bbva.com/en/innovation/bbva-banco-santander-and-caixabank-launch-fraudfense-check-to-strengthen-the-banking-sectors-fight-against-financial-crime/",
+            "time_published": "20260615T083951",
+            "authors": [],
+            "summary": "BBVA, Banco Santander, and CaixaBank have launched Fraudfense Check, a new service developed by their joint company FrauDfense, to prevent financial fraud within the banking sector. This initiative uses an advanced technology platform for secure information exchange between financial institutions, and FrauDfense is inviting other Spanish financial institutions to join the service to enhance collaborative fraud prevention efforts. A pilot program demonstrated its effectiveness in preventing millions of euros in fraud across various banking operations.",
+            "banner_image": "https://www.bbva.com/wp-content/uploads/2026/06/Alianzacontraelcrimen-bbva-150x150.jpg",
+            "source": "BBVA",
+            "category_within_source": "General",
+            "source_domain": "BBVA",
+            "topics": [
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.939745"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.640369"
+                }
+            ],
+            "overall_sentiment_score": 0.039336,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "SAN",
+                    "relevance_score": "0.335684",
+                    "ticker_sentiment_score": "0.011656",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        }
+    ]
+}

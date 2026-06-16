@@ -1,0 +1,1130 @@
+{
+  "endpoint_id": "balance_sheet_ibm",
+  "generated_at_utc": "2026-06-15T12:23:29.732934+00:00",
+  "key_kind": "demo",
+  "schema": {
+    "fields": {
+      "$": {
+        "appearance_count": 1,
+        "examples": [
+          "{\"symbol\": \"IBM\", \"annualReports\": [{\"fiscalDateEnding\": \"2025-12-31\", \"reportedCurrency\": \"USD\", \"totalAssets\": \"151880000000\", \"totalCu..."
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.annualReports": {
+        "appearance_count": 1,
+        "examples": [
+          "[{\"fiscalDateEnding\": \"2025-12-31\", \"reportedCurrency\": \"USD\", \"totalAssets\": \"151880000000\", \"totalCurrentAssets\": \"35860000000\", \"cashA..."
+        ],
+        "json_types": [
+          "array"
+        ],
+        "semantic_types": [
+          "array"
+        ]
+      },
+      "$.annualReports[]": {
+        "appearance_count": 10,
+        "examples": [
+          "{\"fiscalDateEnding\": \"2025-12-31\", \"reportedCurrency\": \"USD\", \"totalAssets\": \"151880000000\", \"totalCurrentAssets\": \"35860000000\", \"cashAn...",
+          "{\"fiscalDateEnding\": \"2024-12-31\", \"reportedCurrency\": \"USD\", \"totalAssets\": \"137175000000\", \"totalCurrentAssets\": \"34482000000\", \"cashAn...",
+          "{\"fiscalDateEnding\": \"2023-12-31\", \"reportedCurrency\": \"USD\", \"totalAssets\": \"135241000000\", \"totalCurrentAssets\": \"32908000000\", \"cashAn..."
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.annualReports[].accumulatedDepreciationAmortizationPPE": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\"",
+          "\"-14390000000\"",
+          "\"-23136000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none",
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].capitalLeaseObligations": {
+        "appearance_count": 10,
+        "examples": [
+          "\"3347000000\"",
+          "\"3423000000\"",
+          "\"3388000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string",
+          "literal_string_none"
+        ]
+      },
+      "$.annualReports[].cashAndCashEquivalentsAtCarryingValue": {
+        "appearance_count": 10,
+        "examples": [
+          "\"13641000000\"",
+          "\"13947000000\"",
+          "\"13068000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].cashAndShortTermInvestments": {
+        "appearance_count": 10,
+        "examples": [
+          "\"13641000000\"",
+          "\"13947000000\"",
+          "\"13068000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].commonStock": {
+        "appearance_count": 10,
+        "examples": [
+          "\"63318000000\"",
+          "\"61380000000\"",
+          "\"59643000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].commonStockSharesOutstanding": {
+        "appearance_count": 10,
+        "examples": [
+          "\"948700000\"",
+          "\"937200000\"",
+          "\"922073828\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].currentAccountsPayable": {
+        "appearance_count": 10,
+        "examples": [
+          "\"4756000000\"",
+          "\"4032000000\"",
+          "\"4132000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].currentDebt": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.annualReports[].currentLongTermDebt": {
+        "appearance_count": 10,
+        "examples": [
+          "\"6424000000\"",
+          "\"5089000000\"",
+          "\"6426000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].currentNetReceivables": {
+        "appearance_count": 10,
+        "examples": [
+          "\"17639000000\"",
+          "\"14010000000\"",
+          "\"13956000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].deferredRevenue": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.annualReports[].fiscalDateEnding": {
+        "appearance_count": 10,
+        "examples": [
+          "\"2025-12-31\"",
+          "\"2024-12-31\"",
+          "\"2023-12-31\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "date_yyyy_mm_dd"
+        ]
+      },
+      "$.annualReports[].goodwill": {
+        "appearance_count": 10,
+        "examples": [
+          "\"67717000000\"",
+          "\"60706000000\"",
+          "\"60178000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].intangibleAssets": {
+        "appearance_count": 10,
+        "examples": [
+          "\"11391000000\"",
+          "\"10661000000\"",
+          "\"11036000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].intangibleAssetsExcludingGoodwill": {
+        "appearance_count": 10,
+        "examples": [
+          "\"11391000000\"",
+          "\"10661000000\"",
+          "\"11036000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].inventory": {
+        "appearance_count": 10,
+        "examples": [
+          "\"1220000000\"",
+          "\"1289000000\"",
+          "\"1161000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].investments": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.annualReports[].longTermDebt": {
+        "appearance_count": 10,
+        "examples": [
+          "\"54836000000\"",
+          "\"49884000000\"",
+          "\"50121000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].longTermDebtNoncurrent": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.annualReports[].longTermInvestments": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\"",
+          "\"1617000000\"",
+          "\"1823000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none",
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].otherCurrentAssets": {
+        "appearance_count": 10,
+        "examples": [
+          "\"2530000000\"",
+          "\"4592000000\"",
+          "\"4350000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].otherCurrentLiabilities": {
+        "appearance_count": 10,
+        "examples": [
+          "\"10577000000\"",
+          "\"7313000000\"",
+          "\"7023000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].otherNonCurrentAssets": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.annualReports[].otherNonCurrentLiabilities": {
+        "appearance_count": 10,
+        "examples": [
+          "\"1068000000\"",
+          "\"981000000\"",
+          "\"1164000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].propertyPlantEquipment": {
+        "appearance_count": 10,
+        "examples": [
+          "\"9028000000\"",
+          "\"8928000000\"",
+          "\"8721000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].reportedCurrency": {
+        "appearance_count": 10,
+        "examples": [
+          "\"USD\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.annualReports[].retainedEarnings": {
+        "appearance_count": 10,
+        "examples": [
+          "\"155648000000\"",
+          "\"151163000000\"",
+          "\"151276000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].shortLongTermDebtTotal": {
+        "appearance_count": 10,
+        "examples": [
+          "\"67154000000\"",
+          "\"58396000000\"",
+          "\"59935000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].shortTermDebt": {
+        "appearance_count": 10,
+        "examples": [
+          "\"7224000000\"",
+          "\"5857000000\"",
+          "\"7246000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].shortTermInvestments": {
+        "appearance_count": 10,
+        "examples": [
+          "\"830000000\"",
+          "\"644000000\"",
+          "\"373000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].totalAssets": {
+        "appearance_count": 10,
+        "examples": [
+          "\"151880000000\"",
+          "\"137175000000\"",
+          "\"135241000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].totalCurrentAssets": {
+        "appearance_count": 10,
+        "examples": [
+          "\"35860000000\"",
+          "\"34482000000\"",
+          "\"32908000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].totalCurrentLiabilities": {
+        "appearance_count": 10,
+        "examples": [
+          "\"38658000000\"",
+          "\"33142000000\"",
+          "\"34122000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].totalLiabilities": {
+        "appearance_count": 10,
+        "examples": [
+          "\"119140000000\"",
+          "\"109782000000\"",
+          "\"112628000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].totalNonCurrentAssets": {
+        "appearance_count": 10,
+        "examples": [
+          "\"116020000000\"",
+          "\"102694000000\"",
+          "\"102333000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].totalNonCurrentLiabilities": {
+        "appearance_count": 10,
+        "examples": [
+          "\"80482000000\"",
+          "\"76640000000\"",
+          "\"78506000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].totalShareholderEquity": {
+        "appearance_count": 10,
+        "examples": [
+          "\"32648000000\"",
+          "\"27307000000\"",
+          "\"22533000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].treasuryStock": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\"",
+          "\"-169392000000\"",
+          "\"-169339000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none",
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports": {
+        "appearance_count": 1,
+        "examples": [
+          "[{\"fiscalDateEnding\": \"2026-03-31\", \"reportedCurrency\": \"USD\", \"totalAssets\": \"156229000000\", \"totalCurrentAssets\": \"31914000000\", \"cashA..."
+        ],
+        "json_types": [
+          "array"
+        ],
+        "semantic_types": [
+          "array"
+        ]
+      },
+      "$.quarterlyReports[]": {
+        "appearance_count": 10,
+        "examples": [
+          "{\"fiscalDateEnding\": \"2026-03-31\", \"reportedCurrency\": \"USD\", \"totalAssets\": \"156229000000\", \"totalCurrentAssets\": \"31914000000\", \"cashAn...",
+          "{\"fiscalDateEnding\": \"2025-12-31\", \"reportedCurrency\": \"USD\", \"totalAssets\": \"151880000000\", \"totalCurrentAssets\": \"35860000000\", \"cashAn...",
+          "{\"fiscalDateEnding\": \"2025-09-30\", \"reportedCurrency\": \"USD\", \"totalAssets\": \"146312000000\", \"totalCurrentAssets\": \"32740000000\", \"cashAn..."
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.quarterlyReports[].accumulatedDepreciationAmortizationPPE": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.quarterlyReports[].capitalLeaseObligations": {
+        "appearance_count": 10,
+        "examples": [
+          "\"3441000000\"",
+          "\"3347000000\"",
+          "\"3453000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].cashAndCashEquivalentsAtCarryingValue": {
+        "appearance_count": 10,
+        "examples": [
+          "\"10819000000\"",
+          "\"13641000000\"",
+          "\"11569000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].cashAndShortTermInvestments": {
+        "appearance_count": 10,
+        "examples": [
+          "\"10819000000\"",
+          "\"13641000000\"",
+          "\"11569000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].commonStock": {
+        "appearance_count": 10,
+        "examples": [
+          "\"63936000000\"",
+          "\"63318000000\"",
+          "\"62819000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].commonStockSharesOutstanding": {
+        "appearance_count": 10,
+        "examples": [
+          "\"952100000\"",
+          "\"952400000\"",
+          "\"948900000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].currentAccountsPayable": {
+        "appearance_count": 10,
+        "examples": [
+          "\"4039000000\"",
+          "\"4756000000\"",
+          "\"3867000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].currentDebt": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.quarterlyReports[].currentLongTermDebt": {
+        "appearance_count": 10,
+        "examples": [
+          "\"8655000000\"",
+          "\"6424000000\"",
+          "\"7942000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].currentNetReceivables": {
+        "appearance_count": 10,
+        "examples": [
+          "\"14245000000\"",
+          "\"17639000000\"",
+          "\"12607000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].deferredRevenue": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.quarterlyReports[].fiscalDateEnding": {
+        "appearance_count": 10,
+        "examples": [
+          "\"2026-03-31\"",
+          "\"2025-12-31\"",
+          "\"2025-09-30\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "date_yyyy_mm_dd"
+        ]
+      },
+      "$.quarterlyReports[].goodwill": {
+        "appearance_count": 10,
+        "examples": [
+          "\"74709000000\"",
+          "\"67717000000\"",
+          "\"67396000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].intangibleAssets": {
+        "appearance_count": 10,
+        "examples": [
+          "\"14624000000\"",
+          "\"11391000000\"",
+          "\"11729000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].intangibleAssetsExcludingGoodwill": {
+        "appearance_count": 10,
+        "examples": [
+          "\"14624000000\"",
+          "\"11391000000\"",
+          "\"11729000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].inventory": {
+        "appearance_count": 10,
+        "examples": [
+          "\"1476000000\"",
+          "\"1220000000\"",
+          "\"1397000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].investments": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.quarterlyReports[].longTermDebt": {
+        "appearance_count": 10,
+        "examples": [
+          "\"57706000000\"",
+          "\"54836000000\"",
+          "\"55174000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].longTermDebtNoncurrent": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.quarterlyReports[].longTermInvestments": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.quarterlyReports[].otherCurrentAssets": {
+        "appearance_count": 10,
+        "examples": [
+          "\"4410000000\"",
+          "\"2530000000\"",
+          "\"3881000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].otherCurrentLiabilities": {
+        "appearance_count": 10,
+        "examples": [
+          "\"7522000000\"",
+          "\"8230000000\"",
+          "\"6985000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].otherNonCurrentAssets": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.quarterlyReports[].otherNonCurrentLiabilities": {
+        "appearance_count": 10,
+        "examples": [
+          "\"9766000000\"",
+          "\"1068000000\"",
+          "\"11762000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].propertyPlantEquipment": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\"",
+          "\"9028000000\"",
+          "\"9074000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none",
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].reportedCurrency": {
+        "appearance_count": 10,
+        "examples": [
+          "\"USD\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.quarterlyReports[].retainedEarnings": {
+        "appearance_count": 10,
+        "examples": [
+          "\"155327000000\"",
+          "\"155648000000\"",
+          "\"151581000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].shortLongTermDebtTotal": {
+        "appearance_count": 10,
+        "examples": [
+          "\"69802000000\"",
+          "\"67154000000\"",
+          "\"66569000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].shortTermDebt": {
+        "appearance_count": 10,
+        "examples": [
+          "\"9453000000\"",
+          "\"7224000000\"",
+          "\"8749000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].shortTermInvestments": {
+        "appearance_count": 10,
+        "examples": [
+          "\"964000000\"",
+          "\"830000000\"",
+          "\"3286000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].totalAssets": {
+        "appearance_count": 10,
+        "examples": [
+          "\"156229000000\"",
+          "\"151880000000\"",
+          "\"146312000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].totalCurrentAssets": {
+        "appearance_count": 10,
+        "examples": [
+          "\"31914000000\"",
+          "\"35860000000\"",
+          "\"32740000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].totalCurrentLiabilities": {
+        "appearance_count": 10,
+        "examples": [
+          "\"40101000000\"",
+          "\"38658000000\"",
+          "\"35142000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].totalLiabilities": {
+        "appearance_count": 10,
+        "examples": [
+          "\"123174000000\"",
+          "\"119140000000\"",
+          "\"118322000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].totalNonCurrentAssets": {
+        "appearance_count": 10,
+        "examples": [
+          "\"124315000000\"",
+          "\"116020000000\"",
+          "\"113572000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].totalNonCurrentLiabilities": {
+        "appearance_count": 10,
+        "examples": [
+          "\"83074000000\"",
+          "\"80482000000\"",
+          "\"83180000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].totalShareholderEquity": {
+        "appearance_count": 10,
+        "examples": [
+          "\"32974000000\"",
+          "\"32648000000\"",
+          "\"27905000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].treasuryStock": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.symbol": {
+        "appearance_count": 1,
+        "examples": [
+          "\"IBM\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      }
+    },
+    "format": "json",
+    "root_keys": [
+      "annualReports",
+      "quarterlyReports",
+      "symbol"
+    ]
+  }
+}

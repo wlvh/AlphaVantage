@@ -1,0 +1,133 @@
+{
+  "endpoint_id": "earnings_call_transcript_ibm_2024q1",
+  "generated_at_utc": "2026-06-15T12:25:49.958539+00:00",
+  "key_kind": "demo",
+  "schema": {
+    "fields": {
+      "$": {
+        "appearance_count": 1,
+        "examples": [
+          "{\"symbol\": \"IBM\", \"quarter\": \"2024Q1\", \"transcript\": [{\"speaker\": \"Olympia McNerney\", \"title\": \"Global Head of Investor Relations\", \"cont..."
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.quarter": {
+        "appearance_count": 1,
+        "examples": [
+          "\"2024Q1\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.symbol": {
+        "appearance_count": 1,
+        "examples": [
+          "\"IBM\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.transcript": {
+        "appearance_count": 1,
+        "examples": [
+          "[{\"speaker\": \"Olympia McNerney\", \"title\": \"Global Head of Investor Relations\", \"content\": \"Thank you. I'd like to welcome you to IBM's Fi..."
+        ],
+        "json_types": [
+          "array"
+        ],
+        "semantic_types": [
+          "array"
+        ]
+      },
+      "$.transcript[]": {
+        "appearance_count": 10,
+        "examples": [
+          "{\"speaker\": \"Olympia McNerney\", \"title\": \"Global Head of Investor Relations\", \"content\": \"Thank you. I'd like to welcome you to IBM's Fir...",
+          "{\"speaker\": \"Arvind Krishna\", \"title\": \"CEO\", \"content\": \"Thank you for joining us. In the first quarter, we had solid performance across...",
+          "{\"speaker\": \"James Kavanaugh\", \"title\": \"CFO\", \"content\": \"Thank you, Arvind. Let me start with the details of the transaction. We have a..."
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.transcript[].content": {
+        "appearance_count": 10,
+        "examples": [
+          "\"Thank you. I'd like to welcome you to IBM's First Quarter 2024 Earnings Presentation. I'm Olympia McNerney, and I'm here today with Arvi...",
+          "\"Thank you for joining us. In the first quarter, we had solid performance across revenue and cash flow. These results are further proof o...",
+          "\"Thank you, Arvind. Let me start with the details of the transaction. We have agreed to acquire HashiCorp for $6.4 billion in enterprise ..."
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.transcript[].sentiment": {
+        "appearance_count": 10,
+        "examples": [
+          "\"0.6\"",
+          "\"0.7\"",
+          "\"0.5\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.transcript[].speaker": {
+        "appearance_count": 10,
+        "examples": [
+          "\"Olympia McNerney\"",
+          "\"Arvind Krishna\"",
+          "\"James Kavanaugh\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.transcript[].title": {
+        "appearance_count": 10,
+        "examples": [
+          "\"Global Head of Investor Relations\"",
+          "\"CEO\"",
+          "\"CFO\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      }
+    },
+    "format": "json",
+    "root_keys": [
+      "quarter",
+      "symbol",
+      "transcript"
+    ]
+  }
+}

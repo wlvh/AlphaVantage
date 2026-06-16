@@ -1,0 +1,868 @@
+{
+  "endpoint_id": "cash_flow_ibm",
+  "generated_at_utc": "2026-06-15T12:23:43.844851+00:00",
+  "key_kind": "demo",
+  "schema": {
+    "fields": {
+      "$": {
+        "appearance_count": 1,
+        "examples": [
+          "{\"symbol\": \"IBM\", \"annualReports\": [{\"fiscalDateEnding\": \"2025-12-31\", \"reportedCurrency\": \"USD\", \"operatingCashflow\": \"13192000000\", \"pa..."
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.annualReports": {
+        "appearance_count": 1,
+        "examples": [
+          "[{\"fiscalDateEnding\": \"2025-12-31\", \"reportedCurrency\": \"USD\", \"operatingCashflow\": \"13192000000\", \"paymentsForOperatingActivities\": \"Non..."
+        ],
+        "json_types": [
+          "array"
+        ],
+        "semantic_types": [
+          "array"
+        ]
+      },
+      "$.annualReports[]": {
+        "appearance_count": 10,
+        "examples": [
+          "{\"fiscalDateEnding\": \"2025-12-31\", \"reportedCurrency\": \"USD\", \"operatingCashflow\": \"13192000000\", \"paymentsForOperatingActivities\": \"None...",
+          "{\"fiscalDateEnding\": \"2024-12-31\", \"reportedCurrency\": \"USD\", \"operatingCashflow\": \"13445000000\", \"paymentsForOperatingActivities\": \"None...",
+          "{\"fiscalDateEnding\": \"2023-12-31\", \"reportedCurrency\": \"USD\", \"operatingCashflow\": \"13432000000\", \"paymentsForOperatingActivities\": \"None..."
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.annualReports[].capitalExpenditures": {
+        "appearance_count": 10,
+        "examples": [
+          "\"1617000000\"",
+          "\"1685000000\"",
+          "\"1918000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].cashflowFromFinancing": {
+        "appearance_count": 10,
+        "examples": [
+          "\"-3829000000\"",
+          "\"-7079000000\"",
+          "\"-6016000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].cashflowFromInvestment": {
+        "appearance_count": 10,
+        "examples": [
+          "\"-10302000000\"",
+          "\"-4937000000\"",
+          "\"-7070000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].changeInCashAndCashEquivalents": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\"",
+          "\"-6533000000\"",
+          "\"5448000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none",
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].changeInExchangeRate": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\"",
+          "\"937000000\"",
+          "\"-51000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none",
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].changeInInventory": {
+        "appearance_count": 10,
+        "examples": [
+          "\"70000000\"",
+          "\"-166000000\"",
+          "\"390000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].changeInOperatingAssets": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.annualReports[].changeInOperatingLiabilities": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.annualReports[].changeInReceivables": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\"",
+          "\"1372000000\"",
+          "\"5297000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none",
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].depreciationDepletionAndAmortization": {
+        "appearance_count": 10,
+        "examples": [
+          "\"5021000000\"",
+          "\"4667000000\"",
+          "\"4381000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].dividendPayout": {
+        "appearance_count": 10,
+        "examples": [
+          "\"6255000000\"",
+          "\"6147000000\"",
+          "\"6016000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].dividendPayoutCommonStock": {
+        "appearance_count": 10,
+        "examples": [
+          "\"6255000000\"",
+          "\"6147000000\"",
+          "\"6016000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].dividendPayoutPreferredStock": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.annualReports[].fiscalDateEnding": {
+        "appearance_count": 10,
+        "examples": [
+          "\"2025-12-31\"",
+          "\"2024-12-31\"",
+          "\"2023-12-31\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "date_yyyy_mm_dd"
+        ]
+      },
+      "$.annualReports[].netIncome": {
+        "appearance_count": 10,
+        "examples": [
+          "\"10571000000\"",
+          "\"6023000000\"",
+          "\"6925000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].operatingCashflow": {
+        "appearance_count": 10,
+        "examples": [
+          "\"13192000000\"",
+          "\"13445000000\"",
+          "\"13432000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].paymentsForOperatingActivities": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.annualReports[].paymentsForRepurchaseOfCommonStock": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.annualReports[].paymentsForRepurchaseOfEquity": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.annualReports[].paymentsForRepurchaseOfPreferredStock": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.annualReports[].proceedsFromIssuanceOfCommonStock": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.annualReports[].proceedsFromIssuanceOfLongTermDebtAndCapitalSecuritiesNet": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.annualReports[].proceedsFromIssuanceOfPreferredStock": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.annualReports[].proceedsFromOperatingActivities": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.annualReports[].proceedsFromRepaymentsOfShortTermDebt": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.annualReports[].proceedsFromRepurchaseOfEquity": {
+        "appearance_count": 10,
+        "examples": [
+          "\"-1018000000\"",
+          "\"-651000000\"",
+          "\"-416000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.annualReports[].proceedsFromSaleOfTreasuryStock": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.annualReports[].profitLoss": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.annualReports[].reportedCurrency": {
+        "appearance_count": 10,
+        "examples": [
+          "\"USD\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.annualReports[].stockBasedCompensation": {
+        "appearance_count": 10,
+        "examples": [
+          "\"1715000000\"",
+          "\"1311000000\"",
+          "\"1091000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports": {
+        "appearance_count": 1,
+        "examples": [
+          "[{\"fiscalDateEnding\": \"2026-03-31\", \"reportedCurrency\": \"USD\", \"operatingCashflow\": \"5169000000\", \"paymentsForOperatingActivities\": \"None..."
+        ],
+        "json_types": [
+          "array"
+        ],
+        "semantic_types": [
+          "array"
+        ]
+      },
+      "$.quarterlyReports[]": {
+        "appearance_count": 10,
+        "examples": [
+          "{\"fiscalDateEnding\": \"2026-03-31\", \"reportedCurrency\": \"USD\", \"operatingCashflow\": \"5169000000\", \"paymentsForOperatingActivities\": \"None\"...",
+          "{\"fiscalDateEnding\": \"2025-12-31\", \"reportedCurrency\": \"USD\", \"operatingCashflow\": \"4039000000\", \"paymentsForOperatingActivities\": \"None\"...",
+          "{\"fiscalDateEnding\": \"2025-09-30\", \"reportedCurrency\": \"USD\", \"operatingCashflow\": \"3082000000\", \"paymentsForOperatingActivities\": \"None\"..."
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.quarterlyReports[].capitalExpenditures": {
+        "appearance_count": 10,
+        "examples": [
+          "\"391000000\"",
+          "\"908000000\"",
+          "\"605000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].cashflowFromFinancing": {
+        "appearance_count": 10,
+        "examples": [
+          "\"2719000000\"",
+          "\"-3406000000\"",
+          "\"-3012000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].cashflowFromInvestment": {
+        "appearance_count": 10,
+        "examples": [
+          "\"-10489000000\"",
+          "\"1417000000\"",
+          "\"-438000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].changeInCashAndCashEquivalents": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.quarterlyReports[].changeInExchangeRate": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.quarterlyReports[].changeInInventory": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\"",
+          "\"390000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none",
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].changeInOperatingAssets": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.quarterlyReports[].changeInOperatingLiabilities": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.quarterlyReports[].changeInReceivables": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.quarterlyReports[].depreciationDepletionAndAmortization": {
+        "appearance_count": 10,
+        "examples": [
+          "\"1274000000\"",
+          "\"1297000000\"",
+          "\"-2442000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].dividendPayout": {
+        "appearance_count": 10,
+        "examples": [
+          "\"1576000000\"",
+          "\"1574000000\"",
+          "\"1569000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].dividendPayoutCommonStock": {
+        "appearance_count": 10,
+        "examples": [
+          "\"1576000000\"",
+          "\"1574000000\"",
+          "\"1569000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].dividendPayoutPreferredStock": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.quarterlyReports[].fiscalDateEnding": {
+        "appearance_count": 10,
+        "examples": [
+          "\"2026-03-31\"",
+          "\"2025-12-31\"",
+          "\"2025-09-30\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "date_yyyy_mm_dd"
+        ]
+      },
+      "$.quarterlyReports[].netIncome": {
+        "appearance_count": 10,
+        "examples": [
+          "\"1216000000\"",
+          "\"5579000000\"",
+          "\"-3249000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].operatingCashflow": {
+        "appearance_count": 10,
+        "examples": [
+          "\"5169000000\"",
+          "\"4039000000\"",
+          "\"3082000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].paymentsForOperatingActivities": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.quarterlyReports[].paymentsForRepurchaseOfCommonStock": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.quarterlyReports[].paymentsForRepurchaseOfEquity": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.quarterlyReports[].paymentsForRepurchaseOfPreferredStock": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.quarterlyReports[].proceedsFromIssuanceOfCommonStock": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.quarterlyReports[].proceedsFromIssuanceOfLongTermDebtAndCapitalSecuritiesNet": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.quarterlyReports[].proceedsFromIssuanceOfPreferredStock": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.quarterlyReports[].proceedsFromOperatingActivities": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.quarterlyReports[].proceedsFromRepaymentsOfShortTermDebt": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.quarterlyReports[].proceedsFromRepurchaseOfEquity": {
+        "appearance_count": 10,
+        "examples": [
+          "\"-350000000\"",
+          "\"-167000000\"",
+          "\"-414000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyReports[].proceedsFromSaleOfTreasuryStock": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.quarterlyReports[].profitLoss": {
+        "appearance_count": 10,
+        "examples": [
+          "\"None\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "literal_string_none"
+        ]
+      },
+      "$.quarterlyReports[].reportedCurrency": {
+        "appearance_count": 10,
+        "examples": [
+          "\"USD\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.quarterlyReports[].stockBasedCompensation": {
+        "appearance_count": 10,
+        "examples": [
+          "\"506000000\"",
+          "\"430000000\"",
+          "\"-842000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.symbol": {
+        "appearance_count": 1,
+        "examples": [
+          "\"IBM\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      }
+    },
+    "format": "json",
+    "root_keys": [
+      "annualReports",
+      "quarterlyReports",
+      "symbol"
+    ]
+  }
+}

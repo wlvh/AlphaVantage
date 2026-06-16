@@ -1,0 +1,398 @@
+{
+  "endpoint_id": "news_sentiment_technology_latest",
+  "generated_at_utc": "2026-06-15T12:26:46.316028+00:00",
+  "key_kind": "real",
+  "schema": {
+    "fields": {
+      "$": {
+        "appearance_count": 1,
+        "examples": [
+          "{\"items\": \"50\", \"sentiment_score_definition\": \"x <= -0.35: Bearish; -0.35 < x <= -0.15: Somewhat-Bearish; -0.15 < x < 0.15: Neutral; 0.15..."
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.feed": {
+        "appearance_count": 1,
+        "examples": [
+          "[{\"title\": \"Wedbush initiates EPAM Systems stock at Neutral on growth concerns\", \"url\": \"https://www.investing.com/news/analyst-ratings/w..."
+        ],
+        "json_types": [
+          "array"
+        ],
+        "semantic_types": [
+          "array"
+        ]
+      },
+      "$.feed[]": {
+        "appearance_count": 10,
+        "examples": [
+          "{\"title\": \"Wedbush initiates EPAM Systems stock at Neutral on growth concerns\", \"url\": \"https://www.investing.com/news/analyst-ratings/we...",
+          "{\"title\": \"Micron, Nebius surge premarket; Traws Pharma tumbles By Investing.com\", \"url\": \"https://au.investing.com/news/stock-market-new...",
+          "{\"title\": \"Walmart expands online marketplace offering for customers in Mexico\", \"url\": \"https://retail-systems.com/rs/Walmart_Expands_On..."
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.feed[].authors": {
+        "appearance_count": 10,
+        "examples": [
+          "[\"Investing.com\"]",
+          "[\"Pranav Kashyap\"]",
+          "[\"Dalvinder Kular\"]"
+        ],
+        "json_types": [
+          "array"
+        ],
+        "semantic_types": [
+          "array"
+        ]
+      },
+      "$.feed[].authors[]": {
+        "appearance_count": 6,
+        "examples": [
+          "\"Investing.com\"",
+          "\"Pranav Kashyap\"",
+          "\"Dalvinder Kular\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.feed[].banner_image": {
+        "appearance_count": 10,
+        "examples": [
+          "\"https://i-invdn-com.investing.com/news/moved_LYNXMPEM4519D_1200_L.jpg\"",
+          "\"https://i-invdn-com.investing.com/news/SP500StandardandPoors500Index_800x533_L_1657544297.jpg\"",
+          "\"https://www.retail-systems.com/rs/../../rs/images/GB-SERVICE-INTERNATIONAL-728X90-21-05-2026.jpg\""
+        ],
+        "json_types": [
+          "string",
+          "null"
+        ],
+        "semantic_types": [
+          "string",
+          "null"
+        ]
+      },
+      "$.feed[].category_within_source": {
+        "appearance_count": 10,
+        "examples": [
+          "\"General\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.feed[].overall_sentiment_label": {
+        "appearance_count": 10,
+        "examples": [
+          "\"Somewhat-Bearish\"",
+          "\"Somewhat-Bullish\"",
+          "\"Bullish\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.feed[].overall_sentiment_score": {
+        "appearance_count": 10,
+        "examples": [
+          "-0.15628",
+          "0.165956",
+          "0.418925"
+        ],
+        "json_types": [
+          "number"
+        ],
+        "semantic_types": [
+          "number"
+        ]
+      },
+      "$.feed[].source": {
+        "appearance_count": 10,
+        "examples": [
+          "\"Investing.com\"",
+          "\"Investing.com Australia\"",
+          "\"Retail Systems\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.feed[].source_domain": {
+        "appearance_count": 10,
+        "examples": [
+          "\"Investing.com\"",
+          "\"Investing.com Australia\"",
+          "\"Retail Systems\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.feed[].summary": {
+        "appearance_count": 10,
+        "examples": [
+          "\"Wedbush initiated coverage on EPAM Systems (NYSE:EPAM) with a Neutral rating and a $99.00 price target, citing concerns about slowing gr...",
+          "\"U.S. stock index futures rose sharply on Monday following news of a preliminary peace agreement between Washington and Tehran. Technolog...",
+          "\"Walmart has expanded its online marketplace in Mexico, allowing customers access to hundreds of thousands of additional products from it..."
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.feed[].ticker_sentiment": {
+        "appearance_count": 10,
+        "examples": [
+          "[{\"ticker\": \"EPAM\", \"relevance_score\": \"1.000000\", \"ticker_sentiment_score\": \"-0.223303\", \"ticker_sentiment_label\": \"Somewhat-Bearish\"}, ...",
+          "[{\"ticker\": \"TRAW\", \"relevance_score\": \"1.000000\", \"ticker_sentiment_score\": \"-0.715370\", \"ticker_sentiment_label\": \"Bearish\"}, {\"ticker\"...",
+          "[{\"ticker\": \"WMT\", \"relevance_score\": \"1.000000\", \"ticker_sentiment_score\": \"0.420064\", \"ticker_sentiment_label\": \"Bullish\"}]"
+        ],
+        "json_types": [
+          "array"
+        ],
+        "semantic_types": [
+          "array"
+        ]
+      },
+      "$.feed[].ticker_sentiment[]": {
+        "appearance_count": 23,
+        "examples": [
+          "{\"ticker\": \"EPAM\", \"relevance_score\": \"1.000000\", \"ticker_sentiment_score\": \"-0.223303\", \"ticker_sentiment_label\": \"Somewhat-Bearish\"}",
+          "{\"ticker\": \"GS\", \"relevance_score\": \"0.638820\", \"ticker_sentiment_score\": \"-0.344893\", \"ticker_sentiment_label\": \"Somewhat-Bearish\"}",
+          "{\"ticker\": \"AMZN\", \"relevance_score\": \"0.636203\", \"ticker_sentiment_score\": \"0.147425\", \"ticker_sentiment_label\": \"Neutral\"}"
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.feed[].ticker_sentiment[].relevance_score": {
+        "appearance_count": 23,
+        "examples": [
+          "\"1.000000\"",
+          "\"0.638820\"",
+          "\"0.636203\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.feed[].ticker_sentiment[].ticker": {
+        "appearance_count": 23,
+        "examples": [
+          "\"EPAM\"",
+          "\"GS\"",
+          "\"AMZN\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.feed[].ticker_sentiment[].ticker_sentiment_label": {
+        "appearance_count": 23,
+        "examples": [
+          "\"Somewhat-Bearish\"",
+          "\"Neutral\"",
+          "\"Bearish\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.feed[].ticker_sentiment[].ticker_sentiment_score": {
+        "appearance_count": 23,
+        "examples": [
+          "\"-0.223303\"",
+          "\"-0.344893\"",
+          "\"0.147425\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.feed[].time_published": {
+        "appearance_count": 10,
+        "examples": [
+          "\"20260615T113431\"",
+          "\"20260615T112642\"",
+          "\"20260615T111959\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "alpha_vantage_news_timestamp"
+        ]
+      },
+      "$.feed[].title": {
+        "appearance_count": 10,
+        "examples": [
+          "\"Wedbush initiates EPAM Systems stock at Neutral on growth concerns\"",
+          "\"Micron, Nebius surge premarket; Traws Pharma tumbles By Investing.com\"",
+          "\"Walmart expands online marketplace offering for customers in Mexico\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.feed[].topics": {
+        "appearance_count": 10,
+        "examples": [
+          "[{\"topic\": \"earnings\", \"relevance_score\": \"0.925180\"}, {\"topic\": \"financial_markets\", \"relevance_score\": \"0.803498\"}, {\"topic\": \"technolo...",
+          "[{\"topic\": \"financial_markets\", \"relevance_score\": \"0.934831\"}, {\"topic\": \"technology\", \"relevance_score\": \"0.806376\"}, {\"topic\": \"life_s...",
+          "[{\"topic\": \"retail_wholesale\", \"relevance_score\": \"0.947288\"}, {\"topic\": \"technology\", \"relevance_score\": \"0.738031\"}]"
+        ],
+        "json_types": [
+          "array"
+        ],
+        "semantic_types": [
+          "array"
+        ]
+      },
+      "$.feed[].topics[]": {
+        "appearance_count": 34,
+        "examples": [
+          "{\"topic\": \"earnings\", \"relevance_score\": \"0.925180\"}",
+          "{\"topic\": \"financial_markets\", \"relevance_score\": \"0.803498\"}",
+          "{\"topic\": \"technology\", \"relevance_score\": \"0.723318\"}"
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.feed[].topics[].relevance_score": {
+        "appearance_count": 34,
+        "examples": [
+          "\"0.925180\"",
+          "\"0.803498\"",
+          "\"0.723318\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.feed[].topics[].topic": {
+        "appearance_count": 34,
+        "examples": [
+          "\"earnings\"",
+          "\"financial_markets\"",
+          "\"technology\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.feed[].url": {
+        "appearance_count": 10,
+        "examples": [
+          "\"https://www.investing.com/news/analyst-ratings/wedbush-initiates-epam-systems-stock-at-neutral-on-growth-concerns-93CH-4741832\"",
+          "\"https://au.investing.com/news/stock-market-news/micron-nebius-surge-premarket-traws-pharma-tumbles-4487038\"",
+          "\"https://retail-systems.com/rs/Walmart_Expands_Online_Marketplace_Offering_For_Customers_In_Mexico.php\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.items": {
+        "appearance_count": 1,
+        "examples": [
+          "\"50\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.relevance_score_definition": {
+        "appearance_count": 1,
+        "examples": [
+          "\"0 < x <= 1, with a higher score indicating higher relevance.\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.sentiment_score_definition": {
+        "appearance_count": 1,
+        "examples": [
+          "\"x <= -0.35: Bearish; -0.35 < x <= -0.15: Somewhat-Bearish; -0.15 < x < 0.15: Neutral; 0.15 <= x < 0.35: Somewhat_Bullish; x >= 0.35: Bul..."
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      }
+    },
+    "format": "json",
+    "root_keys": [
+      "feed",
+      "items",
+      "relevance_score_definition",
+      "sentiment_score_definition"
+    ]
+  }
+}

@@ -1,0 +1,313 @@
+{
+  "endpoint_id": "earnings_estimates_ibm",
+  "generated_at_utc": "2026-06-15T12:24:55.430889+00:00",
+  "key_kind": "demo",
+  "schema": {
+    "fields": {
+      "$": {
+        "appearance_count": 1,
+        "examples": [
+          "{\"symbol\": \"IBM\", \"estimates\": [{\"date\": \"2027-12-31\", \"horizon\": \"fiscal year\", \"eps_estimate_average\": \"13.4227\", \"eps_estimate_high\": ..."
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.estimates": {
+        "appearance_count": 1,
+        "examples": [
+          "[{\"date\": \"2027-12-31\", \"horizon\": \"fiscal year\", \"eps_estimate_average\": \"13.4227\", \"eps_estimate_high\": \"14.0100\", \"eps_estimate_low\": ..."
+        ],
+        "json_types": [
+          "array"
+        ],
+        "semantic_types": [
+          "array"
+        ]
+      },
+      "$.estimates[]": {
+        "appearance_count": 10,
+        "examples": [
+          "{\"date\": \"2027-12-31\", \"horizon\": \"fiscal year\", \"eps_estimate_average\": \"13.4227\", \"eps_estimate_high\": \"14.0100\", \"eps_estimate_low\": \"...",
+          "{\"date\": \"2026-12-31\", \"horizon\": \"fiscal year\", \"eps_estimate_average\": \"12.4254\", \"eps_estimate_high\": \"12.6900\", \"eps_estimate_low\": \"...",
+          "{\"date\": \"2026-09-30\", \"horizon\": \"fiscal quarter\", \"eps_estimate_average\": \"2.9336\", \"eps_estimate_high\": \"3.1400\", \"eps_estimate_low\": ..."
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.estimates[].date": {
+        "appearance_count": 10,
+        "examples": [
+          "\"2027-12-31\"",
+          "\"2026-12-31\"",
+          "\"2026-09-30\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "date_yyyy_mm_dd"
+        ]
+      },
+      "$.estimates[].eps_estimate_analyst_count": {
+        "appearance_count": 10,
+        "examples": [
+          "\"22.0000\"",
+          "\"18.0000\"",
+          "\"19.0000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.estimates[].eps_estimate_average": {
+        "appearance_count": 10,
+        "examples": [
+          "\"13.4227\"",
+          "\"12.4254\"",
+          "\"2.9336\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.estimates[].eps_estimate_average_30_days_ago": {
+        "appearance_count": 10,
+        "examples": [
+          "\"13.4537\"",
+          "\"12.4295\"",
+          "\"2.9347\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.estimates[].eps_estimate_average_60_days_ago": {
+        "appearance_count": 10,
+        "examples": [
+          "\"13.3984\"",
+          "\"12.3767\"",
+          "\"2.9128\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.estimates[].eps_estimate_average_7_days_ago": {
+        "appearance_count": 10,
+        "examples": [
+          "\"13.4227\"",
+          "\"12.4254\"",
+          "\"2.9336\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.estimates[].eps_estimate_average_90_days_ago": {
+        "appearance_count": 10,
+        "examples": [
+          "\"13.4008\"",
+          "\"12.3800\"",
+          "\"2.9136\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.estimates[].eps_estimate_high": {
+        "appearance_count": 10,
+        "examples": [
+          "\"14.0100\"",
+          "\"12.6900\"",
+          "\"3.1400\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.estimates[].eps_estimate_low": {
+        "appearance_count": 10,
+        "examples": [
+          "\"12.6700\"",
+          "\"12.1000\"",
+          "\"2.7800\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.estimates[].eps_estimate_revision_down_trailing_30_days": {
+        "appearance_count": 10,
+        "examples": [
+          "\"0.0000\"",
+          "\"4.0000\"",
+          "\"9.0000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.estimates[].eps_estimate_revision_down_trailing_7_days": {
+        "appearance_count": 10,
+        "examples": [
+          "null"
+        ],
+        "json_types": [
+          "null"
+        ],
+        "semantic_types": [
+          "null"
+        ]
+      },
+      "$.estimates[].eps_estimate_revision_up_trailing_30_days": {
+        "appearance_count": 10,
+        "examples": [
+          "\"1.0000\"",
+          "\"17.0000\"",
+          "\"5.0000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.estimates[].eps_estimate_revision_up_trailing_7_days": {
+        "appearance_count": 10,
+        "examples": [
+          "\"0.0000\"",
+          "\"1.0000\"",
+          "\"2.0000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.estimates[].horizon": {
+        "appearance_count": 10,
+        "examples": [
+          "\"fiscal year\"",
+          "\"fiscal quarter\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.estimates[].revenue_estimate_analyst_count": {
+        "appearance_count": 10,
+        "examples": [
+          "\"20.00\"",
+          "\"15.00\"",
+          "\"17.00\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.estimates[].revenue_estimate_average": {
+        "appearance_count": 10,
+        "examples": [
+          "\"74636094990.00\"",
+          "\"71465024380.00\"",
+          "\"17114782670.00\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.estimates[].revenue_estimate_high": {
+        "appearance_count": 10,
+        "examples": [
+          "\"76013674440.00\"",
+          "\"71975000000.00\"",
+          "\"17270000000.00\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.estimates[].revenue_estimate_low": {
+        "appearance_count": 10,
+        "examples": [
+          "\"72592041360.00\"",
+          "\"70765466910.00\"",
+          "\"16934077440.00\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.symbol": {
+        "appearance_count": 1,
+        "examples": [
+          "\"IBM\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      }
+    },
+    "format": "json",
+    "root_keys": [
+      "estimates",
+      "symbol"
+    ]
+  }
+}

@@ -1,0 +1,2516 @@
+{
+    "items": "50",
+    "sentiment_score_definition": "x <= -0.35: Bearish; -0.35 < x <= -0.15: Somewhat-Bearish; -0.15 < x < 0.15: Neutral; 0.15 <= x < 0.35: Somewhat_Bullish; x >= 0.35: Bullish",
+    "relevance_score_definition": "0 < x <= 1, with a higher score indicating higher relevance.",
+    "feed": [
+        {
+            "title": "Why is Traws Pharma stock tumbling today?",
+            "url": "https://ca.investing.com/news/stock-market-news/why-is-traws-pharma-stock-tumbling-today-93CH-4690251",
+            "time_published": "20260615T104042",
+            "authors": [
+                "Senad Karaahmetovic"
+            ],
+            "summary": "Traws Pharma's stock is down 16.4% in pre-market trading after the UK's MHRA issued a negative review for its lead antiviral candidate's Phase 2a study, deferring the trial. This regulatory setback, combined with a prior FDA clinical hold and dilution concerns, is causing investors to re-evaluate the company's prospects. Despite the broader market's positive performance, Traws Pharma is significantly تحتperforming, trading near its 52-week low.",
+            "banner_image": "https://i-invdn-com.investing.com/news/SP500StandardandPoors500Index_800x533_L_1657544297.jpg",
+            "source": "Investing.com Canada",
+            "category_within_source": "General",
+            "source_domain": "Investing.com Canada",
+            "topics": [
+                {
+                    "topic": "life_sciences",
+                    "relevance_score": "0.910532"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.849013"
+                }
+            ],
+            "overall_sentiment_score": -0.311872,
+            "overall_sentiment_label": "Somewhat-Bearish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "TRAW",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "-0.932609",
+                    "ticker_sentiment_label": "Bearish"
+                },
+                {
+                    "ticker": "AVGO",
+                    "relevance_score": "0.606795",
+                    "ticker_sentiment_score": "0.118363",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.612517",
+                    "ticker_sentiment_score": "-0.140692",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Performance Comparison: Apple And Competitors In Technology Hardware, Storage & Peripherals Industry",
+            "url": "https://www.benzinga.com/insights/news/26/06/53188423/performance-comparison-apple-and-competitors-in-technology-hardware-storage-amp-peripherals-industr",
+            "time_published": "20260615T095909",
+            "authors": [
+                "Benzinga Staff Writer"
+            ],
+            "summary": "This article provides a comprehensive financial comparison of Apple (NASDAQ: AAPL) against its competitors in the Technology Hardware, Storage & Peripherals industry. It highlights Apple's strong financial position with a low debt-to-equity ratio and high profitability metrics like ROE, EBITDA, and gross profit. However, it also notes Apple's lower revenue growth compared to its peers, which could be a concern for future performance.",
+            "banner_image": "https://cdn.benzinga.com/cdn-cgi/image/width=1300,format=auto,quality=85/files/images/story/2025/07/24/article-header-background-image.png",
+            "source": "Benzinga",
+            "category_within_source": "General",
+            "source_domain": "Benzinga",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.923720"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.849660"
+                }
+            ],
+            "overall_sentiment_score": -0.045159,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.323321",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "WDC",
+                    "relevance_score": "0.745946",
+                    "ticker_sentiment_score": "-0.138803",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "STX",
+                    "relevance_score": "0.728808",
+                    "ticker_sentiment_score": "-0.142730",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "HPE",
+                    "relevance_score": "0.625111",
+                    "ticker_sentiment_score": "-0.141021",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "The Zacks Analyst Blog Highlights Apple, Netflix and Disney",
+            "url": "https://www.theglobeandmail.com/investing/markets/stocks/DIS/pressreleases/2467357/the-zacks-analyst-blog-highlights-apple-netflix-and-disney/",
+            "time_published": "20260615T093659",
+            "authors": [
+                "Zacks Investment Research"
+            ],
+            "summary": "The Zacks Analyst Blog highlights Apple, Netflix, and Disney, discussing Apple's expanding Services business, which achieved record revenues in Q2 fiscal 2026, driven by AI enhancements and new offerings. The article also notes strong competition from Netflix and Disney, which are expanding their streaming and gaming footprints, with Disney's streaming segment achieving profitability. Apple's stock performance and valuation are also discussed.",
+            "banner_image": "https://staticx-tuner.zacks.com/images/articles/main/83/1163.jpg",
+            "source": "The Globe and Mail",
+            "category_within_source": "General",
+            "source_domain": "The Globe and Mail",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.913294"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.803581"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.714719"
+                }
+            ],
+            "overall_sentiment_score": 0.331742,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.990338",
+                    "ticker_sentiment_score": "0.440753",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "NFLX",
+                    "relevance_score": "0.845340",
+                    "ticker_sentiment_score": "0.285419",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "DIS",
+                    "relevance_score": "0.768701",
+                    "ticker_sentiment_score": "0.315257",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "The Zacks Analyst Blog Highlights Apple, Netflix and Disney",
+            "url": "https://www.theglobeandmail.com/investing/markets/stocks/AAPL/pressreleases/2467357/the-zacks-analyst-blog-highlights-apple-netflix-and-disney/",
+            "time_published": "20260615T091801",
+            "authors": [
+                "Zacks Investment Research"
+            ],
+            "summary": "This Zacks Analyst Blog discusses Apple's expanding Services business, which contributed 27.9% of total net sales in Q2 fiscal 2026, driven by new AI features and ecosystem expansion. Despite strong growth, Apple faces competition from Netflix and Disney, both of which are also expanding aggressively in streaming and gaming. The article notes Apple's stock underperformed the tech sector year-to-date and carries a premium valuation.",
+            "banner_image": "https://staticx-tuner.zacks.com/images/articles/main/83/1163.jpg",
+            "source": "The Globe and Mail",
+            "category_within_source": "General",
+            "source_domain": "The Globe and Mail",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.913625"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.800013"
+                }
+            ],
+            "overall_sentiment_score": 0.28456,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.953921",
+                    "ticker_sentiment_score": "0.281164",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "NFLX",
+                    "relevance_score": "0.809368",
+                    "ticker_sentiment_score": "0.236882",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "DIS",
+                    "relevance_score": "0.714671",
+                    "ticker_sentiment_score": "0.309974",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "The Zacks Analyst Blog Highlights Apple, Netflix and Disney",
+            "url": "https://uk.finance.yahoo.com/news/zacks-analyst-blog-highlights-apple-075600899.html",
+            "time_published": "20260615T073825",
+            "authors": [
+                "Zacks Equity Research"
+            ],
+            "summary": "This Zacks Analyst Blog discusses Apple's expanding Services business, citing its strong growth and diversification into AI-powered enhancements. It also highlights the competition Apple faces from Netflix and Disney, which are expanding their streaming and gaming footprints. The article concludes with an analysis of Apple's stock performance, valuation, and Zacks Rank.",
+            "banner_image": "https://s.yimg.com/ny/api/res/1.2/w_CKu_6X3y0rkUQ_gt091Q--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTYwNQ--/https://media.zenfs.com/en/zacks.com/9c2d59e61c051e05ce1cae6d0db95ab5",
+            "source": "Yahoo Finance UK",
+            "category_within_source": "General",
+            "source_domain": "Yahoo Finance UK",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.930334"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.801599"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.821021"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.645228"
+                }
+            ],
+            "overall_sentiment_score": 0.184557,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "NFLX",
+                    "relevance_score": "0.959594",
+                    "ticker_sentiment_score": "0.269856",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.909674",
+                    "ticker_sentiment_score": "0.326199",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "DIS",
+                    "relevance_score": "0.701298",
+                    "ticker_sentiment_score": "-0.121356",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Can You Use Apple Music On An iPod?",
+            "url": "https://www.bgr.com/2191585/can-you-use-apple-music-on-ipod/",
+            "time_published": "20260615T005858",
+            "authors": [
+                "José Adorno"
+            ],
+            "summary": "While older iPod models like the Classic, Nano, or Shuffle do not support Apple Music, specific iPod Touch models can. Only the iPod Touch 6th and 7th generations (running iOS 10 or later) are compatible with Apple Music, though they may lack some advanced features available on newer devices. Users will need a more recent iPhone to access all the platform's functionalities, such as AutoMix, Music Haptics, and enhanced Apple Music Sing features.",
+            "banner_image": "https://www.bgr.com/img/gallery/can-you-use-apple-music-on-an-ipod/intro-1781112896.jpg",
+            "source": "BGR",
+            "category_within_source": "General",
+            "source_domain": "BGR",
+            "topics": [
+                {
+                    "topic": "technology",
+                    "relevance_score": "1.000000"
+                }
+            ],
+            "overall_sentiment_score": 0.110455,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.139935",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Apple's (NASDAQ: AAPL) Weak WWDC Response Suggests Berkshire Hathaway (NYSE: BRK.B) Was Right To Trim Its Position",
+            "url": "https://www.foreignpolicyjournal.com/2026/06/14/apples-nasdaq-aapl-weak-wwdc-response-suggests-berkshire-hathaway-nyse-brk-b-was-right-to-trim-its-position/",
+            "time_published": "20260615T003957",
+            "authors": [
+                "Ewan Scott"
+            ],
+            "summary": "Apple's recent Worldwide Developers Conference (WWDC) and the unveiling of Siri AI failed to impress markets, causing Apple shares to fall. This weak response suggests that Berkshire Hathaway's decision to trim its Apple position, despite subsequent stock appreciation, was a sound strategic move for diversification and managing concentration risk. Berkshire Hathaway also redeployed capital into Alphabet, reinforcing its commitment to a diversified portfolio.",
+            "banner_image": "https://www.foreignpolicyjournal.com/wp-content/uploads/2026/05/warren-buffett-1280x640.webp",
+            "source": "Foreign Policy Journal",
+            "category_within_source": "General",
+            "source_domain": "Foreign Policy Journal",
+            "topics": [
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.942727"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.846043"
+                },
+                {
+                    "topic": "economy_macro",
+                    "relevance_score": "0.610742"
+                }
+            ],
+            "overall_sentiment_score": 0.073233,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "-0.281657",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "GOOGL",
+                    "relevance_score": "0.613871",
+                    "ticker_sentiment_score": "0.334554",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Jim Cramer Asserts NVIDIA (NVDA), Not SpaceX, Is The “Key” To The Market",
+            "url": "https://uk.finance.yahoo.com/news/jim-cramer-asserts-nvidia-nvda-190818710.html",
+            "time_published": "20260614T190820",
+            "authors": [
+                "Ramish Cheema"
+            ],
+            "summary": "Jim Cramer states that NVIDIA (NVDA), rather than SpaceX, is the crucial factor for the market, even as investors focus on SpaceX's IPO. He believes NVIDIA is central to the ongoing industrial revolution and is leading in AI GPU technology. Cramer highlighted NVIDIA's recent announcement of the Space-1 Vera Rubin Module to bring AI computing to space, despite acknowledging recent lackluster stock performance.",
+            "banner_image": "https://s.yimg.com/ny/api/res/1.2/MAB9.Uf0mJ2uJsQ64Kge8w--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MA--/https://media.zenfs.com/en/insidermonkey.com/a31e549fe7490e734036c908eaa59b12",
+            "source": "Yahoo Finance UK",
+            "category_within_source": "General",
+            "source_domain": "Yahoo Finance UK",
+            "topics": [
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.931976"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.834235"
+                },
+                {
+                    "topic": "ipo",
+                    "relevance_score": "0.728509"
+                }
+            ],
+            "overall_sentiment_score": 0.134969,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "NVDA",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.645484",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.622496",
+                    "ticker_sentiment_score": "-0.403302",
+                    "ticker_sentiment_label": "Bearish"
+                }
+            ]
+        },
+        {
+            "title": "Jim Cramer Asserts NVIDIA (NVDA), Not SpaceX, Is The “Key” To The Market",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-asserts-nvidia-nvda-190818710.html",
+            "time_published": "20260614T140841",
+            "authors": [
+                "Ramish Cheema"
+            ],
+            "summary": "Jim Cramer highlighted NVIDIA (NVDA) as the crucial stock for the market, even amidst rising anticipation for SpaceX's IPO. He emphasized NVIDIA's role in the industrial revolution and its leadership in AI GPU technology. Cramer's sentiment underscores his belief in NVIDIA's fundamental importance despite recent lackluster stock performance.",
+            "banner_image": "https://s.yimg.com/ny/api/res/1.2/MAB9.Uf0mJ2uJsQ64Kge8w--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MA--/https://media.zenfs.com/en/insidermonkey.com/a31e549fe7490e734036c908eaa59b12",
+            "source": "Yahoo Finance",
+            "category_within_source": "General",
+            "source_domain": "Yahoo Finance",
+            "topics": [
+                {
+                    "topic": "ipo",
+                    "relevance_score": "0.812988"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.942158"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.900605"
+                }
+            ],
+            "overall_sentiment_score": 0.186815,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "NVDA",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.501647",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.616133",
+                    "ticker_sentiment_score": "-0.219180",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                }
+            ]
+        },
+        {
+            "title": "Apple's iPhone Linked To Birth Rate, Steve Jobs' Impact On 'Toy Story' And More: This Week In Appleverse",
+            "url": "https://www.benzinga.com/markets/tech/26/06/53185340/apples-iphone-linked-to-birth-rate-steve-jobs-impact-on-toy-story-and-more-this-week-in-appleverse",
+            "time_published": "20260614T110156",
+            "authors": [
+                "Mohd Haider"
+            ],
+            "summary": "This article recaps significant Apple-related news from the past week, highlighting Steve Jobs' pivotal role in Pixar's creation of \"Toy Story\" and a study linking the iPhone to America's declining birth rate. It also covers Apple's recent AI reveal at WWDC, new developments with Telegram on Apple Watch, and an analyst's positive view of Apple's WWDC event. The report touches on Apple's (NASDAQ: AAPL) market performance in light of these events.",
+            "banner_image": "https://cdn.benzinga.com/cdn-cgi/image/width=1300,format=auto,quality=85/files/images/story/2025/07/24/article-header-background-image.png",
+            "source": "Benzinga",
+            "category_within_source": "General",
+            "source_domain": "Benzinga",
+            "topics": [
+                {
+                    "topic": "technology",
+                    "relevance_score": "1.000000"
+                }
+            ],
+            "overall_sentiment_score": 0.018986,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.014589",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "GOOGL",
+                    "relevance_score": "0.594174",
+                    "ticker_sentiment_score": "-0.138365",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "NVDA",
+                    "relevance_score": "0.597321",
+                    "ticker_sentiment_score": "-0.143124",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "DIS",
+                    "relevance_score": "0.623768",
+                    "ticker_sentiment_score": "0.205072",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "The Walt Disney Company $DIS Shares Purchased by Healthcare of Ontario Pension Plan Trust Fund",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-the-walt-disney-company-dis-shares-purchased-by-healthcare-of-ontario-pension-plan-trust-fund-2026-06-14/",
+            "time_published": "20260614T101331",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "Healthcare of Ontario Pension Plan Trust Fund significantly increased its stake in The Walt Disney Company (DIS) by 280.9%, now holding 1,558,575 shares valued at $177.3 million. This comes as other major institutional investors also added Disney shares, bringing institutional ownership to 65.71%. The company recently reported better-than-expected quarterly results, and analysts maintain a \"Moderate Buy\" consensus with an average price target of $133.71.",
+            "banner_image": "https://www.marketbeat.com/logos/the-walt-disney-company-logo-1200x675.png?v=20201229105326",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.923384"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.902344"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.829947"
+                },
+                {
+                    "topic": "economy_macro",
+                    "relevance_score": "0.623788"
+                }
+            ],
+            "overall_sentiment_score": 0.175692,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "DIS",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.302429",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.709002",
+                    "ticker_sentiment_score": "0.109956",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "MSFT",
+                    "relevance_score": "0.610191",
+                    "ticker_sentiment_score": "0.139281",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Apple Inc. $AAPL Stock Holdings Reduced by Adams Diversified Equity Fund Inc.",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-apple-inc-aapl-stock-holdings-reduced-by-adams-diversified-equity-fund-inc-2026-06-14/",
+            "time_published": "20260614T091002",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "Adams Diversified Equity Fund Inc. reduced its holdings in Apple Inc. by 0.8% in the fourth quarter, selling 6,500 shares. Despite this reduction, Apple remains the fund's second-largest position, accounting for 7.4% of its portfolio. Other institutional investors showed mixed activity, while Apple insiders sold a significant number of shares, and the company recently increased its quarterly dividend.",
+            "banner_image": "https://www.marketbeat.com/logos/apple-inc-logo-1200x675.png",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.926936"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.830062"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.718505"
+                }
+            ],
+            "overall_sentiment_score": 0.043515,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "ADX",
+                    "relevance_score": "0.315481",
+                    "ticker_sentiment_score": "0.009593",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.013952",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Aoife Keohane Promoted to Associate Vice President – HR Technology and Operations at Eli Lilly and Company",
+            "url": "https://hrtoday.in/aoife-keohane-promoted-to-associate-vice-president-hr-technology-and-operations-at-eli-lilly-and-company/",
+            "time_published": "20260614T085716",
+            "authors": [
+                "Smita Singh"
+            ],
+            "summary": "Aoife Keohane has been promoted to Associate Vice President – HR Technology and Operations at Eli Lilly and Company. She has nearly twelve years of experience with the company, holding various leadership roles in HR operations, technology, and global business services. Keohane's previous roles include Executive Director, Global HR Shared Services, and she possesses a Bachelor's degree in Human Resource Management.",
+            "banner_image": "https://hrtoday.in/wp-content/themes/jnews/assets/img/jeg-empty.png",
+            "source": "https://hrtoday.in/",
+            "category_within_source": "General",
+            "source_domain": "https://hrtoday.in/",
+            "topics": [
+                {
+                    "topic": "life_sciences",
+                    "relevance_score": "0.901315"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.702778"
+                }
+            ],
+            "overall_sentiment_score": 0.184413,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "LLY",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.488573",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "ECL",
+                    "relevance_score": "0.614044",
+                    "ticker_sentiment_score": "0.101311",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "KMB",
+                    "relevance_score": "0.621594",
+                    "ticker_sentiment_score": "0.102446",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "GEHC",
+                    "relevance_score": "0.644443",
+                    "ticker_sentiment_score": "0.143825",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.627793",
+                    "ticker_sentiment_score": "0.138872",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Blue Jean Financial LLC Acquires Shares of 6,268 Apple Inc. $AAPL",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-blue-jean-financial-llc-acquires-shares-of-6268-apple-inc-aapl-2026-06-14/",
+            "time_published": "20260614T083656",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "Blue Jean Financial LLC has acquired 6,268 shares of Apple Inc. (NASDAQ:AAPL) for approximately $1.7 million, making it the 26th largest holding in their portfolio. This acquisition highlights continued institutional support for Apple, despite mixed investor sentiment regarding its AI rollout. The company reported strong quarterly earnings, beating expectations, and analysts maintain a \"Moderate Buy\" rating with an average price target of $314.59.",
+            "banner_image": "https://www.marketbeat.com/logos/apple-inc-logo-1200x675.png",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.924251"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.849693"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.746011"
+                }
+            ],
+            "overall_sentiment_score": 0.12485,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.136181",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Apple Inc. $AAPL Shares Sold by B&D White Capital Company LLC",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-apple-inc-aapl-shares-sold-by-bd-white-capital-company-llc-2026-06-14/",
+            "time_published": "20260614T081903",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "B&D White Capital Company LLC significantly reduced its stake in Apple Inc. ($AAPL) during the fourth quarter, selling 43.6% of its shares. Despite this, institutional ownership of Apple remains high at 67.73%, with other investment firms adjusting their positions. Sentiment around Apple is mixed, with strong services revenue and fundamentals balanced against investor anticipation for the full impact of its AI strategy on growth.",
+            "banner_image": "https://www.marketbeat.com/logos/apple-inc-logo-1200x675.png",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.920832"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.830761"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.731970"
+                }
+            ],
+            "overall_sentiment_score": 0.007282,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.025270",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Apple Inc. $AAPL is Biondo Investment Advisors LLC's 2nd Largest Position",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-apple-inc-aapl-is-biondo-investment-advisors-llcs-2nd-largest-position-2026-06-14/",
+            "time_published": "20260614T075057",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "Biondo Investment Advisors LLC reduced its Apple stake by 3.3% in Q4, but Apple remains its second-largest position, comprising 7.1% of its portfolio. Various Wall Street firms maintain positive outlooks, with a \"Moderate Buy\" consensus and an average price target of $314.59. Despite solid operating results and a dividend increase, some investors are not fully convinced by Apple's recent AI/WWDC announcements, and corporate insiders have sold a significant number of shares recently.",
+            "banner_image": "https://www.marketbeat.com/logos/apple-inc-logo-1200x675.png",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.900427"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.820983"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.817086"
+                },
+                {
+                    "topic": "economy_macro",
+                    "relevance_score": "0.635039"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.634385"
+                }
+            ],
+            "overall_sentiment_score": 0.108855,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.127497",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Ally Financial Inc. Sells 44,000 Shares of Apple Inc. $AAPL",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-ally-financial-inc-sells-44000-shares-of-apple-inc-aapl-2026-06-14/",
+            "time_published": "20260614T072258",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "Ally Financial Inc. significantly reduced its stake in Apple Inc. by selling 44,000 shares in the fourth quarter, decreasing its holdings by 88.0% to 6,000 shares valued at $1.63 million. Other institutional investors made minor adjustments to their Apple positions. The article also covers recent analyst ratings for Apple, its financial performance, dividend increase, and recent insider selling activities.",
+            "banner_image": "https://www.marketbeat.com/logos/apple-inc-logo-1200x675.png",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.909133"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.822115"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.729827"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.811073"
+                }
+            ],
+            "overall_sentiment_score": 0.004668,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.124049",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "INTC",
+                    "relevance_score": "0.639324",
+                    "ticker_sentiment_score": "-0.107352",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Aigen Investment Management LP Decreases Stock Position in Apple Inc. $AAPL",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-aigen-investment-management-lp-decreases-stock-position-in-apple-inc-aapl-2026-06-14/",
+            "time_published": "20260614T071258",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "Aigen Investment Management LP reduced its stake in Apple Inc. (NASDAQ:AAPL) by 26.4% in the fourth quarter, selling 3,264 shares and holding 9,113 shares valued at $2.48 million. Despite this, Apple continues to see significant institutional support, with major firms like Vanguard, State Street, and Geode increasing their holdings, resulting in 67.73% of shares owned by institutional investors. The stock has experienced mixed sentiment, with strong quarterly results and a dividend increase, but also investor caution following its recent AI announcements.",
+            "banner_image": "https://www.marketbeat.com/logos/apple-inc-logo-1200x675.png",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.933975"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.818842"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.717204"
+                }
+            ],
+            "overall_sentiment_score": 0.010671,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.043988",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Apple Inc. (NASDAQ:AAPL) Receives Consensus Recommendation of \"Moderate Buy\" from Analysts",
+            "url": "https://www.marketbeat.com/instant-alerts/apple-inc-nasdaqaapl-receives-consensus-recommendation-of-moderate-buy-from-analysts-2026-06-14/",
+            "time_published": "20260614T062757",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "Analysts have given Apple Inc. (NASDAQ:AAPL) a consensus \"Moderate Buy\" rating, with 23 buy ratings out of 35 covering firms and an average 12-month price target of approximately $314.59. The company recently reported strong quarterly results, exceeding expectations with $2.01 EPS and $111.18 billion in revenue, a 16.6% year-over-year increase. Despite some insider selling, institutional investors retain a significant 67.73% stake in the company.",
+            "banner_image": "https://www.marketbeat.com/logos/apple-inc-logo-1200x675.png",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.922194"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.928204"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.815382"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.713677"
+                }
+            ],
+            "overall_sentiment_score": 0.207531,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.956924",
+                    "ticker_sentiment_score": "0.336799",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "INTC",
+                    "relevance_score": "0.648072",
+                    "ticker_sentiment_score": "0.130225",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "MSFT",
+                    "relevance_score": "0.641485",
+                    "ticker_sentiment_score": "0.142300",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.614444",
+                    "ticker_sentiment_score": "0.248347",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "GOOGL",
+                    "relevance_score": "0.592226",
+                    "ticker_sentiment_score": "0.101669",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Wall Street’s Top Billionaires Are Changing Their Mind About Apple (AAPL)",
+            "url": "https://www.insidermonkey.com/blog/wall-streets-top-billionaires-are-changing-their-mind-about-apple-aapl-1779337/",
+            "time_published": "20260613T155158",
+            "authors": [
+                "Fahad Saleem"
+            ],
+            "summary": "Billionaire investors, including Warren Buffett, are reportedly changing their perception of Apple (AAPL), which was once considered an AI laggard but is now seen as a winner. The company's strategy of monetizing AI through its massive existing customer base, coupled with its low capex-to-revenue ratio, sets it apart from competitors. Despite a high valuation and some AI integration challenges, Apple's early adoption of on-device AI features has exceeded expectations, particularly for its Pro models.",
+            "banner_image": "https://d2w7kw43nye0pi.cloudfront.net/a_w8Wqkf32GHRjF2ylFF4gFflvI5YVBfhBdhMUP2i68/resize:fit:480:320:0/plain/https://imonkeyblog.s3.us-east-1.amazonaws.com/blog/wp-content/uploads/2023/01/31074729/fitbit-Apple-Watch-Health-Tracking-fitness-andres-urena-V7UoMNWsYsg-unsplash.jpg",
+            "source": "Insider Monkey",
+            "category_within_source": "General",
+            "source_domain": "Insider Monkey",
+            "topics": [
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.881865"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.701821"
+                }
+            ],
+            "overall_sentiment_score": 0.105609,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.269783",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "MSFT",
+                    "relevance_score": "0.633319",
+                    "ticker_sentiment_score": "0.121586",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "META",
+                    "relevance_score": "0.624583",
+                    "ticker_sentiment_score": "0.103697",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "NVDA",
+                    "relevance_score": "0.598663",
+                    "ticker_sentiment_score": "-0.100410",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Amkor Technology Trades Near High as AI Packaging Push Lifts AMKR",
+            "url": "https://ts2.tech/en/amkor-technology-trades-near-high-as-ai-packaging-push-lifts-amkr/",
+            "time_published": "20260613T144032",
+            "authors": [
+                "Khadija Saeed"
+            ],
+            "summary": "Amkor Technology (AMKR) saw its stock surge by 8.7% to $82.78, driven by increased investor interest in advanced chip packaging for AI and high-performance computing. The company posted record first-quarter sales and is expanding its advanced-packaging operations in Arizona, partnering with major players like AMD, Nvidia, and Apple. While significant growth is projected through 2030, analysts caution about valuation and execution risks, especially concerning startup costs for its Arizona facility and potential supply constraints.",
+            "banner_image": "https://ts2.tech/wp-content/uploads/2026/05/amkor-technology-stock-jumps-6-why-1-15-billion-debt-deal-has-amkr-in-focus-featured.jpg",
+            "source": "TechStock²",
+            "category_within_source": "General",
+            "source_domain": "TechStock²",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.937967"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.818187"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.702586"
+                },
+                {
+                    "topic": "manufacturing",
+                    "relevance_score": "0.604025"
+                },
+                {
+                    "topic": "ipo",
+                    "relevance_score": "0.618183"
+                }
+            ],
+            "overall_sentiment_score": 0.323039,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AMKR",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.477818",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "AMD",
+                    "relevance_score": "0.632079",
+                    "ticker_sentiment_score": "0.343999",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "NVDA",
+                    "relevance_score": "0.643529",
+                    "ticker_sentiment_score": "0.265829",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.631310",
+                    "ticker_sentiment_score": "0.280958",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Does Google Stock Have More Upside?",
+            "url": "https://www.trefis.com/stock/googl/articles/602686/does-google-stock-have-more-upside/2026-06-12",
+            "time_published": "20260613T143740",
+            "authors": [
+                "Trefis Team"
+            ],
+            "summary": "Alphabet (GOOGL) stock is positioned strongly due to its core digital advertising business and growing AI leadership, particularly through its profitable Google Cloud segment. The company's fundamentals show high operating cash flow, strong revenue growth, and low debt, but investors are currently debating whether massive AI capital expenditures will compress near-term free cash flow. Despite these concerns, significant backlog in Google Cloud indicates durable, high-margin growth that could uplift Google's financial profile.",
+            "banner_image": null,
+            "source": "Trefis",
+            "category_within_source": "General",
+            "source_domain": "Trefis",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.910644"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.919948"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.832167"
+                }
+            ],
+            "overall_sentiment_score": 0.224859,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "GOOGL",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.253846",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "NVDA",
+                    "relevance_score": "0.622536",
+                    "ticker_sentiment_score": "0.244418",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.612486",
+                    "ticker_sentiment_score": "0.233446",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "AMZN",
+                    "relevance_score": "0.649162",
+                    "ticker_sentiment_score": "0.235034",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "MSFT",
+                    "relevance_score": "0.584495",
+                    "ticker_sentiment_score": "0.100324",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Apple Inc. $AAPL Holdings Lifted by Castleark Management LLC",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-apple-inc-aapl-holdings-lifted-by-castleark-management-llc-2026-06-13/",
+            "time_published": "20260613T130656",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "Castleark Management LLC increased its holdings in Apple Inc. by 1.8% in the fourth quarter, bringing its total ownership to 387,041 shares valued at over $105 million. Analyst sentiment remains positive, with a consensus rating of \"Moderate Buy\" and a target price of $314.59, despite some investor caution regarding the impact of Apple's recent AI updates. The article also details other institutional investor activity, recent financial performance, and insider trading.",
+            "banner_image": "https://www.marketbeat.com/logos/apple-inc-logo-1200x675.png",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.901078"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.934122"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.848273"
+                }
+            ],
+            "overall_sentiment_score": 0.221527,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.241212",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Intel Just Got a Rare Double Upgrade From Bank of America. Here's the AI Shift Behind the Call.",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/intel-just-got-rare-double-162600720.html",
+            "time_published": "20260613T122600",
+            "authors": [
+                "Daniel Sparks"
+            ],
+            "summary": "Bank of America analyst Vivek Arya double-upgraded Intel (NASDAQ: INTC) to \"buy\" from \"underperform,\" citing a changing landscape in AI spending. The upgrade is based on the increasing role of central processing units (CPUs) in future AI systems and Intel's progress in its contract chipmaking foundry business. However, the article notes that Intel's stock valuation is high, and the foundry business still faces significant challenges and expenses.",
+            "banner_image": "https://s.yimg.com/ny/api/res/1.2/aH_9Q8HiSJUZxO6FdSDmDA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTU0NQ--/https://media.zenfs.com/en/motleyfool.com/f8b8fed4e392b83240e5ab1f106cf34c",
+            "source": "Yahoo Finance",
+            "category_within_source": "General",
+            "source_domain": "Yahoo Finance",
+            "topics": [
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.830371"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.706431"
+                }
+            ],
+            "overall_sentiment_score": 0.200857,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "BAC",
+                    "relevance_score": "0.927817",
+                    "ticker_sentiment_score": "0.313227",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "INTC",
+                    "relevance_score": "0.940948",
+                    "ticker_sentiment_score": "0.210669",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.602017",
+                    "ticker_sentiment_score": "0.147035",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "NVDA",
+                    "relevance_score": "0.601086",
+                    "ticker_sentiment_score": "0.104015",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "SVRN Asset Management LLC Takes $1.42 Million Position in Apple Inc. $AAPL",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-svrn-asset-management-llc-takes-142-million-position-in-apple-inc-aapl-2026-06-13/",
+            "time_published": "20260613T120659",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "SVRN Asset Management LLC has initiated a new position in Apple Inc. (NASDAQ:AAPL), purchasing 5,208 shares valued at approximately $1.42 million during the fourth quarter. Apple now constitutes 1.2% of the firm's portfolio. Despite broad analyst optimism and solid recent earnings, concerns about insider selling and the impact of Apple's AI rollout remain.",
+            "banner_image": "https://www.marketbeat.com/logos/apple-inc-logo-1200x675.png",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.922721"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.818094"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.736938"
+                }
+            ],
+            "overall_sentiment_score": 0.108048,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.995667",
+                    "ticker_sentiment_score": "0.102524",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Summit Financial LLC Trims Position in Apple Inc. $AAPL",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-summit-financial-llc-trims-position-in-apple-inc-aapl-2026-06-13/",
+            "time_published": "20260613T120658",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "Summit Financial LLC reduced its stake in Apple Inc. by 2.2% in the fourth quarter, selling 11,798 shares but still holding 531,978 shares valued at $144.6 million. Apple remains its fourth-largest holding, representing 2.1% of its portfolio. Despite this trim, institutional ownership of Apple remains high at 67.73%, and the company received generally positive analyst ratings and beat recent earnings estimates.",
+            "banner_image": "https://www.marketbeat.com/logos/apple-inc-logo-1200x675.png",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.925675"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.819565"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.737893"
+                }
+            ],
+            "overall_sentiment_score": 0.118255,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.138379",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Wealthspire Advisors LLC Acquires 147,930 Shares of Apple Inc. $AAPL",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-wealthspire-advisors-llc-acquires-147930-shares-of-apple-inc-aapl-2026-06-13/",
+            "time_published": "20260613T113709",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "Wealthspire Advisors LLC increased its stake in Apple Inc. by 33.4% during the fourth quarter, acquiring an additional 147,930 shares to bring its total holdings to 590,564 shares, valued at approximately $160.6 million. This increase makes Apple the 19th largest position in Wealthspire Advisors' portfolio. Despite strong quarterly results from Apple, institutional activity includes both increases and reductions by other firms, while insider selling by executives has also been noted.",
+            "banner_image": "https://www.marketbeat.com/logos/apple-inc-logo-1200x675.png",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.929512"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.822131"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.742312"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.635947"
+                }
+            ],
+            "overall_sentiment_score": 0.065677,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.067424",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Vistica Wealth Advisors LLC Takes Position in Apple Inc. $AAPL",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-vistica-wealth-advisors-llc-takes-position-in-apple-inc-aapl-2026-06-13/",
+            "time_published": "20260613T113657",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "Vistica Wealth Advisors LLC recently acquired 2,967 shares of Apple Inc. (AAPL) valued at approximately $807,000, making it their 22nd largest holding. This comes as Apple reported better-than-expected quarterly results, increased its dividend, and received a \"Moderate Buy\" consensus rating from analysts with an average price target of $314.59. However, insider selling has also been noted, and some market analysts remain neutral regarding the impact of Apple's recent AI announcements on its stock performance.",
+            "banner_image": "https://www.marketbeat.com/logos/apple-inc-logo-1200x675.png",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "1.000000"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.939373"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.806179"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.645320"
+                }
+            ],
+            "overall_sentiment_score": 0.125973,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.289361",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "INTC",
+                    "relevance_score": "0.607179",
+                    "ticker_sentiment_score": "0.110507",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "CRM",
+                    "relevance_score": "0.560147",
+                    "ticker_sentiment_score": "0.002658",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "MSFT",
+                    "relevance_score": "0.568057",
+                    "ticker_sentiment_score": "0.038277",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Apple Inc. $AAPL is Trillium Asset Management LLC's 4th Largest Position",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-apple-inc-aapl-is-trillium-asset-management-llcs-4th-largest-position-2026-06-13/",
+            "time_published": "20260613T110700",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "Trillium Asset Management LLC, despite reducing its stake by 17.6% in the fourth quarter, still holds Apple Inc. (NASDAQ:AAPL) as its fourth-largest position, accounting for 4.6% of its portfolio. The article highlights that institutional investors collectively own 67.73% of Apple's shares and that the company maintains a \"Moderate Buy\" consensus rating from analysts with an average target price of $314.59. It also details recent financial performance, dividend increases, and insider trading activity, alongside various analyst opinions on Apple's services growth and AI strategy.",
+            "banner_image": "https://www.marketbeat.com/logos/apple-inc-logo-1200x675.png",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.941662"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.935789"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.809359"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.700739"
+                }
+            ],
+            "overall_sentiment_score": 0.178783,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.132945",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "MSFT",
+                    "relevance_score": "0.591321",
+                    "ticker_sentiment_score": "0.200608",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Korea Investment CORP Trims Stock Holdings in The Walt Disney Company $DIS",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-korea-investment-corp-trims-stock-holdings-in-the-walt-disney-company-dis-2026-06-13/",
+            "time_published": "20260613T103426",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "Korea Investment CORP significantly reduced its stake in The Walt Disney Company by 16.1% in the fourth quarter, selling 179,083 shares and now owning 935,761 shares valued at over $106 million. Despite this, other hedge funds increased their positions in Disney, and institutional investors collectively own 65.71% of the stock. Analysts generally maintain a \"Moderate Buy\" rating for Disney with an average price target of $133.71, following recent earnings that beat consensus estimates.",
+            "banner_image": "https://www.marketbeat.com/logos/the-walt-disney-company-logo-1200x675.png?v=20201229105326",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.915183"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.905372"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.803768"
+                }
+            ],
+            "overall_sentiment_score": 0.114005,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "DIS",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.194708",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.839543",
+                    "ticker_sentiment_score": "0.149457",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "JPM",
+                    "relevance_score": "0.646400",
+                    "ticker_sentiment_score": "0.119522",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "NFLX",
+                    "relevance_score": "0.556580",
+                    "ticker_sentiment_score": "0.048070",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Quadrant Capital Group LLC Has $132.06 Million Stake in Apple Inc. $AAPL",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-quadrant-capital-group-llc-has-13206-million-stake-in-apple-inc-aapl-2026-06-13/",
+            "time_published": "20260613T083700",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "Quadrant Capital Group LLC increased its stake in Apple Inc. to $132.06 million, making Apple its second-largest position. This move follows Apple's stronger-than-expected quarterly results, though Wall Street seeks more clarity on how Apple's AI efforts will translate to revenue growth. The company also recently announced an increased quarterly dividend.",
+            "banner_image": "https://www.marketbeat.com/logos/apple-inc-logo-1200x675.png",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.946240"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.835697"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.709307"
+                }
+            ],
+            "overall_sentiment_score": 0.270008,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.286498",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Apple Inc. $AAPL Stock Holdings Lowered by Columbia Bank",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-apple-inc-aapl-stock-holdings-lowered-by-columbia-bank-2026-06-13/",
+            "time_published": "20260613T074300",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "Columbia Bank has lowered its holdings in Apple Inc. by 6.1% in the fourth quarter, selling 3,848 shares, though Apple remains its fifth-largest position. Insider selling also continued with two executives divesting shares. Despite these reductions, Apple's fundamentals and analyst sentiment are largely positive, marked by strong earnings, a dividend increase, and a \"Moderate Buy\" consensus rating, although some investors are hesitant waiting for stronger evidence that AI updates will significantly boost growth.",
+            "banner_image": "https://www.marketbeat.com/logos/apple-inc-logo-1200x675.png",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.944615"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.839217"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.709475"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.831124"
+                }
+            ],
+            "overall_sentiment_score": 0.113722,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.111398",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Allianz SE Increases Position in Apple Inc. $AAPL",
+            "url": "https://www.marketbeat.com/instant-alerts/filing-allianz-se-increases-position-in-apple-inc-aapl-2026-06-13/",
+            "time_published": "20260613T070701",
+            "authors": [
+                "MarketBeat"
+            ],
+            "summary": "Allianz SE increased its stake in Apple Inc. by 0.9% during the fourth quarter, acquiring an additional 5,291 shares to own a total of 609,786 shares valued at $165.78 million. Apple constitutes 2.1% of Allianz SE's investment portfolio. Other institutional investors also adjusted their holdings, with Apple's stock performing strongly, reporting higher-than-expected earnings and increasing its quarterly dividend.",
+            "banner_image": "https://www.marketbeat.com/logos/apple-inc-logo-1200x675.png",
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.910197"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.905180"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.810265"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.748115"
+                }
+            ],
+            "overall_sentiment_score": 0.219826,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.997425",
+                    "ticker_sentiment_score": "0.310221",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "INTC",
+                    "relevance_score": "0.619545",
+                    "ticker_sentiment_score": "0.133033",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "HGRO Top Holdings List & Exposure (Hedgeye Quality Growth ETF)",
+            "url": "https://www.marketbeat.com/stocks/NYSEARCA/HGRO/holdings/",
+            "time_published": "20260613T061030",
+            "authors": [
+                "MarketBeat.com Staff"
+            ],
+            "summary": "This article details the top holdings and exposure of the Hedgeye Quality Growth ETF (HGRO). The fund's primary holdings include NVIDIA, Alphabet, and Apple, with its largest geographic exposure being the United States and its dominant sector exposure in Technology. The asset is concentrated in large & mid-cap growth strategies within North America, with specific breakdowns provided for sector, geographic, industry, sub-industry, coupon, and maturity exposures.",
+            "banner_image": null,
+            "source": "MarketBeat",
+            "category_within_source": "General",
+            "source_domain": "MarketBeat",
+            "topics": [
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "1.000000"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.839169"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.748671"
+                },
+                {
+                    "topic": "economy_macro",
+                    "relevance_score": "0.618374"
+                },
+                {
+                    "topic": "retail_wholesale",
+                    "relevance_score": "0.616932"
+                }
+            ],
+            "overall_sentiment_score": 0.129453,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "HGRO",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.116183",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "NVDA",
+                    "relevance_score": "0.934609",
+                    "ticker_sentiment_score": "0.122121",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "GOOGL",
+                    "relevance_score": "0.882669",
+                    "ticker_sentiment_score": "0.146598",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.841874",
+                    "ticker_sentiment_score": "0.132985",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "AMZN",
+                    "relevance_score": "0.750228",
+                    "ticker_sentiment_score": "0.102527",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Nothing phones are coming to Best Buy—and they could shake up the market",
+            "url": "https://www.howtogeek.com/nothing-phones-and-earbuds-best-buy-store-availability/",
+            "time_published": "20260613T013708",
+            "authors": [
+                "Jon Fingas"
+            ],
+            "summary": "Nothing, a tech brand focused on design, is expanding its retail presence in the U.S. by partnering with Best Buy. This move allows customers to experience Nothing phones, earbuds, and headphones firsthand in over 500 stores and online. With Pei's former company, OnePlus, scaling back, Nothing aims to become a significant alternative for consumers amidst the dominance of brands like Apple, Samsung, and Google, particularly targeting cost-conscious buyers.",
+            "banner_image": "https://static0.howtogeekimages.com/wordpress/wp-content/uploads/wm/2026/05/img_2448.jpeg?&fit=crop&w=1600&h=900",
+            "source": "How-To Geek",
+            "category_within_source": "General",
+            "source_domain": "How-To Geek",
+            "topics": [
+                {
+                    "topic": "retail_wholesale",
+                    "relevance_score": "0.749989"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "1.000000"
+                }
+            ],
+            "overall_sentiment_score": 0.159801,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "BBY",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.322882",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "AMZN",
+                    "relevance_score": "0.723905",
+                    "ticker_sentiment_score": "0.123725",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "GOOGL",
+                    "relevance_score": "0.601731",
+                    "ticker_sentiment_score": "0.105618",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.629576",
+                    "ticker_sentiment_score": "0.134651",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Rayonier Inc Stock Price Live, Charts & News",
+            "url": "https://economictimes.indiatimes.com/markets/us-stocks/rayonier-inc/ryn",
+            "time_published": "20260612T223901",
+            "authors": [],
+            "summary": "This article provides live stock price, charts, and news for Rayonier Inc (RYN). It includes detailed financial data such as market capitalization, PE ratio, dividend yield, historical returns, balance sheets, income statements, and cash flow statements. Rayonier is described as a leading timber real estate investment trust operating in the US and New Zealand.",
+            "banner_image": "https://img.etimg.com/photo/msid-76931895,quality-100/et-logo.jpg",
+            "source": "The Economic Times",
+            "category_within_source": "General",
+            "source_domain": "The Economic Times",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.922476"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.838506"
+                },
+                {
+                    "topic": "real_estate",
+                    "relevance_score": "0.949737"
+                }
+            ],
+            "overall_sentiment_score": 0.171445,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "RYN",
+                    "relevance_score": "0.968530",
+                    "ticker_sentiment_score": "0.130952",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "NVDA",
+                    "relevance_score": "0.664665",
+                    "ticker_sentiment_score": "0.430351",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "JPM",
+                    "relevance_score": "0.618382",
+                    "ticker_sentiment_score": "0.337313",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "MSFT",
+                    "relevance_score": "0.646983",
+                    "ticker_sentiment_score": "0.279155",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.598164",
+                    "ticker_sentiment_score": "-0.241824",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                }
+            ]
+        },
+        {
+            "title": "Apple (NASDAQ: AAPL) Stock Price Slides 8% After WWDC 2026 Despite AI Progress And Raised Price Target",
+            "url": "https://www.foreignpolicyjournal.com/2026/06/12/apple-nasdaq-aapl-stock-price-slides-8-after-wwdc-2026-despite-ai-progress-and-raised-price-target/",
+            "time_published": "20260612T223004",
+            "authors": [
+                "Ewan Scott"
+            ],
+            "summary": "Apple's stock (NASDAQ: AAPL) dropped 8% following its WWDC 2026 conference despite the unveiling of new AI capabilities and a raised price target from Morgan Stanley. The selloff was attributed to market disappointment over the limited initial rollout of Siri AI and unmet expectations for more aggressive agentic AI announcements. Despite the short-term decline, Wall Street analysts maintain a positive outlook, anticipating more than 10% upside for the stock.",
+            "banner_image": "https://www.foreignpolicyjournal.com/wp-content/uploads/2026/04/apple-3.jpg",
+            "source": "Foreign Policy Journal",
+            "category_within_source": "General",
+            "source_domain": "Foreign Policy Journal",
+            "topics": [
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.912189"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.823265"
+                },
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.712078"
+                },
+                {
+                    "topic": "economy_macro",
+                    "relevance_score": "0.617943"
+                }
+            ],
+            "overall_sentiment_score": -0.085367,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "-0.220436",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "MS",
+                    "relevance_score": "0.647696",
+                    "ticker_sentiment_score": "0.131353",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Alphabet Deepens AI Bets With Waymo Testing Site And Anthropic Backing",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/alphabet-deepens-ai-bets-waymo-211323468.html",
+            "time_published": "20260612T213739",
+            "authors": [
+                "Simply Wall St"
+            ],
+            "summary": "Alphabet is intensifying its investment in AI through two key initiatives: its autonomous driving unit Waymo acquiring Apple's former testing site in Arizona, and Alphabet playing a significant role in Anthropic's $35 billion AI data center financing by supplying chips and acting as a guarantor. These moves underscore Alphabet's commitment to both physical mobility networks and large-scale AI infrastructure, integrating AI into its core business strategy. The article discusses how these investments impact Alphabet's risk profile and business mix by increasing its capital-heavy AI infrastructure and exposure to long-term compute contracts, while also potentially reinforcing Google Cloud's market position.",
+            "banner_image": "https://s.yimg.com/ny/api/res/1.2/vKblhpP2.8oeWSCNpC2iNQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTI4MjtoPTQ4/https://s.yimg.com/uu/api/res/1.2/pGNKZXU0xTlugUxQWymR8w--~B/aD00OTY7dz0yOTIwO2FwcGlkPXl0YWNoeW9u/https://d29szjachogqwa.cloudfront.net/images/user-uploaded/gray-horizontal-text_8328.png",
+            "source": "Yahoo Finance",
+            "category_within_source": "General",
+            "source_domain": "Yahoo Finance",
+            "topics": [
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.937592"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.820987"
+                },
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.614546"
+                }
+            ],
+            "overall_sentiment_score": 0.160909,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "GOOGL",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.287342",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "GOOG",
+                    "relevance_score": "0.864344",
+                    "ticker_sentiment_score": "0.257016",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.627018",
+                    "ticker_sentiment_score": "-0.101997",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "COIN",
+                    "relevance_score": "0.561428",
+                    "ticker_sentiment_score": "0.061150",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "FDMO ETF: Fidelity Momentum Factor Fund Near $93 High on a 39% Year as AI Trade Faces Its Test",
+            "url": "https://www.tradingnews.com/news/fdmos39percent-year-rieds-the-ai-momentun",
+            "time_published": "20260612T210906",
+            "authors": [
+                "Itai Smidt"
+            ],
+            "summary": "The Fidelity Momentum Factor ETF (FDMO) has returned 39.13% over the past year, driven largely by its concentrated holdings in AI and mega-cap tech stocks like NVIDIA, Apple, and Alphabet. Despite strong performance and consistent inflows, its sector-neutral design and quarterly rebalancing make it vulnerable to sharp market reversals, as evidenced by recent June volatility in the chip sector. The article explores whether the AI-driven momentum will continue or if the recent turbulence signals a shift, highlighting FDMO's disciplined methodology and competitive expense ratio.",
+            "banner_image": "https://www.tradingnews.com/Warehouse/content/pics/pic_42185_a_3dc5611b-137b-4a02-9ceb-d878951a4315.webp?1=1",
+            "source": "TradingNEWS",
+            "category_within_source": "General",
+            "source_domain": "TradingNEWS",
+            "topics": [
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.923868"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.847074"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.728717"
+                },
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.604564"
+                }
+            ],
+            "overall_sentiment_score": 0.217804,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "FDMO",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.203789",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "NVDA",
+                    "relevance_score": "0.801286",
+                    "ticker_sentiment_score": "0.244215",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.743176",
+                    "ticker_sentiment_score": "0.242566",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "GOOGL",
+                    "relevance_score": "0.734293",
+                    "ticker_sentiment_score": "0.229836",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "MSFT",
+                    "relevance_score": "0.725243",
+                    "ticker_sentiment_score": "0.227220",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Apple, Oracle, Meta, Intel and more analyst calls of the week",
+            "url": "https://www.proactiveinvestors.com/companies/news/1093849/apple-oracle-meta-intel-and-more-analyst-calls-of-the-week-1093849.html",
+            "time_published": "20260612T192001",
+            "authors": [
+                "Angela Harmantas"
+            ],
+            "summary": "This article summarizes recent analyst calls for major tech companies like Apple, Oracle, Meta, and Intel, along with other companies like Adobe, Amazon, and General Mills. Analysts weigh in on financial performance, new product rollouts, strategic shifts, and future outlooks, often leading to stock movements based on guidance and company announcements. Key themes include the impact of AI investments, growth strategies, and market sentiment.",
+            "banner_image": "https://cdn.proactiveinvestors.com/eyJidWNrZXQiOiJwYS1jZG4iLCJrZXkiOiJ1cGxvYWRcL05ld3NcL0ltYWdlXC8yMDI2XzA2XC8yMDIzLTA4LTI1LTEyLTE0LTUzLTc3N2YxNTFiNDk5OGFkODhmMjQwYzAxNzU2MmRmNMGZfNjJhYzQ2ZjAwNmU3Yy5qcGciLCJlZGl0cyI6eyJzZXNpemUiOnsid2lkdGgiOjEyODAsImhlaWdodCI6NzIwLCJmaXQiOiJjb3ZlciJ9fX0=",
+            "source": "Proactive financial news",
+            "category_within_source": "General",
+            "source_domain": "Proactive financial news",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.914665"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.823455"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.709656"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.619185"
+                },
+                {
+                    "topic": "life_sciences",
+                    "relevance_score": "0.622329"
+                }
+            ],
+            "overall_sentiment_score": -0.085544,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.997580",
+                    "ticker_sentiment_score": "0.142709",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "ORCL",
+                    "relevance_score": "0.910400",
+                    "ticker_sentiment_score": "-0.252252",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "INTC",
+                    "relevance_score": "0.863993",
+                    "ticker_sentiment_score": "0.599687",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "META",
+                    "relevance_score": "0.826125",
+                    "ticker_sentiment_score": "-0.332523",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "ADBE",
+                    "relevance_score": "0.786376",
+                    "ticker_sentiment_score": "-0.426487",
+                    "ticker_sentiment_label": "Bearish"
+                }
+            ]
+        },
+        {
+            "title": "Rocket Lab (NASDAQ: RKLB) Joins Nasdaq-100 In Major Index Reshuffle, Stock Climbs",
+            "url": "https://www.foreignpolicyjournal.com/2026/06/12/rocket-lab-nasdaq-rklb-joins-nasdaq-100-in-major-index-reshuffle-stock-climbs/",
+            "time_published": "20260612T180917",
+            "authors": [
+                "David Prior"
+            ],
+            "summary": "Rocket Lab USA (NASDAQ: RKLB) has been included in the Nasdaq-100 index, causing its stock to surge. This inclusion is significant as the Nasdaq-100 tracks the 100 largest non-financial companies on the Nasdaq and drives substantial passive investment flows. Rocket Lab joins other major technology companies like Nvidia and Apple, a move that validates its growth from a startup to a global space industry leader.",
+            "banner_image": "https://www.foreignpolicyjournal.com/wp-content/uploads/2026/05/rocketlab-2.jpg",
+            "source": "Foreign Policy Journal",
+            "category_within_source": "General",
+            "source_domain": "Foreign Policy Journal",
+            "topics": [
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.938275"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.826775"
+                }
+            ],
+            "overall_sentiment_score": 0.307609,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "RKLB",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.648635",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "NVDA",
+                    "relevance_score": "0.623003",
+                    "ticker_sentiment_score": "0.218548",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.628354",
+                    "ticker_sentiment_score": "0.209980",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "AMZN",
+                    "relevance_score": "0.609117",
+                    "ticker_sentiment_score": "0.213673",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "MSFT",
+                    "relevance_score": "0.609672",
+                    "ticker_sentiment_score": "0.212382",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Intel Corp Share Price - INTC, RNS News, Articles, Quotes, & Charts (NASDAQ:INTC)",
+            "url": "https://www.proactiveinvestors.com/NASDAQ:INTC/Intel-Corp",
+            "time_published": "20260612T180804",
+            "authors": [],
+            "summary": "This article provides an overview of Intel Corp (NASDAQ:INTC) stock information, including its share price, market capitalization, and recent news headlines. It highlights the company's various segments and offers a snapshot of its performance and analyst coverage. The article also lists several related news items concerning Intel's stock movements and business developments over the past few weeks and months.",
+            "banner_image": null,
+            "source": "Proactive financial news",
+            "category_within_source": "General",
+            "source_domain": "Proactive financial news",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.819339"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.941541"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.942883"
+                },
+                {
+                    "topic": "mergers_and_acquisitions",
+                    "relevance_score": "0.627084"
+                }
+            ],
+            "overall_sentiment_score": 0.136948,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "INTC",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.337448",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "AMD",
+                    "relevance_score": "0.721537",
+                    "ticker_sentiment_score": "-0.237535",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                },
+                {
+                    "ticker": "NVDA",
+                    "relevance_score": "0.600034",
+                    "ticker_sentiment_score": "0.135209",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.637436",
+                    "ticker_sentiment_score": "0.200737",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "The AI bubble looks fit to burst, Bank of America director says. Here’s your road map for riding out a crash",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/ai-bubble-looks-fit-burst-171500617.html",
+            "time_published": "20260612T171500",
+            "authors": [
+                "Aditi Ganguly"
+            ],
+            "summary": "A Bank of America managing director and chief investment strategist, Michael Hartnett, warns that the AI bubble is likely to burst, drawing parallels to the dot-com crisis. He advises investors to prepare by leaning into bonds and historically underperforming, defensive sectors like consumer goods and healthcare. The article also suggests diversifying with alternative assets like gold and real estate, or investing in index funds, to protect portfolios from a potential tech downturn.",
+            "banner_image": "https://s.yimg.com/ny/api/res/1.2/FLxOpV1fgdgrfeiT1VUqlw--/YXBwaWQ9aGlnZ2hhbmRsZXJ0O3c9MjQ4O2g9NDg/https://s.yimg.com/os/creatr-uploaded-images/2023-11/72933370-7dbb-11ee-bbdf-185c76170239",
+            "source": "Yahoo Finance",
+            "category_within_source": "General",
+            "source_domain": "Yahoo Finance",
+            "topics": [
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.929922"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.808670"
+                },
+                {
+                    "topic": "economy_macro",
+                    "relevance_score": "0.720280"
+                },
+                {
+                    "topic": "real_estate",
+                    "relevance_score": "0.636286"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.619567"
+                }
+            ],
+            "overall_sentiment_score": 0.004169,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "BAC",
+                    "relevance_score": "0.880608",
+                    "ticker_sentiment_score": "0.096073",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "MSFT",
+                    "relevance_score": "0.638323",
+                    "ticker_sentiment_score": "0.130583",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "GOOGL",
+                    "relevance_score": "0.561498",
+                    "ticker_sentiment_score": "-0.086152",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.586258",
+                    "ticker_sentiment_score": "-0.094313",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "AMZN",
+                    "relevance_score": "0.593027",
+                    "ticker_sentiment_score": "-0.093881",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Richard Orrell’s Top Picks for June 12, 2026",
+            "url": "https://www.bnnbloomberg.ca/markets/2026/06/12/richard-orrells-top-picks-for-june-12-2026/",
+            "time_published": "20260612T170942",
+            "authors": [
+                "BNNBloomberg.ca Staff"
+            ],
+            "summary": "Richard Orrell, a portfolio manager at RN Croft Financial Group, shared his top ETF picks for June 12, 2026, which include the BMO USA High-Quality ETF, Invesco S&P 500 GARP ETF, and Global X Active Canadian Municipal Bond ETF. He also provided a market outlook focusing on U.S. market sector rotation, potential IPOs, and monetary policy stances from both the Bank of Canada and the U.S. Federal Reserve. Orrell highlighted the proliferation of ETFs in Canadian wealth management and stressed the importance of due diligence.",
+            "banner_image": "https://www.bnnbloomberg.ca/resizer/v2/https%3A%2F%2Fcloudfront-us-east-1.images.arcpublishing.com%2Fbellmediainc%2FR6HKZ4PAIBF3HJCUSVX2R6WBRE.png?smart=true&auth=7a6f35b1a8fe20a88bc2c9b4c50eda6e77dd265e0adc9ece13c90670461ff7d1&width=600",
+            "source": "BNN Bloomberg",
+            "category_within_source": "General",
+            "source_domain": "BNN Bloomberg",
+            "topics": [
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.901173"
+                },
+                {
+                    "topic": "economy_monetary",
+                    "relevance_score": "0.843957"
+                },
+                {
+                    "topic": "ipo",
+                    "relevance_score": "0.712596"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.623764"
+                },
+                {
+                    "topic": "life_sciences",
+                    "relevance_score": "0.620925"
+                }
+            ],
+            "overall_sentiment_score": 0.302035,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "SPGP",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.334661",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.611169",
+                    "ticker_sentiment_score": "0.317483",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "NVDA",
+                    "relevance_score": "0.639393",
+                    "ticker_sentiment_score": "0.313872",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Apple Continues to Expand Services Business: What's the Path Ahead?",
+            "url": "https://www.tradingview.com/news/zacks:8264ba652094b:0-apple-continues-to-expand-services-business-what-s-the-path-ahead/",
+            "time_published": "20260612T153658",
+            "authors": [],
+            "summary": "Apple's Services business is rapidly expanding, driven by ecosystem growth and innovation, contributing significantly to its overall revenue. Despite this growth and new AI-powered enhancements, Apple faces stiff competition from companies like Netflix and Disney, which are also investing heavily in streaming and gaming services. Apple's stock performance has underperformed its sector, and it trades at a premium valuation.",
+            "banner_image": "https://s3.tradingview.com/news/image/zacks:8264ba652094b-98f188cd2de3dd8481391fb74a0af037-resized.webp",
+            "source": "TradingView",
+            "category_within_source": "General",
+            "source_domain": "TradingView",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.901427"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.816198"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.723683"
+                }
+            ],
+            "overall_sentiment_score": 0.338335,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.407270",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "NFLX",
+                    "relevance_score": "0.730706",
+                    "ticker_sentiment_score": "0.286504",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "DIS",
+                    "relevance_score": "0.741529",
+                    "ticker_sentiment_score": "0.301587",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Apple Beats Worker Bid to Count Some Stock in Overtime Rates",
+            "url": "https://news.bloomberglaw.com/daily-labor-report/apple-beats-worker-bid-to-count-some-stock-in-overtime-rates",
+            "time_published": "20260612T143458",
+            "authors": [
+                "Jennifer Bennett"
+            ],
+            "summary": "A federal judge in California has ruled in favor of Apple Inc., granting summary judgment in a case where workers sought to include restricted stock units in their overtime pay calculations. The court determined that the Fair Labor Standards Act's \"gift\" and \"equity\" exceptions allowed Apple to exclude these stock values from regular rate of pay calculations. This decision addresses a \"novel question\" regarding federal wage law.",
+            "banner_image": "https://news-api.bloomberglaw.com/v1/resize-image?url=https%3A%2F%2Fbloomberg-bna-brightspot.s3.us-east-1.amazonaws.com%2Fc1%2Fda%2Fd00dc98e42ee9ac3b01f16db3bc0%2Fapple-david-paul-morrris-clouds-cool.jpg&width=1240&height=480&fit=cover",
+            "source": "Bloomberg Law News",
+            "category_within_source": "General",
+            "source_domain": "Bloomberg Law News",
+            "topics": [
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.810172"
+                }
+            ],
+            "overall_sentiment_score": 0.291328,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.292249",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                }
+            ]
+        },
+        {
+            "title": "Why is Zenas BioPharma stock rallying 9% today? By Investing.com",
+            "url": "https://ca.investing.com/news/stock-market-news/why-is-zenas-biopharma-stock-rallying-9-today-93CH-4688955",
+            "time_published": "20260612T143200",
+            "authors": [
+                "Garrett Cook"
+            ],
+            "summary": "Zenas BioPharma stock rallied 9.5% due to its participation in the H.C. Wainwright 7th Annual Neuro Perspectives Expert Summit and a series of recent pipeline advances. The company is showcasing its neurology pipeline, particularly orelabrutinib in Phase 3 trials for multiple sclerosis, and recently submitted a Biologics License Application for obexelimab in IgG4-Related Disease. H.C. Wainwright maintains a Buy rating with a $44 price target, and the stock's current price below analyst consensus, combined with these catalysts, attracted buyers.",
+            "banner_image": "https://i-invdn-com.investing.com/news/LYNXMPEB230DM_L.jpg",
+            "source": "Investing.com Canada",
+            "category_within_source": "General",
+            "source_domain": "Investing.com Canada",
+            "topics": [
+                {
+                    "topic": "life_sciences",
+                    "relevance_score": "0.936056"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.703349"
+                }
+            ],
+            "overall_sentiment_score": 0.172567,
+            "overall_sentiment_label": "Somewhat-Bullish",
+            "ticker_sentiment": [
+                {
+                    "ticker": "ZBIO",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.497167",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "AVGO",
+                    "relevance_score": "0.625041",
+                    "ticker_sentiment_score": "0.132035",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.621997",
+                    "ticker_sentiment_score": "-0.183262",
+                    "ticker_sentiment_label": "Somewhat-Bearish"
+                }
+            ]
+        },
+        {
+            "title": "The IPO Wave Is Historic. So Is Today’s Market.",
+            "url": "https://www.jpmorgan.com/insights/markets-and-economy/top-market-takeaways/tmt-the-ipo-wave-is-historic-so-is-todays-market",
+            "time_published": "20260612T141358",
+            "authors": [
+                "Kriti Gupta",
+                "Abigail Yoder"
+            ],
+            "summary": "A historic surge in initial public offerings (IPOs) is expected to bring over $260 billion in new equity issuance to the U.S. market this year. Despite the seemingly large volume, J.P. Morgan suggests the market's capacity to absorb it has also grown immensely, with the S&P 500's market cap reaching over $65 trillion. Corporate buybacks, M&A activity, and increasing demand from households and retail investors are expected to provide sufficient liquidity and demand to digest the new supply without overwhelming the market.",
+            "banner_image": "https://www.jpmorgan.com/content/dam/jpmorgan/images/jpma/tmt-the-ipo-wave-is-historic-so-is-todays-market/tmt-the-ipo-wave-is-historic-so-is-todays-market-hero.jpg",
+            "source": "J.P. Morgan",
+            "category_within_source": "General",
+            "source_domain": "J.P. Morgan",
+            "topics": [
+                {
+                    "topic": "ipo",
+                    "relevance_score": "1.000000"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.917779"
+                },
+                {
+                    "topic": "economy_macro",
+                    "relevance_score": "0.710041"
+                }
+            ],
+            "overall_sentiment_score": 0.137997,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "JPM",
+                    "relevance_score": "0.941260",
+                    "ticker_sentiment_score": "0.273662",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "NVDA",
+                    "relevance_score": "0.642873",
+                    "ticker_sentiment_score": "0.113965",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.643711",
+                    "ticker_sentiment_score": "0.134481",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "FDS",
+                    "relevance_score": "0.647805",
+                    "ticker_sentiment_score": "0.106277",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "SPGI",
+                    "relevance_score": "0.628657",
+                    "ticker_sentiment_score": "0.134769",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "PayPal Holdings, Inc. Shs Cert Deposito Arg Repr 0.125 Sh Trade Ideas — BCBA:PYPL.CI",
+            "url": "https://www.tradingview.com/symbols/BCBA-PYPL.CI/ideas/",
+            "time_published": "20260612T133811",
+            "authors": [
+                "federico_gomez_",
+                "robo414",
+                "Investing_Trading",
+                "novamatic",
+                "apkaiser80",
+                "darksignal",
+                "PlanTradePlanMM",
+                "epicscoreeu",
+                "KalaGhazi",
+                "Tired-Wolf",
+                "ThePennyMan",
+                "Apollo_21mil",
+                "aminalimoradii",
+                "Swing_Trader_Saan",
+                "Numberfive",
+                "Mrbigman",
+                "Sam_LuxTrader",
+                "Jasmine-Flower",
+                "CheatCode_Wealth"
+            ],
+            "summary": "This article compiles various trade ideas and analyses for PayPal Holdings, Inc. (PYPL.CI), discussing potential bullish and bearish scenarios, resistance and support levels, and the company's long-term value. Analysts weigh in on PayPal's ongoing restructuring, share repurchase programs, and AI-powered commerce initiatives, while also highlighting risks such as competitive moat erosion and short-term earnings pressure. The overall sentiment ranges from speculative value play to strong long-term investment, with several traders identifying breakout opportunities and target prices.",
+            "banner_image": null,
+            "source": "TradingView",
+            "category_within_source": "General",
+            "source_domain": "TradingView",
+            "topics": [
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.938684"
+                },
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.824842"
+                },
+                {
+                    "topic": "technology",
+                    "relevance_score": "0.700357"
+                },
+                {
+                    "topic": "finance",
+                    "relevance_score": "0.624955"
+                }
+            ],
+            "overall_sentiment_score": 0.133727,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "PYPL",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.028053",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.717140",
+                    "ticker_sentiment_score": "-0.130403",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "MSFT",
+                    "relevance_score": "0.638334",
+                    "ticker_sentiment_score": "0.331780",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "GOOGL",
+                    "relevance_score": "0.642200",
+                    "ticker_sentiment_score": "0.338110",
+                    "ticker_sentiment_label": "Somewhat-Bullish"
+                },
+                {
+                    "ticker": "HPQ",
+                    "relevance_score": "0.602985",
+                    "ticker_sentiment_score": "0.122092",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        },
+        {
+            "title": "Nucor Corp stock hits all-time high at 265.14 USD By Investing.com",
+            "url": "https://ca.investing.com/news/company-news/nucor-corp-stock-hits-alltime-high-at-26514-usd-93CH-4688551",
+            "time_published": "20260612T133514",
+            "authors": [
+                "Investing.com"
+            ],
+            "summary": "Nucor Corp stock has reached an all-time high of $264.40, nearing its 52-week high of $264.67, driven by strong market performance and investor confidence. Despite analytical suggestions of overvaluation, the steel manufacturer maintains a \"GOOD\" financial health score, boasting a 1-year total return of 123.6%. The company also reported robust first-quarter 2026 earnings, exceeding expectations, and declared its 213th consecutive quarterly cash dividend.",
+            "banner_image": "https://i-invdn-com.investing.com/news/LYNXMPEB59082_L.jpg",
+            "source": "Investing.com Canada",
+            "category_within_source": "General",
+            "source_domain": "Investing.com Canada",
+            "topics": [
+                {
+                    "topic": "earnings",
+                    "relevance_score": "0.837542"
+                },
+                {
+                    "topic": "financial_markets",
+                    "relevance_score": "0.908234"
+                },
+                {
+                    "topic": "manufacturing",
+                    "relevance_score": "0.714817"
+                }
+            ],
+            "overall_sentiment_score": 0.129422,
+            "overall_sentiment_label": "Neutral",
+            "ticker_sentiment": [
+                {
+                    "ticker": "NUE",
+                    "relevance_score": "1.000000",
+                    "ticker_sentiment_score": "0.465249",
+                    "ticker_sentiment_label": "Bullish"
+                },
+                {
+                    "ticker": "AVGO",
+                    "relevance_score": "0.627684",
+                    "ticker_sentiment_score": "-0.102164",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "AAPL",
+                    "relevance_score": "0.604992",
+                    "ticker_sentiment_score": "-0.123111",
+                    "ticker_sentiment_label": "Neutral"
+                },
+                {
+                    "ticker": "TSLA",
+                    "relevance_score": "0.640177",
+                    "ticker_sentiment_score": "0.127674",
+                    "ticker_sentiment_label": "Neutral"
+                }
+            ]
+        }
+    ]
+}

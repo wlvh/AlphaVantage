@@ -1,0 +1,27 @@
+{
+  "endpoint_id": "news_sentiment_aapl_latest",
+  "fetched_at_utc": "2026-06-15T12:25:22.510003+00:00",
+  "headers": {
+    "CF-RAY": "a0c18e9cee98f9b0-NRT",
+    "Connection": "close",
+    "Content-Length": "220",
+    "Content-Type": "application/json",
+    "Date": "Mon, 15 Jun 2026 12:25:22 GMT",
+    "Server": "cloudflare",
+    "Server-Timing": "cfEdge;dur=4,cfOrigin;dur=154",
+    "allow": "GET, HEAD, OPTIONS",
+    "cf-cache-status": "DYNAMIC",
+    "cross-origin-opener-policy": "same-origin",
+    "nel": "{\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}",
+    "referrer-policy": "same-origin",
+    "report-to": "{\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=GAov5KykvykxR%2FRm1Za4rk%2F3AuKs2W77YSFOhXiNp7Q%3D\\u0026sid=1b10b0ff-8a76-4548-befa-353fc6c6c045\\u0026ts=1781526322\"}],\"max_age\":3600}",
+    "reporting-endpoints": "heroku-nel=\"https://nel.heroku.com/reports?s=GAov5KykvykxR%2FRm1Za4rk%2F3AuKs2W77YSFOhXiNp7Q%3D&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&ts=1781526322\"",
+    "vary": "Cookie, Origin",
+    "via": "2.0 heroku-router",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "DENY"
+  },
+  "key_kind": "demo",
+  "request_url": "https://www.alphavantage.co/query?function=NEWS_SENTIMENT&tickers=AAPL&sort=LATEST&limit=10&apikey=REDACTED",
+  "status": 200
+}

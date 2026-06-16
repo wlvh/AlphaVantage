@@ -1,0 +1,16 @@
+{
+  "completed_at_utc": "2026-06-15T12:26:46.339392+00:00",
+  "demo_calls_used": 15,
+  "max_demo_calls": 20,
+  "max_real_calls": 6,
+  "outputs": [
+    "reports/alpha_vantage_observed_schema.md",
+    "reports/alpha_vantage_observed_schema.json",
+    "reports/alpha_vantage_next_run_queue.json",
+    "artifacts/alpha_vantage/call_log.jsonl",
+    "artifacts/alpha_vantage/state.json"
+  ],
+  "real_calls_used": 2,
+  "real_key_available": true,
+  "status": "complete"
+}

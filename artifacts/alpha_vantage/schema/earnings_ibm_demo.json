@@ -1,0 +1,215 @@
+{
+  "endpoint_id": "earnings_ibm",
+  "generated_at_utc": "2026-06-15T12:23:57.631004+00:00",
+  "key_kind": "demo",
+  "schema": {
+    "fields": {
+      "$": {
+        "appearance_count": 1,
+        "examples": [
+          "{\"symbol\": \"IBM\", \"annualEarnings\": [{\"fiscalDateEnding\": \"2026-03-31\", \"reportedEPS\": \"1.91\"}, {\"fiscalDateEnding\": \"2025-12-31\", \"repor..."
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.annualEarnings": {
+        "appearance_count": 1,
+        "examples": [
+          "[{\"fiscalDateEnding\": \"2026-03-31\", \"reportedEPS\": \"1.91\"}, {\"fiscalDateEnding\": \"2025-12-31\", \"reportedEPS\": \"11.57\"}, {\"fiscalDateEndin..."
+        ],
+        "json_types": [
+          "array"
+        ],
+        "semantic_types": [
+          "array"
+        ]
+      },
+      "$.annualEarnings[]": {
+        "appearance_count": 10,
+        "examples": [
+          "{\"fiscalDateEnding\": \"2026-03-31\", \"reportedEPS\": \"1.91\"}",
+          "{\"fiscalDateEnding\": \"2025-12-31\", \"reportedEPS\": \"11.57\"}",
+          "{\"fiscalDateEnding\": \"2024-12-31\", \"reportedEPS\": \"10.33\"}"
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.annualEarnings[].fiscalDateEnding": {
+        "appearance_count": 10,
+        "examples": [
+          "\"2026-03-31\"",
+          "\"2025-12-31\"",
+          "\"2024-12-31\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "date_yyyy_mm_dd"
+        ]
+      },
+      "$.annualEarnings[].reportedEPS": {
+        "appearance_count": 10,
+        "examples": [
+          "\"1.91\"",
+          "\"11.57\"",
+          "\"10.33\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyEarnings": {
+        "appearance_count": 1,
+        "examples": [
+          "[{\"fiscalDateEnding\": \"2026-03-31\", \"reportedDate\": \"2026-04-22\", \"reportedEPS\": \"1.91\", \"estimatedEPS\": \"1.81\", \"surprise\": \"0.1\", \"surp..."
+        ],
+        "json_types": [
+          "array"
+        ],
+        "semantic_types": [
+          "array"
+        ]
+      },
+      "$.quarterlyEarnings[]": {
+        "appearance_count": 10,
+        "examples": [
+          "{\"fiscalDateEnding\": \"2026-03-31\", \"reportedDate\": \"2026-04-22\", \"reportedEPS\": \"1.91\", \"estimatedEPS\": \"1.81\", \"surprise\": \"0.1\", \"surpr...",
+          "{\"fiscalDateEnding\": \"2025-12-31\", \"reportedDate\": \"2026-01-28\", \"reportedEPS\": \"4.52\", \"estimatedEPS\": \"4.29\", \"surprise\": \"0.23\", \"surp...",
+          "{\"fiscalDateEnding\": \"2025-09-30\", \"reportedDate\": \"2025-10-22\", \"reportedEPS\": \"2.65\", \"estimatedEPS\": \"2.45\", \"surprise\": \"0.2\", \"surpr..."
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.quarterlyEarnings[].estimatedEPS": {
+        "appearance_count": 10,
+        "examples": [
+          "\"1.81\"",
+          "\"4.29\"",
+          "\"2.45\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyEarnings[].fiscalDateEnding": {
+        "appearance_count": 10,
+        "examples": [
+          "\"2026-03-31\"",
+          "\"2025-12-31\"",
+          "\"2025-09-30\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "date_yyyy_mm_dd"
+        ]
+      },
+      "$.quarterlyEarnings[].reportTime": {
+        "appearance_count": 10,
+        "examples": [
+          "\"post-market\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.quarterlyEarnings[].reportedDate": {
+        "appearance_count": 10,
+        "examples": [
+          "\"2026-04-22\"",
+          "\"2026-01-28\"",
+          "\"2025-10-22\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "date_yyyy_mm_dd"
+        ]
+      },
+      "$.quarterlyEarnings[].reportedEPS": {
+        "appearance_count": 10,
+        "examples": [
+          "\"1.91\"",
+          "\"4.52\"",
+          "\"2.65\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyEarnings[].surprise": {
+        "appearance_count": 10,
+        "examples": [
+          "\"0.1\"",
+          "\"0.23\"",
+          "\"0.2\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.quarterlyEarnings[].surprisePercentage": {
+        "appearance_count": 10,
+        "examples": [
+          "\"5.5249\"",
+          "\"5.3613\"",
+          "\"8.1633\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.symbol": {
+        "appearance_count": 1,
+        "examples": [
+          "\"IBM\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      }
+    },
+    "format": "json",
+    "root_keys": [
+      "annualEarnings",
+      "quarterlyEarnings",
+      "symbol"
+    ]
+  }
+}

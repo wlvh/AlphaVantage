@@ -1,0 +1,396 @@
+{
+  "endpoint_id": "news_sentiment_aapl_latest",
+  "generated_at_utc": "2026-06-15T12:26:32.315186+00:00",
+  "key_kind": "real",
+  "schema": {
+    "fields": {
+      "$": {
+        "appearance_count": 1,
+        "examples": [
+          "{\"items\": \"50\", \"sentiment_score_definition\": \"x <= -0.35: Bearish; -0.35 < x <= -0.15: Somewhat-Bearish; -0.15 < x < 0.15: Neutral; 0.15..."
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.feed": {
+        "appearance_count": 1,
+        "examples": [
+          "[{\"title\": \"Why is Traws Pharma stock tumbling today?\", \"url\": \"https://ca.investing.com/news/stock-market-news/why-is-traws-pharma-stock..."
+        ],
+        "json_types": [
+          "array"
+        ],
+        "semantic_types": [
+          "array"
+        ]
+      },
+      "$.feed[]": {
+        "appearance_count": 10,
+        "examples": [
+          "{\"title\": \"Why is Traws Pharma stock tumbling today?\", \"url\": \"https://ca.investing.com/news/stock-market-news/why-is-traws-pharma-stock-...",
+          "{\"title\": \"Performance Comparison: Apple And Competitors In Technology Hardware, Storage & Peripherals Industry\", \"url\": \"https://www.ben...",
+          "{\"title\": \"The Zacks Analyst Blog Highlights Apple, Netflix and Disney\", \"url\": \"https://www.theglobeandmail.com/investing/markets/stocks..."
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.feed[].authors": {
+        "appearance_count": 10,
+        "examples": [
+          "[\"Senad Karaahmetovic\"]",
+          "[\"Benzinga Staff Writer\"]",
+          "[\"Zacks Investment Research\"]"
+        ],
+        "json_types": [
+          "array"
+        ],
+        "semantic_types": [
+          "array"
+        ]
+      },
+      "$.feed[].authors[]": {
+        "appearance_count": 10,
+        "examples": [
+          "\"Senad Karaahmetovic\"",
+          "\"Benzinga Staff Writer\"",
+          "\"Zacks Investment Research\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.feed[].banner_image": {
+        "appearance_count": 10,
+        "examples": [
+          "\"https://i-invdn-com.investing.com/news/SP500StandardandPoors500Index_800x533_L_1657544297.jpg\"",
+          "\"https://cdn.benzinga.com/cdn-cgi/image/width=1300,format=auto,quality=85/files/images/story/2025/07/24/article-header-background-image.png\"",
+          "\"https://staticx-tuner.zacks.com/images/articles/main/83/1163.jpg\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.feed[].category_within_source": {
+        "appearance_count": 10,
+        "examples": [
+          "\"General\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.feed[].overall_sentiment_label": {
+        "appearance_count": 10,
+        "examples": [
+          "\"Somewhat-Bearish\"",
+          "\"Neutral\"",
+          "\"Somewhat-Bullish\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.feed[].overall_sentiment_score": {
+        "appearance_count": 10,
+        "examples": [
+          "-0.311872",
+          "-0.045159",
+          "0.331742"
+        ],
+        "json_types": [
+          "number"
+        ],
+        "semantic_types": [
+          "number"
+        ]
+      },
+      "$.feed[].source": {
+        "appearance_count": 10,
+        "examples": [
+          "\"Investing.com Canada\"",
+          "\"Benzinga\"",
+          "\"The Globe and Mail\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.feed[].source_domain": {
+        "appearance_count": 10,
+        "examples": [
+          "\"Investing.com Canada\"",
+          "\"Benzinga\"",
+          "\"The Globe and Mail\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.feed[].summary": {
+        "appearance_count": 10,
+        "examples": [
+          "\"Traws Pharma's stock is down 16.4% in pre-market trading after the UK's MHRA issued a negative review for its lead antiviral candidate's...",
+          "\"This article provides a comprehensive financial comparison of Apple (NASDAQ: AAPL) against its competitors in the Technology Hardware, S...",
+          "\"The Zacks Analyst Blog highlights Apple, Netflix, and Disney, discussing Apple's expanding Services business, which achieved record reve..."
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.feed[].ticker_sentiment": {
+        "appearance_count": 10,
+        "examples": [
+          "[{\"ticker\": \"TRAW\", \"relevance_score\": \"1.000000\", \"ticker_sentiment_score\": \"-0.932609\", \"ticker_sentiment_label\": \"Bearish\"}, {\"ticker\"...",
+          "[{\"ticker\": \"AAPL\", \"relevance_score\": \"1.000000\", \"ticker_sentiment_score\": \"0.323321\", \"ticker_sentiment_label\": \"Somewhat-Bullish\"}, {...",
+          "[{\"ticker\": \"AAPL\", \"relevance_score\": \"0.990338\", \"ticker_sentiment_score\": \"0.440753\", \"ticker_sentiment_label\": \"Bullish\"}, {\"ticker\":..."
+        ],
+        "json_types": [
+          "array"
+        ],
+        "semantic_types": [
+          "array"
+        ]
+      },
+      "$.feed[].ticker_sentiment[]": {
+        "appearance_count": 27,
+        "examples": [
+          "{\"ticker\": \"TRAW\", \"relevance_score\": \"1.000000\", \"ticker_sentiment_score\": \"-0.932609\", \"ticker_sentiment_label\": \"Bearish\"}",
+          "{\"ticker\": \"AVGO\", \"relevance_score\": \"0.606795\", \"ticker_sentiment_score\": \"0.118363\", \"ticker_sentiment_label\": \"Neutral\"}",
+          "{\"ticker\": \"AAPL\", \"relevance_score\": \"0.612517\", \"ticker_sentiment_score\": \"-0.140692\", \"ticker_sentiment_label\": \"Neutral\"}"
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.feed[].ticker_sentiment[].relevance_score": {
+        "appearance_count": 27,
+        "examples": [
+          "\"1.000000\"",
+          "\"0.606795\"",
+          "\"0.612517\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.feed[].ticker_sentiment[].ticker": {
+        "appearance_count": 27,
+        "examples": [
+          "\"TRAW\"",
+          "\"AVGO\"",
+          "\"AAPL\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.feed[].ticker_sentiment[].ticker_sentiment_label": {
+        "appearance_count": 27,
+        "examples": [
+          "\"Bearish\"",
+          "\"Neutral\"",
+          "\"Somewhat-Bullish\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.feed[].ticker_sentiment[].ticker_sentiment_score": {
+        "appearance_count": 27,
+        "examples": [
+          "\"-0.932609\"",
+          "\"0.118363\"",
+          "\"-0.140692\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.feed[].time_published": {
+        "appearance_count": 10,
+        "examples": [
+          "\"20260615T104042\"",
+          "\"20260615T095909\"",
+          "\"20260615T093659\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "alpha_vantage_news_timestamp"
+        ]
+      },
+      "$.feed[].title": {
+        "appearance_count": 10,
+        "examples": [
+          "\"Why is Traws Pharma stock tumbling today?\"",
+          "\"Performance Comparison: Apple And Competitors In Technology Hardware, Storage & Peripherals Industry\"",
+          "\"The Zacks Analyst Blog Highlights Apple, Netflix and Disney\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.feed[].topics": {
+        "appearance_count": 10,
+        "examples": [
+          "[{\"topic\": \"life_sciences\", \"relevance_score\": \"0.910532\"}, {\"topic\": \"financial_markets\", \"relevance_score\": \"0.849013\"}]",
+          "[{\"topic\": \"earnings\", \"relevance_score\": \"0.923720\"}, {\"topic\": \"technology\", \"relevance_score\": \"0.849660\"}]",
+          "[{\"topic\": \"earnings\", \"relevance_score\": \"0.913294\"}, {\"topic\": \"technology\", \"relevance_score\": \"0.803581\"}, {\"topic\": \"financial_marke..."
+        ],
+        "json_types": [
+          "array"
+        ],
+        "semantic_types": [
+          "array"
+        ]
+      },
+      "$.feed[].topics[]": {
+        "appearance_count": 24,
+        "examples": [
+          "{\"topic\": \"life_sciences\", \"relevance_score\": \"0.910532\"}",
+          "{\"topic\": \"financial_markets\", \"relevance_score\": \"0.849013\"}",
+          "{\"topic\": \"earnings\", \"relevance_score\": \"0.923720\"}"
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.feed[].topics[].relevance_score": {
+        "appearance_count": 24,
+        "examples": [
+          "\"0.910532\"",
+          "\"0.849013\"",
+          "\"0.923720\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.feed[].topics[].topic": {
+        "appearance_count": 24,
+        "examples": [
+          "\"life_sciences\"",
+          "\"financial_markets\"",
+          "\"earnings\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.feed[].url": {
+        "appearance_count": 10,
+        "examples": [
+          "\"https://ca.investing.com/news/stock-market-news/why-is-traws-pharma-stock-tumbling-today-93CH-4690251\"",
+          "\"https://www.benzinga.com/insights/news/26/06/53188423/performance-comparison-apple-and-competitors-in-technology-hardware-storage-amp-pe...",
+          "\"https://www.theglobeandmail.com/investing/markets/stocks/DIS/pressreleases/2467357/the-zacks-analyst-blog-highlights-apple-netflix-and-d..."
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.items": {
+        "appearance_count": 1,
+        "examples": [
+          "\"50\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.relevance_score_definition": {
+        "appearance_count": 1,
+        "examples": [
+          "\"0 < x <= 1, with a higher score indicating higher relevance.\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.sentiment_score_definition": {
+        "appearance_count": 1,
+        "examples": [
+          "\"x <= -0.35: Bearish; -0.35 < x <= -0.15: Somewhat-Bearish; -0.15 < x < 0.15: Neutral; 0.15 <= x < 0.35: Somewhat_Bullish; x >= 0.35: Bul..."
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      }
+    },
+    "format": "json",
+    "root_keys": [
+      "feed",
+      "items",
+      "relevance_score_definition",
+      "sentiment_score_definition"
+    ]
+  }
+}

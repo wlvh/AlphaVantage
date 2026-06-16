@@ -1,0 +1,99 @@
+{
+  "endpoint_id": "listing_status",
+  "generated_at_utc": "2026-06-15T14:25:15.381233+00:00",
+  "key_kind": "demo",
+  "schema": {
+    "columns": [
+      "symbol",
+      "name",
+      "exchange",
+      "assetType",
+      "ipoDate",
+      "delistingDate",
+      "status"
+    ],
+    "columns_observed": {
+      "assetType": {
+        "appearance_count": 10,
+        "blank_count": 0,
+        "examples": [
+          "\"Stock\"",
+          "\"ETF\""
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "delistingDate": {
+        "appearance_count": 10,
+        "blank_count": 0,
+        "examples": [
+          "\"null\""
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "exchange": {
+        "appearance_count": 10,
+        "blank_count": 0,
+        "examples": [
+          "\"NASDAQ\"",
+          "\"NYSE\"",
+          "\"BATS\""
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "ipoDate": {
+        "appearance_count": 10,
+        "blank_count": 0,
+        "examples": [
+          "\"2023-08-30\"",
+          "\"1999-11-18\"",
+          "\"2016-10-18\""
+        ],
+        "semantic_types": [
+          "date_yyyy_mm_dd"
+        ]
+      },
+      "name": {
+        "appearance_count": 10,
+        "blank_count": 0,
+        "examples": [
+          "\"Presurance Holdings Inc\"",
+          "\"Agilent Technologies Inc\"",
+          "\"Alcoa Corp\""
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "status": {
+        "appearance_count": 10,
+        "blank_count": 0,
+        "examples": [
+          "\"Active\""
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "symbol": {
+        "appearance_count": 10,
+        "blank_count": 0,
+        "examples": [
+          "\"-P-HIZ\"",
+          "\"A\"",
+          "\"AA\""
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      }
+    },
+    "format": "csv",
+    "rows_inspected": 10
+  }
+}

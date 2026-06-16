@@ -1,0 +1,119 @@
+{
+  "endpoint_id": "shares_outstanding_msft",
+  "generated_at_utc": "2026-06-15T12:24:41.553543+00:00",
+  "key_kind": "demo",
+  "schema": {
+    "fields": {
+      "$": {
+        "appearance_count": 1,
+        "examples": [
+          "{\"symbol\": \"MSFT\", \"status\": \"success\", \"data\": [{\"date\": \"2026-03-31\", \"shares_outstanding_diluted\": \"7445000000\", \"shares_outstanding_b..."
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.data": {
+        "appearance_count": 1,
+        "examples": [
+          "[{\"date\": \"2026-03-31\", \"shares_outstanding_diluted\": \"7445000000\", \"shares_outstanding_basic\": \"7445000000\"}, {\"date\": \"2025-12-31\", \"sh..."
+        ],
+        "json_types": [
+          "array"
+        ],
+        "semantic_types": [
+          "array"
+        ]
+      },
+      "$.data[]": {
+        "appearance_count": 10,
+        "examples": [
+          "{\"date\": \"2026-03-31\", \"shares_outstanding_diluted\": \"7445000000\", \"shares_outstanding_basic\": \"7445000000\"}",
+          "{\"date\": \"2025-12-31\", \"shares_outstanding_diluted\": \"7460000000\", \"shares_outstanding_basic\": \"7460000000\"}",
+          "{\"date\": \"2025-09-30\", \"shares_outstanding_diluted\": \"7466000000\", \"shares_outstanding_basic\": \"7466000000\"}"
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.data[].date": {
+        "appearance_count": 10,
+        "examples": [
+          "\"2026-03-31\"",
+          "\"2025-12-31\"",
+          "\"2025-09-30\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "date_yyyy_mm_dd"
+        ]
+      },
+      "$.data[].shares_outstanding_basic": {
+        "appearance_count": 10,
+        "examples": [
+          "\"7445000000\"",
+          "\"7460000000\"",
+          "\"7466000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.data[].shares_outstanding_diluted": {
+        "appearance_count": 10,
+        "examples": [
+          "\"7445000000\"",
+          "\"7460000000\"",
+          "\"7466000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.status": {
+        "appearance_count": 1,
+        "examples": [
+          "\"success\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.symbol": {
+        "appearance_count": 1,
+        "examples": [
+          "\"MSFT\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      }
+    },
+    "format": "json",
+    "root_keys": [
+      "data",
+      "status",
+      "symbol"
+    ]
+  }
+}

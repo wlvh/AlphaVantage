@@ -1,0 +1,156 @@
+{
+  "endpoint_id": "insider_transactions_ibm",
+  "generated_at_utc": "2026-06-15T12:24:27.928049+00:00",
+  "key_kind": "demo",
+  "schema": {
+    "fields": {
+      "$": {
+        "appearance_count": 1,
+        "examples": [
+          "{\"data\": [{\"transaction_date\": \"2026-06-04\", \"ticker\": \"IBM\", \"executive\": \"FEHRING, NICOLAS A.\", \"executive_title\": \"VP, Controller\", \"s..."
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.data": {
+        "appearance_count": 1,
+        "examples": [
+          "[{\"transaction_date\": \"2026-06-04\", \"ticker\": \"IBM\", \"executive\": \"FEHRING, NICOLAS A.\", \"executive_title\": \"VP, Controller\", \"security_t..."
+        ],
+        "json_types": [
+          "array"
+        ],
+        "semantic_types": [
+          "array"
+        ]
+      },
+      "$.data[]": {
+        "appearance_count": 10,
+        "examples": [
+          "{\"transaction_date\": \"2026-06-04\", \"ticker\": \"IBM\", \"executive\": \"FEHRING, NICOLAS A.\", \"executive_title\": \"VP, Controller\", \"security_ty...",
+          "{\"transaction_date\": \"2026-03-31\", \"ticker\": \"IBM\", \"executive\": \"ZOLLAR, ALFRED W\", \"executive_title\": \"Director\", \"security_type\": \"Pro...",
+          "{\"transaction_date\": \"2026-03-31\", \"ticker\": \"IBM\", \"executive\": \"BUBERL, THOMAS\", \"executive_title\": \"Director\", \"security_type\": \"Promi..."
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.data[].acquisition_or_disposal": {
+        "appearance_count": 10,
+        "examples": [
+          "\"D\"",
+          "\"A\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.data[].executive": {
+        "appearance_count": 10,
+        "examples": [
+          "\"FEHRING, NICOLAS A.\"",
+          "\"ZOLLAR, ALFRED W\"",
+          "\"BUBERL, THOMAS\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.data[].executive_title": {
+        "appearance_count": 10,
+        "examples": [
+          "\"VP, Controller\"",
+          "\"Director\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.data[].security_type": {
+        "appearance_count": 10,
+        "examples": [
+          "\"Common Stock\"",
+          "\"Promised Fee Share\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.data[].share_price": {
+        "appearance_count": 10,
+        "examples": [
+          "\"0.0\"",
+          "\"242.39\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.data[].shares": {
+        "appearance_count": 10,
+        "examples": [
+          "\"400.0\"",
+          "\"377.0\"",
+          "\"403.0\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.data[].ticker": {
+        "appearance_count": 10,
+        "examples": [
+          "\"IBM\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.data[].transaction_date": {
+        "appearance_count": 10,
+        "examples": [
+          "\"2026-06-04\"",
+          "\"2026-03-31\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "date_yyyy_mm_dd"
+        ]
+      }
+    },
+    "format": "json",
+    "root_keys": [
+      "data"
+    ]
+  }
+}

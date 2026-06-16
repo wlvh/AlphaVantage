@@ -1,0 +1,134 @@
+{
+  "endpoint_id": "dividends_ibm",
+  "generated_at_utc": "2026-06-15T12:24:11.430000+00:00",
+  "key_kind": "demo",
+  "schema": {
+    "fields": {
+      "$": {
+        "appearance_count": 1,
+        "examples": [
+          "{\"symbol\": \"IBM\", \"data\": [{\"ex_dividend_date\": \"2026-05-08\", \"declaration_date\": \"2026-04-22\", \"record_date\": \"2026-05-08\", \"payment_dat..."
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.data": {
+        "appearance_count": 1,
+        "examples": [
+          "[{\"ex_dividend_date\": \"2026-05-08\", \"declaration_date\": \"2026-04-22\", \"record_date\": \"2026-05-08\", \"payment_date\": \"2026-06-10\", \"amount\"..."
+        ],
+        "json_types": [
+          "array"
+        ],
+        "semantic_types": [
+          "array"
+        ]
+      },
+      "$.data[]": {
+        "appearance_count": 10,
+        "examples": [
+          "{\"ex_dividend_date\": \"2026-05-08\", \"declaration_date\": \"2026-04-22\", \"record_date\": \"2026-05-08\", \"payment_date\": \"2026-06-10\", \"amount\":...",
+          "{\"ex_dividend_date\": \"2026-02-10\", \"declaration_date\": \"2026-01-28\", \"record_date\": \"2026-02-10\", \"payment_date\": \"2026-03-10\", \"amount\":...",
+          "{\"ex_dividend_date\": \"2025-11-10\", \"declaration_date\": \"2025-10-22\", \"record_date\": \"2025-11-10\", \"payment_date\": \"2025-12-10\", \"amount\":..."
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.data[].amount": {
+        "appearance_count": 10,
+        "examples": [
+          "\"1.69\"",
+          "\"1.68\"",
+          "\"1.67\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.data[].declaration_date": {
+        "appearance_count": 10,
+        "examples": [
+          "\"2026-04-22\"",
+          "\"2026-01-28\"",
+          "\"2025-10-22\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "date_yyyy_mm_dd"
+        ]
+      },
+      "$.data[].ex_dividend_date": {
+        "appearance_count": 10,
+        "examples": [
+          "\"2026-05-08\"",
+          "\"2026-02-10\"",
+          "\"2025-11-10\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "date_yyyy_mm_dd"
+        ]
+      },
+      "$.data[].payment_date": {
+        "appearance_count": 10,
+        "examples": [
+          "\"2026-06-10\"",
+          "\"2026-03-10\"",
+          "\"2025-12-10\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "date_yyyy_mm_dd"
+        ]
+      },
+      "$.data[].record_date": {
+        "appearance_count": 10,
+        "examples": [
+          "\"2026-05-08\"",
+          "\"2026-02-10\"",
+          "\"2025-11-10\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "date_yyyy_mm_dd"
+        ]
+      },
+      "$.symbol": {
+        "appearance_count": 1,
+        "examples": [
+          "\"IBM\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      }
+    },
+    "format": "json",
+    "root_keys": [
+      "data",
+      "symbol"
+    ]
+  }
+}

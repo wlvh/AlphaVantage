@@ -1,0 +1,90 @@
+{
+  "endpoint_id": "earnings_calendar_ibm_12month",
+  "generated_at_utc": "2026-06-15T12:26:18.010907+00:00",
+  "key_kind": "demo",
+  "schema": {
+    "columns": [
+      "symbol",
+      "name",
+      "reportDate",
+      "fiscalDateEnding",
+      "estimate",
+      "currency",
+      "timeOfTheDay"
+    ],
+    "columns_observed": {
+      "currency": {
+        "appearance_count": 1,
+        "blank_count": 0,
+        "examples": [
+          "\"USD\""
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "estimate": {
+        "appearance_count": 1,
+        "blank_count": 0,
+        "examples": [
+          "\"2.95\""
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "fiscalDateEnding": {
+        "appearance_count": 1,
+        "blank_count": 0,
+        "examples": [
+          "\"2026-06-30\""
+        ],
+        "semantic_types": [
+          "date_yyyy_mm_dd"
+        ]
+      },
+      "name": {
+        "appearance_count": 1,
+        "blank_count": 0,
+        "examples": [
+          "\"INTERNATIONAL BUSINESS MACHINES CORPORATION\""
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "reportDate": {
+        "appearance_count": 1,
+        "blank_count": 0,
+        "examples": [
+          "\"2026-07-22\""
+        ],
+        "semantic_types": [
+          "date_yyyy_mm_dd"
+        ]
+      },
+      "symbol": {
+        "appearance_count": 1,
+        "blank_count": 0,
+        "examples": [
+          "\"IBM\""
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "timeOfTheDay": {
+        "appearance_count": 1,
+        "blank_count": 0,
+        "examples": [
+          "\"post-market\""
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      }
+    },
+    "format": "csv",
+    "rows_inspected": 1
+  }
+}

@@ -1,0 +1,739 @@
+{
+  "endpoint_id": "overview_ibm",
+  "generated_at_utc": "2026-06-15T12:23:01.289543+00:00",
+  "key_kind": "demo",
+  "schema": {
+    "fields": {
+      "$": {
+        "appearance_count": 1,
+        "examples": [
+          "{\"Symbol\": \"IBM\", \"AssetType\": \"Common Stock\", \"Name\": \"International Business Machines\", \"Description\": \"International Business Machines..."
+        ],
+        "json_types": [
+          "object"
+        ],
+        "semantic_types": [
+          "object"
+        ]
+      },
+      "$.200DayMovingAverage": {
+        "appearance_count": 1,
+        "examples": [
+          "\"273.07\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.50DayMovingAverage": {
+        "appearance_count": 1,
+        "examples": [
+          "\"249.15\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.52WeekHigh": {
+        "appearance_count": 1,
+        "examples": [
+          "\"332.46\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.52WeekLow": {
+        "appearance_count": 1,
+        "examples": [
+          "\"212.34\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.Address": {
+        "appearance_count": 1,
+        "examples": [
+          "\"ONE NEW ORCHARD ROAD, ARMONK, NY, UNITED STATES, 10504\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.AnalystRatingBuy": {
+        "appearance_count": 1,
+        "examples": [
+          "\"11\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.AnalystRatingHold": {
+        "appearance_count": 1,
+        "examples": [
+          "\"7\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.AnalystRatingSell": {
+        "appearance_count": 1,
+        "examples": [
+          "\"0\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.AnalystRatingStrongBuy": {
+        "appearance_count": 1,
+        "examples": [
+          "\"1\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.AnalystRatingStrongSell": {
+        "appearance_count": 1,
+        "examples": [
+          "\"2\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.AnalystTargetPrice": {
+        "appearance_count": 1,
+        "examples": [
+          "\"290.89\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.AssetType": {
+        "appearance_count": 1,
+        "examples": [
+          "\"Common Stock\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.Beta": {
+        "appearance_count": 1,
+        "examples": [
+          "\"0.665\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.BookValue": {
+        "appearance_count": 1,
+        "examples": [
+          "\"35.08\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.CIK": {
+        "appearance_count": 1,
+        "examples": [
+          "\"51143\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.Country": {
+        "appearance_count": 1,
+        "examples": [
+          "\"USA\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.Currency": {
+        "appearance_count": 1,
+        "examples": [
+          "\"USD\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.Description": {
+        "appearance_count": 1,
+        "examples": [
+          "\"International Business Machines Corporation (IBM) is an American multinational technology company headquartered in Armonk, New York, wit..."
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.DilutedEPSTTM": {
+        "appearance_count": 1,
+        "examples": [
+          "\"11.3\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.DividendDate": {
+        "appearance_count": 1,
+        "examples": [
+          "\"2026-06-10\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "date_yyyy_mm_dd"
+        ]
+      },
+      "$.DividendPerShare": {
+        "appearance_count": 1,
+        "examples": [
+          "\"6.72\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.DividendYield": {
+        "appearance_count": 1,
+        "examples": [
+          "\"0.0244\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.EBITDA": {
+        "appearance_count": 1,
+        "examples": [
+          "\"16611000000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.EPS": {
+        "appearance_count": 1,
+        "examples": [
+          "\"11.3\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.EVToEBITDA": {
+        "appearance_count": 1,
+        "examples": [
+          "\"17.81\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.EVToRevenue": {
+        "appearance_count": 1,
+        "examples": [
+          "\"4.555\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.ExDividendDate": {
+        "appearance_count": 1,
+        "examples": [
+          "\"2026-05-08\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "date_yyyy_mm_dd"
+        ]
+      },
+      "$.Exchange": {
+        "appearance_count": 1,
+        "examples": [
+          "\"NYSE\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.FiscalYearEnd": {
+        "appearance_count": 1,
+        "examples": [
+          "\"December\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.ForwardPE": {
+        "appearance_count": 1,
+        "examples": [
+          "\"21.98\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.GrossProfitTTM": {
+        "appearance_count": 1,
+        "examples": [
+          "\"40214999000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.Industry": {
+        "appearance_count": 1,
+        "examples": [
+          "\"INFORMATION TECHNOLOGY SERVICES\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.LatestQuarter": {
+        "appearance_count": 1,
+        "examples": [
+          "\"2026-03-31\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "date_yyyy_mm_dd"
+        ]
+      },
+      "$.MarketCapitalization": {
+        "appearance_count": 1,
+        "examples": [
+          "\"255874367000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.Name": {
+        "appearance_count": 1,
+        "examples": [
+          "\"International Business Machines\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.OfficialSite": {
+        "appearance_count": 1,
+        "examples": [
+          "\"https://www.ibm.com\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.OperatingMarginTTM": {
+        "appearance_count": 1,
+        "examples": [
+          "\"0.138\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.PEGRatio": {
+        "appearance_count": 1,
+        "examples": [
+          "\"2.542\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.PERatio": {
+        "appearance_count": 1,
+        "examples": [
+          "\"24.09\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.PercentInsiders": {
+        "appearance_count": 1,
+        "examples": [
+          "\"0.117\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.PercentInstitutions": {
+        "appearance_count": 1,
+        "examples": [
+          "\"65.589\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.PriceToBookRatio": {
+        "appearance_count": 1,
+        "examples": [
+          "\"7.76\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.PriceToSalesRatioTTM": {
+        "appearance_count": 1,
+        "examples": [
+          "\"3.713\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.ProfitMargin": {
+        "appearance_count": 1,
+        "examples": [
+          "\"0.156\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.QuarterlyEarningsGrowthYOY": {
+        "appearance_count": 1,
+        "examples": [
+          "\"0.142\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.QuarterlyRevenueGrowthYOY": {
+        "appearance_count": 1,
+        "examples": [
+          "\"0.095\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.ReturnOnAssetsTTM": {
+        "appearance_count": 1,
+        "examples": [
+          "\"0.0537\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.ReturnOnEquityTTM": {
+        "appearance_count": 1,
+        "examples": [
+          "\"0.358\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.RevenuePerShareTTM": {
+        "appearance_count": 1,
+        "examples": [
+          "\"73.71\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.RevenueTTM": {
+        "appearance_count": 1,
+        "examples": [
+          "\"68910998000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.Sector": {
+        "appearance_count": 1,
+        "examples": [
+          "\"TECHNOLOGY\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.SharesFloat": {
+        "appearance_count": 1,
+        "examples": [
+          "\"937902000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.SharesOutstanding": {
+        "appearance_count": 1,
+        "examples": [
+          "\"939885000\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      },
+      "$.Symbol": {
+        "appearance_count": 1,
+        "examples": [
+          "\"IBM\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "string"
+        ]
+      },
+      "$.TrailingPE": {
+        "appearance_count": 1,
+        "examples": [
+          "\"24.09\""
+        ],
+        "json_types": [
+          "string"
+        ],
+        "semantic_types": [
+          "numeric_string"
+        ]
+      }
+    },
+    "format": "json",
+    "root_keys": [
+      "200DayMovingAverage",
+      "50DayMovingAverage",
+      "52WeekHigh",
+      "52WeekLow",
+      "Address",
+      "AnalystRatingBuy",
+      "AnalystRatingHold",
+      "AnalystRatingSell",
+      "AnalystRatingStrongBuy",
+      "AnalystRatingStrongSell",
+      "AnalystTargetPrice",
+      "AssetType",
+      "Beta",
+      "BookValue",
+      "CIK",
+      "Country",
+      "Currency",
+      "Description",
+      "DilutedEPSTTM",
+      "DividendDate",
+      "DividendPerShare",
+      "DividendYield",
+      "EBITDA",
+      "EPS",
+      "EVToEBITDA",
+      "EVToRevenue",
+      "ExDividendDate",
+      "Exchange",
+      "FiscalYearEnd",
+      "ForwardPE",
+      "GrossProfitTTM",
+      "Industry",
+      "LatestQuarter",
+      "MarketCapitalization",
+      "Name",
+      "OfficialSite",
+      "OperatingMarginTTM",
+      "PEGRatio",
+      "PERatio",
+      "PercentInsiders",
+      "PercentInstitutions",
+      "PriceToBookRatio",
+      "PriceToSalesRatioTTM",
+      "ProfitMargin",
+      "QuarterlyEarningsGrowthYOY",
+      "QuarterlyRevenueGrowthYOY",
+      "ReturnOnAssetsTTM",
+      "ReturnOnEquityTTM",
+      "RevenuePerShareTTM",
+      "RevenueTTM",
+      "Sector",
+      "SharesFloat",
+      "SharesOutstanding",
+      "Symbol",
+      "TrailingPE"
+    ]
+  }
+}
