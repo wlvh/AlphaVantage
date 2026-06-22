@@ -12,16 +12,23 @@ from __future__ import annotations
 
 import csv
 import json
+import sys
 import unittest
 from collections import Counter
 from pathlib import Path
+from unittest import mock
 
 
 REPO_DIR = Path(__file__).resolve().parents[1]
+STEP_DIR = REPO_DIR / "scripts" / "step_0b"
 REPORT_DIR = REPO_DIR / "spikes" / "step_0b" / "reports"
 MATRIX_PATH = REPORT_DIR / "metric_alignment.csv"
 FINDING_PATH = REPORT_DIR / "narrative_finding.json"
 SUMMARY_PATH = REPORT_DIR / "run_summary.json"
+if str(STEP_DIR) not in sys.path:
+    sys.path.insert(0, str(STEP_DIR))
+
+import run_step_0b  # noqa: E402
 ALLOWED_STATUSES = {
     "MATCH",
     "NEAR_MATCH",
@@ -139,6 +146,21 @@ class Step0BAcceptanceTest(unittest.TestCase):
         self.assertFalse(summary["online"])
         self.assertLessEqual(summary["call_budget"]["av_call_count"], 10)
         self.assertTrue(summary["key_redaction_check"]["passed"])
+
+    def test_verify_offline_does_not_rebuild_from_raw_cache(self) -> None:
+        """Ensure clean-checkout verify validates committed reports only."""
+        args = mock.Mock(offline=True)
+        with mock.patch.object(
+            run_step_0b,
+            "WORK_DIR",
+            REPO_DIR / "does-not-exist-step-0b-work",
+        ):
+            with mock.patch.object(
+                run_step_0b,
+                "generate_reports",
+                side_effect=AssertionError("verify must not rebuild"),
+            ):
+                run_step_0b.command_verify(args=args)
 
 
 if __name__ == "__main__":

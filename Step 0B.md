@@ -478,13 +478,16 @@ python scripts/step_0b/run_step_0b.py fetch-av
 # 在线抓取全部 SEC 数据
 python scripts/step_0b/run_step_0b.py fetch-sec
 
-# 基于已保存 raw 文件离线分析和生成报告
+# 基于已保存 raw 文件离线分析和生成报告；需要本地 raw cache
 python scripts/step_0b/run_step_0b.py analyze
+
+# 基于本地 raw cache 重建报告并验证；干净 clone 可失败但错误要明确
+python scripts/step_0b/run_step_0b.py rebuild --offline
 
 # fetch-av + fetch-sec + analyze + verify
 python scripts/step_0b/run_step_0b.py run
 
-# 完全禁用网络，只验证 raw、输出和不变量
+# 完全禁用网络，只验证已提交报告、fixture 和不变量；干净 clone 必须可运行
 python scripts/step_0b/run_step_0b.py verify --offline
 ```
 
@@ -497,7 +500,7 @@ python scripts/step_0b/run_step_0b.py verify --offline
 --output-dir
 ```
 
-`analyze` 和 `verify --offline` 运行时不得要求 API key，也不得进行任何网络连接。
+`analyze`、`rebuild --offline` 和 `verify --offline` 运行时不得要求 API key，也不得进行任何网络连接。`verify --offline` 不得依赖 `spikes/step_0b/work/`。
 
 ---
 
@@ -750,12 +753,16 @@ rationale
   "currency": null,
   "status_text": "...",
   "affected_entity_text": "...",
+  "normalized_text_path": "spikes/step_0b/fixtures/narrative/...",
+  "normalized_text_scope": "evidence_excerpt_fixture",
   "evidence_text": "原文精确片段",
   "evidence_start": 12345,
   "evidence_end": 13000,
+  "source_normalized_evidence_start": 12345,
+  "source_normalized_evidence_end": 13000,
   "source_url": "SEC filing URL",
-  "extraction_method": "MANUAL_REVIEWED_SPIKE",
-  "validation_status": "VERIFIED"
+  "human_review_status": "NOT_REVIEWED",
+  "validation_status": "PROGRAMMATICALLY_VERIFIED"
 }
 ```
 
@@ -903,7 +910,7 @@ python scripts/step_0b/run_step_0b.py fetch-sec
 # 4. 立即检查 run manifest 中 AV call count 默认是否为 10
 
 # 5. 离线分析
-python scripts/step_0b/run_step_0b.py analyze
+python scripts/step_0b/run_step_0b.py rebuild --offline
 
 # 6. 离线验真
 python scripts/step_0b/run_step_0b.py verify --offline

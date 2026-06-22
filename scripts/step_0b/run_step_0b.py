@@ -1834,13 +1834,30 @@ def command_analyze(*, args: argparse.Namespace) -> None:
 
 
 def command_verify(*, args: argparse.Namespace) -> None:
-    """Regenerate reports offline and verify them.
+    """Verify committed reports without rebuilding from raw cache.
 
     Args:
         args: Parsed CLI arguments.
 
     Returns:
         None. Exits non-zero on validation errors.
+    """
+    errors = validate_outputs()
+    if errors:
+        for error in errors:
+            print(f"[verify_error] {error}")
+        raise SystemExit(1)
+    print("Step 0B offline verification passed")
+
+
+def command_rebuild(*, args: argparse.Namespace) -> None:
+    """Rebuild reports from local raw cache and verify the regenerated outputs.
+
+    Args:
+        args: Parsed CLI arguments.
+
+    Returns:
+        None. Exits non-zero on missing raw cache or validation errors.
     """
     mode = "offline" if args.offline else "offline"
     generate_reports(
@@ -1852,7 +1869,7 @@ def command_verify(*, args: argparse.Namespace) -> None:
         for error in errors:
             print(f"[verify_error] {error}")
         raise SystemExit(1)
-    print("Step 0B offline verification passed")
+    print("Step 0B offline rebuild and verification passed")
 
 
 def command_fetch_av(*, args: argparse.Namespace) -> dict[str, int]:
@@ -1965,6 +1982,14 @@ def build_parser() -> argparse.ArgumentParser:
         help="force offline verification; this command never uses network",
     )
     verify.set_defaults(func=command_verify)
+
+    rebuild = subparsers.add_parser(name="rebuild")
+    rebuild.add_argument(
+        "--offline",
+        action="store_true",
+        help="rebuild reports from local raw cache without network access",
+    )
+    rebuild.set_defaults(func=command_rebuild)
 
     fetch_av = subparsers.add_parser(name="fetch-av")
     add_refresh_arg(parser=fetch_av)

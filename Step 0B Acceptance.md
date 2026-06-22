@@ -145,7 +145,8 @@ git log -p --all -- . | grep -i "apikey="
 [ ] 新增 Step 0B 测试全部通过
 [ ] analyze 不需要 API key
 [ ] verify --offline 不会联网
-[ ] offline 重跑能够重新生成同语义的报告
+[ ] verify --offline 不依赖 spikes/step_0b/work/
+[ ] rebuild --offline 在本地 raw cache 存在时能够重新生成同语义的报告
 ```
 
 执行：
@@ -153,6 +154,7 @@ git log -p --all -- . | grep -i "apikey="
 ```bash
 python -m unittest discover -s tests -p 'test*.py'
 python scripts/step_0b/run_step_0b.py verify --offline
+python scripts/step_0b/run_step_0b.py rebuild --offline
 ```
 
 验收时可以临时清空环境变量，确认离线命令仍工作：
@@ -164,6 +166,7 @@ python scripts/step_0b/run_step_0b.py verify --offline
 ```
 
 如果离线命令尝试网络连接或要求 key，直接 FAIL。
+如果 `verify --offline` 在干净 clone 中尝试读取 ignored raw cache，直接 FAIL。
 
 ## C. Raw-first 和调用预算
 
