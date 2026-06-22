@@ -33,7 +33,7 @@ catalog.schema.table
 catalog.schema.volume
 ```
 
-非表格原始文件应放入 Unity Catalog Volume，不放入个人目录、DBFS root 或 FileStore。([docs.databricks.com][1])
+非表格原始文件应放入 Unity Catalog Volume，不放入个人目录、DBFS root 或 FileStore。
 
 ---
 
@@ -41,13 +41,7 @@ catalog.schema.volume
 
 Step 0B 使用 IBM、JPM 和 CAT，对 12 个 canonical metrics 的年度与季度数据进行了 Alpha Vantage / SEC 对照，并验证了一个带 SEC 原文证据的法律事项样本。
 
-Step 0B 的结论是：
-
-```text
-PASS WITH REQUIRED CHANGES
-```
-
-它确认了以下架构原则：
+Step 0B 确认了以下架构原则：
 
 ```text
 1. semantic_key 表示现实中的同一语义事实，不包含 source_system。
