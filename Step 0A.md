@@ -166,8 +166,6 @@ alpha_vantage_exploration.zip
 /Volumes/<catalog>/<schema>/<volume>/<path>
 ```
 
-([docs.databricks.com][2])
-
 ---
 
 # 三、管理员请求
