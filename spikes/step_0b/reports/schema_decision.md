@@ -8,15 +8,19 @@ The spike is reproducible and source-honest, but the formal Silver schema must a
 
 ## Required Semantic Key
 
-`semantic_key = hash(company_key, canonical_metric, comparison_scope, period_type, period_start, period_end, dimensions)`.
+`semantic_key = hash(company_id, metric_key, period_type, period_start, period_end, canonical_dimensions)`.
 
-`source_system` must not enter `semantic_key`.
+`source_system` and comparison query scope must not enter `semantic_key`.
 
 ## Required Observation Identity
 
-`observation_id = hash(source_system, semantic_key, provider field or SEC concept, source artifact, accession/form/filed_at when available)`.
+`observation_id = hash(source_system, semantic_key, provider metric key or SEC concept, source artifact hash, source record key, normalized source value, and revision metadata)`.
 
 AV and SEC can therefore share one semantic key while retaining different source observations.
+
+If a source has no selected observation, `observation_id` must be `NULL` rather than a hash of empty source fields.
+
+Source-honest rows should preserve `raw_value` and store any comparison-only value separately.
 
 ## Period Rules
 

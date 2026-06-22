@@ -85,12 +85,14 @@ class Step0BAcceptanceTest(unittest.TestCase):
             row = row_index[key]
             semantic_inputs = json.loads(row["semantic_key_inputs"])
             av_inputs = json.loads(row["av_observation_id_inputs"])
-            sec_inputs = json.loads(row["sec_observation_id_inputs"])
             self.assertEqual(row["av_semantic_key"], row["sec_semantic_key"])
             self.assertNotEqual(row["av_observation_id"], row["sec_observation_id"])
             self.assertNotIn("source_system", semantic_inputs)
+            self.assertNotIn("comparison_scope", semantic_inputs)
             self.assertIn("source_system", av_inputs)
-            self.assertIn("source_system", sec_inputs)
+            if row["sec_observation_id_inputs"] != "":
+                sec_inputs = json.loads(row["sec_observation_id_inputs"])
+                self.assertIn("source_system", sec_inputs)
 
     def test_jpm_gross_profit_not_forced_to_match(self) -> None:
         """Ensure the banking gross profit boundary remains explicit."""
@@ -106,17 +108,17 @@ class Step0BAcceptanceTest(unittest.TestCase):
     def test_narrative_evidence_offsets_recover_text(self) -> None:
         """Verify evidence fields and local span when normalized text exists."""
         finding = json.loads(FINDING_PATH.read_text(encoding="utf-8"))
-        text_path = Path(finding["normalized_text_path"])
+        text_path = REPO_DIR / finding["normalized_text_path"]
         self.assertTrue(finding["evidence_text"].strip())
         self.assertLess(finding["evidence_start"], finding["evidence_end"])
-        if text_path.exists():
-            text = text_path.read_text(encoding="utf-8")
-            start = finding["evidence_start"]
-            end = finding["evidence_end"]
-            self.assertEqual(text[start:end], finding["evidence_text"])
+        self.assertTrue(text_path.exists())
+        text = text_path.read_text(encoding="utf-8")
+        start = finding["evidence_start"]
+        end = finding["evidence_end"]
+        self.assertEqual(text[start:end], finding["evidence_text"])
         if finding["amount_text"] is not None:
             self.assertIn(finding["amount_text"], finding["evidence_text"])
-        self.assertEqual("VERIFIED", finding["validation_status"])
+        self.assertEqual("PROGRAMMATICALLY_VERIFIED", finding["validation_status"])
 
     def test_run_summary_contains_required_fields(self) -> None:
         """Check offline run summary and redaction bookkeeping."""

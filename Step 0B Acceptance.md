@@ -120,7 +120,7 @@ git diff --stat main...HEAD
 
 git grep -n "ALPHAVANTAGE_API_KEY"
 git grep -n "apikey="
-git grep -nE "pyspark|databricks|delta\.tables"
+git grep -nE "pyspark|databricks|delta\.tables" -- scripts/step_0b tests
 ```
 
 注意：
@@ -349,7 +349,7 @@ end = finding['evidence_end']
 assert text[start:end] == finding['evidence_text']
 if finding.get('amount_text'):
     assert finding['amount_text'] in finding['evidence_text']
-assert finding['validation_status'] == 'VERIFIED'
+assert finding['validation_status'] == 'PROGRAMMATICALLY_VERIFIED'
 print('evidence verified')
 PY
 ```

@@ -1,6 +1,6 @@
 # Step 0B Discrepancy Report
 
-Generated at UTC `2026-06-22T08:57:16.135939+00:00`.
+Generated at UTC `2026-06-22T09:36:22.402249+00:00`.
 
 ## Direct Mapping Candidates
 
@@ -47,14 +47,14 @@ AV fields such as `totalRevenue`, `grossProfit`, `operatingIncome`, `shortLongTe
 ## Mismatch Samples
 
 - NYSE:IBM LATEST_COMMON_ANNUAL financial.gross_profit: MISMATCH - selected GrossProfit by form/end/duration/unit; latest filed observation wins
-- NYSE:IBM LATEST_COMMON_ANNUAL cashflow.capital_expenditure: MISMATCH - selected PaymentsToAcquirePropertyPlantAndEquipment by form/end/duration/unit; latest filed observation wins
-- NYSE:IBM LATEST_COMMON_QUARTER cashflow.capital_expenditure: MISMATCH - selected PaymentsToAcquirePropertyPlantAndEquipment by form/end/duration/unit; latest filed observation wins
+- NYSE:IBM LATEST_COMMON_ANNUAL cashflow.capital_expenditure: MISMATCH - selected PaymentsToAcquirePropertyPlantAndEquipment by form/end/duration/unit; latest filed observation wins; preserve_source_sign_explain_only; comparison_value_abs_cash_outflow
+- NYSE:IBM LATEST_COMMON_QUARTER cashflow.capital_expenditure: MISMATCH - selected PaymentsToAcquirePropertyPlantAndEquipment by form/end/duration/unit; latest filed observation wins; preserve_source_sign_explain_only; comparison_value_abs_cash_outflow
 - NYSE:IBM LATEST_COMMON_ANNUAL earnings.diluted_eps: MISMATCH - selected EarningsPerShareDiluted by form/end/duration/unit; latest filed observation wins; annualEarnings quarterly duplicate excluded when detected
 - NYSE:IBM LATEST_COMMON_QUARTER earnings.diluted_eps: MISMATCH - selected EarningsPerShareDiluted by form/end/duration/unit; latest filed observation wins
 - NYSE:JPM LATEST_COMMON_ANNUAL cashflow.operating_cash_flow: MISMATCH - selected NetCashProvidedByUsedInOperatingActivities by form/end/duration/unit; latest filed observation wins
 - NYSE:JPM LATEST_COMMON_ANNUAL earnings.diluted_eps: MISMATCH - selected EarningsPerShareDiluted by form/end/duration/unit; latest filed observation wins; annualEarnings quarterly duplicate excluded when detected
-- NYSE:CAT LATEST_COMMON_ANNUAL cashflow.capital_expenditure: MISMATCH - selected PaymentsToAcquirePropertyPlantAndEquipment by form/end/duration/unit; latest filed observation wins
-- NYSE:CAT LATEST_COMMON_QUARTER cashflow.capital_expenditure: MISMATCH - selected PaymentsToAcquirePropertyPlantAndEquipment by form/end/duration/unit; latest filed observation wins
+- NYSE:CAT LATEST_COMMON_ANNUAL cashflow.capital_expenditure: MISMATCH - selected PaymentsToAcquirePropertyPlantAndEquipment by form/end/duration/unit; latest filed observation wins; preserve_source_sign_explain_only; comparison_value_abs_cash_outflow
+- NYSE:CAT LATEST_COMMON_QUARTER cashflow.capital_expenditure: MISMATCH - selected PaymentsToAcquirePropertyPlantAndEquipment by form/end/duration/unit; latest filed observation wins; preserve_source_sign_explain_only; comparison_value_abs_cash_outflow
 - NYSE:CAT LATEST_COMMON_ANNUAL earnings.diluted_eps: MISMATCH - selected EarningsPerShareDiluted by form/end/duration/unit; latest filed observation wins; annualEarnings quarterly duplicate excluded when detected
 - NYSE:CAT LATEST_COMMON_QUARTER earnings.diluted_eps: MISMATCH - selected EarningsPerShareDiluted by form/end/duration/unit; latest filed observation wins
 

@@ -472,14 +472,17 @@ artifacts/alpha_vantage/raw/demo/005_earnings_ibm.txt
 Codex 可以调整内部模块，但必须提供以下等价命令：
 
 ```bash
-# 在线抓取缺失的 JPM / CAT Alpha Vantage 数据和全部 SEC 数据
-python scripts/step_0b/run_step_0b.py fetch
+# 在线抓取缺失的 JPM / CAT Alpha Vantage 数据
+python scripts/step_0b/run_step_0b.py fetch-av
+
+# 在线抓取全部 SEC 数据
+python scripts/step_0b/run_step_0b.py fetch-sec
 
 # 基于已保存 raw 文件离线分析和生成报告
 python scripts/step_0b/run_step_0b.py analyze
 
-# fetch + analyze
-python scripts/step_0b/run_step_0b.py all
+# fetch-av + fetch-sec + analyze + verify
+python scripts/step_0b/run_step_0b.py run
 
 # 完全禁用网络，只验证 raw、输出和不变量
 python scripts/step_0b/run_step_0b.py verify --offline
@@ -894,7 +897,8 @@ export ALPHAVANTAGE_API_KEY='...'
 export SEC_USER_AGENT='company-intel-step0b/0.1 your-email@example.com'
 
 # 3. 在线抓取
-python scripts/step_0b/run_step_0b.py fetch
+python scripts/step_0b/run_step_0b.py fetch-av
+python scripts/step_0b/run_step_0b.py fetch-sec
 
 # 4. 立即检查 run manifest 中 AV call count 默认是否为 10
 

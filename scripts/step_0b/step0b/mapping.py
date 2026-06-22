@@ -59,7 +59,7 @@ def sec_unit_preferences(*, metric: MetricConfig) -> list[str]:
     """
     if metric.canonical_metric == "earnings.diluted_eps":
         return ["USD/shares"]
-    return ["USD", "USD/shares"]
+    return ["USD"]
 
 
 def candidate_summary(

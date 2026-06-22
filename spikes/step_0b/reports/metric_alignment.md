@@ -1,6 +1,6 @@
 # Step 0B Metric Alignment
 
-Generated at UTC `2026-06-22T08:57:16.135808+00:00`.
+Generated at UTC `2026-06-22T09:36:22.402086+00:00`.
 
 ## Shape
 
@@ -22,8 +22,8 @@ Generated at UTC `2026-06-22T08:57:16.135808+00:00`.
 - NYSE:IBM LATEST_COMMON_ANNUAL balance.cash_and_equivalents: NEAR_MATCH - selected CashAndCashEquivalentsAtCarryingValue by form/end/duration/unit; latest filed observation wins
 - NYSE:IBM LATEST_COMMON_ANNUAL balance.total_debt: COMPOSITE_REQUIRED - SEC total debt requires explicit component formula; no configured debt component formula was complete
 - NYSE:IBM LATEST_COMMON_QUARTER balance.total_debt: COMPOSITE_REQUIRED - SEC total debt requires explicit component formula; no configured debt component formula was complete
-- NYSE:IBM LATEST_COMMON_ANNUAL cashflow.capital_expenditure: MISMATCH - selected PaymentsToAcquirePropertyPlantAndEquipment by form/end/duration/unit; latest filed observation wins
-- NYSE:IBM LATEST_COMMON_QUARTER cashflow.capital_expenditure: MISMATCH - selected PaymentsToAcquirePropertyPlantAndEquipment by form/end/duration/unit; latest filed observation wins
+- NYSE:IBM LATEST_COMMON_ANNUAL cashflow.capital_expenditure: MISMATCH - selected PaymentsToAcquirePropertyPlantAndEquipment by form/end/duration/unit; latest filed observation wins; preserve_source_sign_explain_only; comparison_value_abs_cash_outflow
+- NYSE:IBM LATEST_COMMON_QUARTER cashflow.capital_expenditure: MISMATCH - selected PaymentsToAcquirePropertyPlantAndEquipment by form/end/duration/unit; latest filed observation wins; preserve_source_sign_explain_only; comparison_value_abs_cash_outflow
 - NYSE:IBM LATEST_COMMON_ANNUAL earnings.diluted_eps: MISMATCH - selected EarningsPerShareDiluted by form/end/duration/unit; latest filed observation wins; annualEarnings quarterly duplicate excluded when detected
 - NYSE:IBM LATEST_COMMON_QUARTER earnings.diluted_eps: MISMATCH - selected EarningsPerShareDiluted by form/end/duration/unit; latest filed observation wins
 - NYSE:JPM LATEST_COMMON_ANNUAL financial.revenue: AMBIGUOUS_MAPPING - selected Revenues by form/end/duration/unit; latest filed observation wins

@@ -82,17 +82,71 @@ def decimal_to_text(*, value: Decimal | None) -> str:
 
 
 def normalize_capex_outflow(*, value: Decimal | None) -> tuple[Decimal | None, str]:
-    """Represent capital expenditure cash outflow as positive absolute value.
+    """Return a comparison-only absolute Capex value while preserving raw value.
 
     Args:
         value: Source Decimal value or None.
 
     Returns:
-        Tuple of normalized value and rule description.
+        Tuple of comparison value and rule description.
     """
     if value is None:
-        return None, "cash_outflow_absolute_positive; source_missing"
-    return abs(value), "cash_outflow_absolute_positive"
+        return None, "raw_value_preserved; comparison_value_missing"
+    return abs(value), "raw_value_preserved; comparison_value_abs_cash_outflow"
+
+
+def comparison_value_for_metric(
+    *,
+    canonical_metric: str,
+    normalization_rule: str | None,
+    value: Decimal | None,
+) -> Decimal | None:
+    """Return the value used only for cross-source numeric comparison.
+
+    Args:
+        canonical_metric: Source-free metric key.
+        normalization_rule: Configured normalization policy or None.
+        value: Raw source value already parsed as Decimal.
+
+    Returns:
+        Decimal used for comparison, or None when the source value is missing.
+    """
+    if value is None:
+        return None
+    if (
+        canonical_metric == "cashflow.capital_expenditure"
+        and normalization_rule == "preserve_source_sign_explain_only"
+    ):
+        normalized, _rule = normalize_capex_outflow(value=value)
+        return normalized
+    return value
+
+
+def comparison_rule_for_metric(
+    *,
+    canonical_metric: str,
+    normalization_rule: str | None,
+) -> str:
+    """Describe any comparison-only normalization applied to a metric.
+
+    Args:
+        canonical_metric: Source-free metric key.
+        normalization_rule: Configured normalization policy or None.
+
+    Returns:
+        Rule text for reports. Empty string means raw and comparison values match.
+    """
+    if (
+        canonical_metric == "cashflow.capital_expenditure"
+        and normalization_rule == "preserve_source_sign_explain_only"
+    ):
+        return (
+            "preserve_source_sign_explain_only; "
+            "comparison_value_abs_cash_outflow"
+        )
+    if normalization_rule is None:
+        return ""
+    return normalization_rule
 
 
 def infer_annual_start(*, period_end: date) -> date:
@@ -105,6 +159,19 @@ def infer_annual_start(*, period_end: date) -> date:
         First day after the previous year end.
     """
     return date(year=period_end.year, month=1, day=1)
+
+
+def infer_quarter_start(*, period_end: date) -> date:
+    """Infer the calendar-quarter start from a quarter end date.
+
+    Args:
+        period_end: Quarter end date.
+
+    Returns:
+        First day of the quarter containing period_end.
+    """
+    start_month = ((period_end.month - 1) // 3) * 3 + 1
+    return date(year=period_end.year, month=start_month, day=1)
 
 
 def is_full_year_duration(*, start: date, end: date) -> bool:

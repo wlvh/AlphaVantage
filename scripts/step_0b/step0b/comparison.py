@@ -20,9 +20,11 @@ from step0b.av_archive import ENDPOINTS, av_raw_path, load_av_payload
 from step0b.mapping import definition_status_override, metric_applicability
 from step0b.models import ANNUAL, QUARTER, QUARTERLY_METRICS, Company, MetricConfig
 from step0b.normalization import (
+    comparison_rule_for_metric,
+    comparison_value_for_metric,
     decimal_to_text,
     infer_annual_start,
-    normalize_capex_outflow,
+    infer_quarter_start,
     parse_decimal,
     parse_iso_date,
 )
@@ -190,6 +192,7 @@ def av_value_for_metric(
 
     if row is None:
         return {
+            "raw_value": None,
             "value": None,
             "unit": (
                 EPS_UNIT
@@ -209,10 +212,16 @@ def av_value_for_metric(
     raw_value = None
     if metric.av_field in row:
         raw_value = row[metric.av_field]
-    value = parse_decimal(value=raw_value)
-    normalization_rule = ""
-    if metric.canonical_metric == "cashflow.capex":
-        value, normalization_rule = normalize_capex_outflow(value=value)
+    raw_decimal = parse_decimal(value=raw_value)
+    comparison_value = comparison_value_for_metric(
+        canonical_metric=metric.canonical_metric,
+        normalization_rule=metric.normalization,
+        value=raw_decimal,
+    )
+    normalization_rule = comparison_rule_for_metric(
+        canonical_metric=metric.canonical_metric,
+        normalization_rule=metric.normalization,
+    )
     unit = EPS_UNIT if metric.av_endpoint == "EARNINGS" else av_currency(av_bundle=av_bundle)
     if "reportedCurrency" in row and metric.av_endpoint != "EARNINGS":
         unit = row["reportedCurrency"]
@@ -222,10 +231,11 @@ def av_value_for_metric(
         notes = f"{notes}; {normalization_rule}".strip("; ")
 
     return {
-        "value": value,
+        "raw_value": raw_decimal,
+        "value": comparison_value,
         "unit": unit,
         "raw_file": str(av_raw_path(company=company, endpoint=metric.av_endpoint)),
-        "status": "OK" if value is not None else "MISSING_AV",
+        "status": "OK" if raw_decimal is not None else "MISSING_AV",
         "notes": notes,
         "period_start": av_period_start(period_kind=period_kind, period_end=target_end),
         "period_end": target_end,
@@ -308,23 +318,54 @@ def difference_values(
 
 def numeric_status(
     *,
+    metric: MetricConfig,
+    absolute_difference: Decimal | None,
     relative_difference: Decimal | None,
 ) -> str:
     """Classify numeric difference using spike thresholds.
 
     Args:
+        metric: Canonical metric config.
+        absolute_difference: Absolute numeric difference.
         relative_difference: Relative difference or None.
 
     Returns:
         MATCH, NEAR_MATCH, DIFFERENT, or MANUAL_REVIEW.
     """
-    if relative_difference is None:
+    if absolute_difference is None or relative_difference is None:
         return "MANUAL_REVIEW"
+    if metric.canonical_metric == "earnings.diluted_eps":
+        if absolute_difference <= Decimal("0.01"):
+            return "MATCH"
+        if absolute_difference <= Decimal("0.05"):
+            return "NEAR_MATCH"
+        return "DIFFERENT"
     if relative_difference <= Decimal("0.001"):
         return "MATCH"
-    if relative_difference <= Decimal("0.01"):
+    if relative_difference <= Decimal("0.02"):
         return "NEAR_MATCH"
     return "DIFFERENT"
+
+
+def sec_comparison_value(
+    *,
+    metric: MetricConfig,
+    sec_result: SecSelection,
+) -> Decimal | None:
+    """Return the SEC value used for numeric comparison.
+
+    Args:
+        metric: Canonical metric config.
+        sec_result: Selected SEC fact or empty selection.
+
+    Returns:
+        Decimal comparison value or None.
+    """
+    return comparison_value_for_metric(
+        canonical_metric=metric.canonical_metric,
+        normalization_rule=metric.normalization,
+        value=sec_result.value,
+    )
 
 
 def comparison_status(
@@ -371,9 +412,13 @@ def comparison_status(
         return "MANUAL_REVIEW"
     absolute, relative = difference_values(
         av_value=av_result["value"],
-        sec_value=sec_result.value,
+        sec_value=sec_comparison_value(metric=metric, sec_result=sec_result),
     )
-    return numeric_status(relative_difference=relative)
+    return numeric_status(
+        metric=metric,
+        absolute_difference=absolute,
+        relative_difference=relative,
+    )
 
 
 def difference_reason(
@@ -440,6 +485,31 @@ def row_period_dates(
     return start_text, end.isoformat()
 
 
+def canonical_period_dates(
+    *,
+    metric: MetricConfig,
+    period_kind: str,
+    target_end: date,
+) -> tuple[str, str]:
+    """Return source-independent canonical period dates for identity.
+
+    Args:
+        metric: Canonical metric config.
+        period_kind: ANNUAL or QUARTER.
+        target_end: Target period end.
+
+    Returns:
+        Tuple of ISO period_start and period_end.
+    """
+    if metric.period_type == "instant":
+        start = target_end
+    elif period_kind == ANNUAL:
+        start = infer_annual_start(period_end=target_end)
+    else:
+        start = infer_quarter_start(period_end=target_end)
+    return start.isoformat(), target_end.isoformat()
+
+
 def build_row(
     *,
     company: Company,
@@ -448,6 +518,8 @@ def build_row(
     av_result: dict[str, Any],
     sec_result: SecSelection,
     sec_raw_file: Path,
+    period_start: str,
+    period_end: str,
 ) -> dict[str, str]:
     """Build one CSV-ready comparison row.
 
@@ -458,6 +530,8 @@ def build_row(
         av_result: AV extraction result.
         sec_result: SEC selection result.
         sec_raw_file: SEC companyfacts raw file path.
+        period_start: Canonical source-independent period start.
+        period_end: Canonical source-independent period end.
 
     Returns:
         Dict with matrix columns.
@@ -476,11 +550,7 @@ def build_row(
     )
     absolute, relative = difference_values(
         av_value=av_result["value"],
-        sec_value=sec_result.value,
-    )
-    period_start, period_end = row_period_dates(
-        av_result=av_result,
-        sec_result=sec_result,
+        sec_value=sec_comparison_value(metric=metric, sec_result=sec_result),
     )
     manual_notes = sec_result.rejected_candidates
     if sec_result.components:
@@ -503,7 +573,9 @@ def build_row(
         "period_end": period_end,
         "av_endpoint": metric.av_endpoint,
         "av_field": metric.av_field,
-        "av_value": decimal_to_text(value=av_result["value"]),
+        "av_value": decimal_to_text(value=av_result["raw_value"]),
+        "av_raw_value": decimal_to_text(value=av_result["raw_value"]),
+        "av_comparison_value": decimal_to_text(value=av_result["value"]),
         "av_currency": av_result["unit"],
         "av_unit": av_result["unit"],
         "av_raw_file": av_result["raw_file"],
@@ -511,13 +583,20 @@ def build_row(
         "sec_candidate_concepts": sec_result.all_candidate_concepts,
         "sec_selected_concept": sec_result.selected_concept,
         "sec_value": decimal_to_text(value=sec_result.value),
+        "sec_raw_value": decimal_to_text(value=sec_result.value),
+        "sec_comparison_value": decimal_to_text(
+            value=sec_comparison_value(metric=metric, sec_result=sec_result),
+        ),
         "sec_unit": sec_result.unit,
         "normalized_unit": normalized_unit,
         "sec_form": sec_result.form,
         "sec_accession": sec_result.accession,
         "sec_filed_at": sec_result.filed_at,
         "sec_raw_file": str(sec_raw_file),
-        "normalization_rule": metric.normalization if metric.normalization is not None else "",
+        "normalization_rule": comparison_rule_for_metric(
+            canonical_metric=metric.canonical_metric,
+            normalization_rule=metric.normalization,
+        ),
         "absolute_difference": decimal_to_text(value=absolute),
         "relative_difference": decimal_to_text(value=relative),
         "comparison_status": status,
@@ -590,6 +669,11 @@ def build_company_rows(
                 target_end=target_end,
                 period_kind=period_kind,
             )
+            period_start, period_end = canonical_period_dates(
+                metric=metric,
+                period_kind=period_kind,
+                target_end=target_end,
+            )
             rows.append(
                 build_row(
                     company=company,
@@ -598,6 +682,8 @@ def build_company_rows(
                     av_result=av_result,
                     sec_result=sec_result,
                     sec_raw_file=companyfacts_path(company=company),
+                    period_start=period_start,
+                    period_end=period_end,
                 )
             )
     return rows

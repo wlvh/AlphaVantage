@@ -23,6 +23,7 @@ import shutil
 import sys
 from collections import Counter
 from datetime import datetime, timezone
+from decimal import Decimal
 from pathlib import Path
 from typing import Any
 
@@ -34,6 +35,8 @@ REPORT_DIR = SPIKE_DIR / "reports"
 WORK_DIR = SPIKE_DIR / "work"
 RAW_DIR = WORK_DIR / "raw"
 NORMALIZED_DIR = WORK_DIR / "normalized"
+FIXTURE_DIR = SPIKE_DIR / "fixtures"
+NARRATIVE_FIXTURE_DIR = FIXTURE_DIR / "narrative"
 
 LEGACY_SPIKE_DIR = REPO_DIR / "spikes" / "step0b_av_sec_alignment"
 LEGACY_RAW_DIR = LEGACY_SPIKE_DIR / "data" / "raw"
@@ -81,17 +84,23 @@ CSV_COLUMNS = [
     "av_endpoint",
     "av_field",
     "av_value",
+    "av_raw_value",
+    "av_comparison_value",
     "av_unit",
     "av_raw_file",
+    "av_source_artifact_hash",
     "sec_taxonomy",
     "sec_candidate_concepts",
     "sec_selected_concept",
     "sec_value",
+    "sec_raw_value",
+    "sec_comparison_value",
     "sec_unit",
     "sec_form",
     "sec_accession",
     "sec_filed_at",
     "sec_raw_file",
+    "sec_source_artifact_hash",
     "normalization_rule",
     "absolute_difference",
     "relative_difference",
@@ -102,6 +111,7 @@ CSV_COLUMNS = [
 ]
 
 LEGAL_PATTERNS = [
+    "Litigation Contingencies",
     "reasonably possible losses",
     "litigation reserves",
     "Legal Proceedings",
@@ -113,8 +123,9 @@ LEGAL_PATTERNS = [
 ]
 AMOUNT_RE = re.compile(
     pattern=(
-        r"\$\s*[0-9]+(?:\.[0-9]+)?(?:\s+to\s+approximately\s+"
-        r"\$\s*[0-9]+(?:\.[0-9]+)?)?\s*(?:billion|million)"
+        r"\$\s*(?P<minimum>[0-9]+(?:\.[0-9]+)?)(?:\s+to\s+approximately\s+"
+        r"\$\s*(?P<maximum>[0-9]+(?:\.[0-9]+)?))?\s*"
+        r"(?P<scale>billion|million)"
     ),
 )
 
@@ -190,6 +201,75 @@ def sha256_file(*, path: Path) -> str:
         for chunk in iter(lambda: handle.read(1024 * 1024), b""):
             digest.update(chunk)
     return digest.hexdigest()
+
+
+def repo_path_from_text(*, path_text: str) -> Path:
+    """Resolve a report path as a repository-local path.
+
+    Args:
+        path_text: Repo-relative or absolute path text.
+
+    Returns:
+        Absolute Path inside this repository.
+
+    Raises:
+        ValueError: If an absolute path points outside the repository.
+    """
+    path = Path(path_text)
+    if path.is_absolute():
+        repo_root = REPO_DIR.resolve()
+        resolved = path.resolve()
+        if resolved != repo_root and repo_root not in resolved.parents:
+            raise ValueError(f"path is outside repository: {resolved}")
+        return resolved
+    return REPO_DIR / path
+
+
+def repo_relative_text(*, path: Path) -> str:
+    """Return a stable repo-relative path string.
+
+    Args:
+        path: Absolute or repo-relative file path.
+
+    Returns:
+        POSIX-style path relative to REPO_DIR.
+
+    Raises:
+        ValueError: If the path is outside the repository.
+    """
+    repo_root = REPO_DIR.resolve()
+    resolved = path.resolve()
+    if resolved != repo_root and repo_root not in resolved.parents:
+        raise ValueError(f"path is outside repository: {resolved}")
+    return resolved.relative_to(repo_root).as_posix()
+
+
+def optional_repo_relative_text(*, path_text: str) -> str:
+    """Return repo-relative text for a non-empty path.
+
+    Args:
+        path_text: Path text from a source row.
+
+    Returns:
+        Empty string for no path, otherwise a repo-relative path.
+    """
+    if path_text == "":
+        return ""
+    return repo_relative_text(path=Path(path_text))
+
+
+def optional_file_hash(*, path_text: str) -> str:
+    """Hash a non-empty report path.
+
+    Args:
+        path_text: Repo-relative or absolute path text.
+
+    Returns:
+        SHA-256 digest, or empty string when no path is provided.
+    """
+    if path_text == "":
+        return ""
+    return sha256_file(path=repo_path_from_text(path_text=path_text))
 
 
 def stable_json_text(*, payload: Any) -> str:
@@ -334,12 +414,21 @@ def period_start_for_row(
 
     Returns:
         ISO date string. Instant facts use period_end to avoid null Silver keys.
+
+    Raises:
+        ValueError: If canonical period_start is missing.
     """
-    if row["period_start"] != "":
-        return row["period_start"]
-    if period_type == "instant":
-        return row["period_end"]
-    return ""
+    if row["period_start"] == "":
+        raise ValueError(
+            f"missing canonical period_start for {row['company_id']} "
+            f"{row['canonical_metric']} {row['comparison_period_kind']}"
+        )
+    if period_type == "instant" and row["period_start"] != row["period_end"]:
+        raise ValueError(
+            f"instant period_start must equal period_end for {row['company_id']} "
+            f"{row['canonical_metric']}"
+        )
+    return row["period_start"]
 
 
 def dimensions_for_row(*, row: dict[str, str]) -> dict[str, str]:
@@ -377,13 +466,12 @@ def semantic_inputs_for_row(
         Dict used to hash the semantic key.
     """
     return {
-        "company_key": row["company_id"],
-        "canonical_metric": row["canonical_metric"],
-        "comparison_scope": SCOPE_BY_PERIOD_KIND[row["comparison_period_kind"]],
+        "company_id": row["company_id"],
+        "metric_key": row["canonical_metric"],
         "period_type": period_type,
         "period_start": period_start,
         "period_end": row["period_end"],
-        "dimensions": dimensions,
+        "canonical_dimensions": dimensions,
     }
 
 
@@ -391,7 +479,7 @@ def av_observation_inputs_for_row(
     *,
     row: dict[str, str],
     semantic_key: str,
-) -> dict[str, str]:
+) -> dict[str, Any]:
     """Build AV observation ID inputs with source identity.
 
     Args:
@@ -404,10 +492,17 @@ def av_observation_inputs_for_row(
     return {
         "source_system": "ALPHA_VANTAGE",
         "semantic_key": semantic_key,
+        "provider_metric_key": f"{row['av_endpoint']}.{row['av_field']}",
+        "source_artifact_hash": row["av_source_artifact_hash"],
+        "source_record_key": (
+            f"{row['period_type']}:{row['period_start']}:{row['period_end']}"
+        ),
+        "raw_source_value": row["av_raw_value"],
+        "normalized_source_value": row["av_comparison_value"],
         "endpoint": row["av_endpoint"],
         "field": row["av_field"],
+        "period_start": row["period_start"],
         "period_end": row["period_end"],
-        "raw_file": row["av_raw_file"],
     }
 
 
@@ -415,7 +510,7 @@ def sec_observation_inputs_for_row(
     *,
     row: dict[str, str],
     semantic_key: str,
-) -> dict[str, str]:
+) -> dict[str, Any]:
     """Build SEC observation ID inputs with source identity.
 
     Args:
@@ -428,13 +523,34 @@ def sec_observation_inputs_for_row(
     return {
         "source_system": "SEC_COMPANYFACTS",
         "semantic_key": semantic_key,
+        "provider_metric_key": row["sec_selected_concept"],
+        "source_artifact_hash": row["sec_source_artifact_hash"],
+        "source_record_key": (
+            f"{row['sec_accession']}:{row['sec_selected_concept']}:"
+            f"{row['period_start']}:{row['period_end']}"
+        ),
+        "raw_source_value": row["sec_raw_value"],
+        "normalized_source_value": row["sec_comparison_value"],
         "concept": row["sec_selected_concept"],
         "accession": row["sec_accession"],
         "form": row["sec_form"],
         "filed_at": row["sec_filed_at"],
+        "period_start": row["period_start"],
         "period_end": row["period_end"],
-        "raw_file": row["sec_raw_file"],
     }
+
+
+def row_has_observation(*, value_text: str, artifact_hash: str) -> bool:
+    """Return whether a source observation exists for identity purposes.
+
+    Args:
+        value_text: Raw source value text from the matrix.
+        artifact_hash: SHA-256 hash of the source artifact.
+
+    Returns:
+        True when both value and source artifact identity are present.
+    """
+    return value_text.strip() != "" and artifact_hash.strip() != ""
 
 
 def accepted_status(*, source_status: str) -> str:
@@ -496,6 +612,10 @@ def transform_row(
     )
     semantic_key = stable_id(prefix="sem", payload=semantic_inputs)
     accepted = accepted_status(source_status=row["comparison_status"])
+    av_raw_file = optional_repo_relative_text(path_text=row["av_raw_file"])
+    sec_raw_file = optional_repo_relative_text(path_text=row["sec_raw_file"])
+    av_source_artifact_hash = optional_file_hash(path_text=av_raw_file)
+    sec_source_artifact_hash = optional_file_hash(path_text=sec_raw_file)
     acceptance_row = {
         "company_key": row["company_id"],
         "symbol": row["symbol"],
@@ -514,17 +634,23 @@ def transform_row(
         "av_endpoint": row["av_endpoint"],
         "av_field": row["av_field"],
         "av_value": row["av_value"],
+        "av_raw_value": row["av_raw_value"],
+        "av_comparison_value": row["av_comparison_value"],
         "av_unit": row["av_unit"],
-        "av_raw_file": row["av_raw_file"],
+        "av_raw_file": av_raw_file,
+        "av_source_artifact_hash": av_source_artifact_hash,
         "sec_taxonomy": row["sec_taxonomy"],
         "sec_candidate_concepts": row["sec_candidate_concepts"],
         "sec_selected_concept": row["sec_selected_concept"],
         "sec_value": row["sec_value"],
+        "sec_raw_value": row["sec_raw_value"],
+        "sec_comparison_value": row["sec_comparison_value"],
         "sec_unit": row["sec_unit"],
         "sec_form": row["sec_form"],
         "sec_accession": row["sec_accession"],
         "sec_filed_at": row["sec_filed_at"],
-        "sec_raw_file": row["sec_raw_file"],
+        "sec_raw_file": sec_raw_file,
+        "sec_source_artifact_hash": sec_source_artifact_hash,
         "normalization_rule": row["normalization_rule"],
         "absolute_difference": row["absolute_difference"],
         "relative_difference": row["relative_difference"],
@@ -537,20 +663,29 @@ def transform_row(
         row=acceptance_row,
         semantic_key=semantic_key,
     )
-    sec_inputs = sec_observation_inputs_for_row(
-        row=acceptance_row,
-        semantic_key=semantic_key,
-    )
     acceptance_row["av_observation_id_inputs"] = stable_json_text(payload=av_inputs)
-    acceptance_row["sec_observation_id_inputs"] = stable_json_text(payload=sec_inputs)
     acceptance_row["av_observation_id"] = stable_id(
         prefix="obs",
         payload=av_inputs,
     )
-    acceptance_row["sec_observation_id"] = stable_id(
-        prefix="obs",
-        payload=sec_inputs,
-    )
+    if row_has_observation(
+        value_text=acceptance_row["sec_raw_value"],
+        artifact_hash=acceptance_row["sec_source_artifact_hash"],
+    ):
+        sec_inputs = sec_observation_inputs_for_row(
+            row=acceptance_row,
+            semantic_key=semantic_key,
+        )
+        acceptance_row["sec_observation_id_inputs"] = stable_json_text(
+            payload=sec_inputs,
+        )
+        acceptance_row["sec_observation_id"] = stable_id(
+            prefix="obs",
+            payload=sec_inputs,
+        )
+    else:
+        acceptance_row["sec_observation_id_inputs"] = ""
+        acceptance_row["sec_observation_id"] = ""
     return acceptance_row
 
 
@@ -873,24 +1008,33 @@ def write_schema_decision() -> Path:
         "## Required Semantic Key",
         "",
         (
-            "`semantic_key = hash(company_key, canonical_metric, "
-            "comparison_scope, period_type, period_start, period_end, "
-            "dimensions)`."
+            "`semantic_key = hash(company_id, metric_key, period_type, "
+            "period_start, period_end, canonical_dimensions)`."
         ),
         "",
-        "`source_system` must not enter `semantic_key`.",
+        "`source_system` and comparison query scope must not enter `semantic_key`.",
         "",
         "## Required Observation Identity",
         "",
         (
-            "`observation_id = hash(source_system, semantic_key, provider field "
-            "or SEC concept, source artifact, accession/form/filed_at when "
-            "available)`."
+            "`observation_id = hash(source_system, semantic_key, provider metric "
+            "key or SEC concept, source artifact hash, source record key, "
+            "normalized source value, and revision metadata)`."
         ),
         "",
         (
             "AV and SEC can therefore share one semantic key while retaining "
             "different source observations."
+        ),
+        "",
+        (
+            "If a source has no selected observation, `observation_id` must be "
+            "`NULL` rather than a hash of empty source fields."
+        ),
+        "",
+        (
+            "Source-honest rows should preserve `raw_value` and store any "
+            "comparison-only value separately."
         ),
         "",
         "## Period Rules",
@@ -999,17 +1143,18 @@ def find_evidence_bounds(*, text: str, index: int) -> tuple[int, int]:
     Returns:
         Start and end offsets.
     """
-    start = max(0, index - 600)
-    end = min(len(text), index + 1800)
-    entity_index = text.rfind("JPMorgan Chase", max(0, index - 5000), index)
-    if entity_index != -1:
-        start = min(start, entity_index)
-    left_sentence = text.rfind(".", 0, start)
-    right_sentence = text.find(".", end)
-    if left_sentence != -1:
-        start = left_sentence + 1
-    if right_sentence != -1:
-        end = right_sentence + 1
+    note_index = text.rfind("Note 24", max(0, index - 500), index + 1)
+    start = index if note_index == -1 else note_index
+    next_note = text.find("Note 25", index)
+    paragraph_end = text.find("For certain matters", index)
+    if paragraph_end != -1:
+        end = text.find(".", paragraph_end)
+        if end != -1:
+            end += 1
+    elif next_note != -1:
+        end = next_note
+    else:
+        end = min(len(text), index + 1200)
     return start, end
 
 
@@ -1051,6 +1196,26 @@ def amount_text_for_evidence(*, evidence_text: str) -> str | None:
     return match.group(0)
 
 
+def scaled_amount_value(*, text: str, scale: str) -> str:
+    """Convert a disclosed amount to full USD units.
+
+    Args:
+        text: Decimal number text without currency symbol.
+        scale: million or billion.
+
+    Returns:
+        Decimal text in full USD units.
+    """
+    multiplier = Decimal("1000000")
+    if scale == "billion":
+        multiplier = Decimal("1000000000")
+    value = Decimal(text) * multiplier
+    formatted = format(value, "f")
+    if "." in formatted:
+        return formatted.rstrip("0").rstrip(".")
+    return formatted
+
+
 def amount_payload_for_text(*, amount_text: str | None) -> dict[str, str] | None:
     """Build an amount payload only when evidence includes an amount.
 
@@ -1062,7 +1227,21 @@ def amount_payload_for_text(*, amount_text: str | None) -> dict[str, str] | None
     """
     if amount_text is None:
         return None
-    return {"amount_text": amount_text, "currency": "USD"}
+    match = AMOUNT_RE.search(string=amount_text)
+    if match is None:
+        raise ValueError(f"amount_text did not match parser: {amount_text}")
+    minimum = match.group("minimum")
+    maximum = match.group("maximum")
+    scale = match.group("scale")
+    payload = {
+        "amount_text": amount_text,
+        "currency": "USD",
+        "amount_min_value": scaled_amount_value(text=minimum, scale=scale),
+        "amount_scale": scale,
+    }
+    if maximum is not None:
+        payload["amount_max_value"] = scaled_amount_value(text=maximum, scale=scale)
+    return payload
 
 
 def jpm_company(*, companies: list[Any]) -> Any:
@@ -1113,42 +1292,53 @@ def write_narrative_finding() -> dict[str, Any]:
     )
     raw_html = raw_path.read_text(encoding="utf-8", errors="replace")
     normalized = normalize_html_text(html_text=raw_html)
-    start, end, pattern = find_legal_evidence(text=normalized)
-    evidence_text = normalized[start:end]
+    source_start, source_end, pattern = find_legal_evidence(text=normalized)
+    evidence_text = normalized[source_start:source_end]
     amount_text = amount_text_for_evidence(evidence_text=evidence_text)
     normalized_path = (
-        NORMALIZED_DIR
+        NARRATIVE_FIXTURE_DIR
         / f"{company.symbol.lower()}_{filing['form'].lower()}_"
-        f"{filing['accessionNumber'].replace('-', '')}.txt"
+        f"{filing['accessionNumber'].replace('-', '')}_evidence.txt"
     )
     normalized_path.parent.mkdir(parents=True, exist_ok=True)
-    normalized_path.write_text(data=normalized, encoding="utf-8")
+    normalized_path.write_text(data=evidence_text, encoding="utf-8")
+    evidence_start = 0
+    evidence_end = len(evidence_text)
+    amount = amount_payload_for_text(amount_text=amount_text)
     finding = {
         "company_key": company.company_id,
         "symbol": company.symbol,
         "company_name": company.name,
         "finding_type": "LEGAL_MATTER",
+        "title": "JPMorgan legal proceedings contingency range",
+        "status_text": "Programmatically identified; not human-reviewed",
+        "affected_entity_text": "JPMorgan Chase & Co. and subsidiaries and affiliates",
         "filing_accession": filing["accessionNumber"],
         "accession_number": filing["accessionNumber"],
         "form": filing["form"],
         "filing_date": filing["filingDate"],
         "source_url": source_url,
-        "normalized_text_path": str(normalized_path),
+        "normalized_text_path": repo_relative_text(path=normalized_path),
+        "normalized_text_scope": "evidence_excerpt_fixture",
         "normalized_text_sha256": sha256_file(path=normalized_path),
-        "source_artifact_path": str(raw_path),
+        "source_artifact_path": repo_relative_text(path=raw_path),
         "source_artifact_sha256": sha256_file(path=raw_path),
-        "evidence_start": start,
-        "evidence_end": end,
+        "source_normalized_evidence_start": source_start,
+        "source_normalized_evidence_end": source_end,
+        "evidence_start": evidence_start,
+        "evidence_end": evidence_end,
         "evidence_text": evidence_text,
         "evidence_sha256": sha256_text(text=evidence_text),
         "matched_pattern": pattern,
         "summary": (
-            "The evidence text contains a legal proceedings or contingencies "
-            "disclosure."
+            "JPMorgan disclosed an aggregate reasonably possible loss range "
+            "for legal proceedings in excess of reserves."
         ),
-        "amount": amount_payload_for_text(amount_text=amount_text),
+        "amount": amount,
         "amount_text": amount_text,
-        "validation_status": "VERIFIED",
+        "amount_value": "" if amount is None else amount["amount_max_value"],
+        "validation_status": "PROGRAMMATICALLY_VERIFIED",
+        "human_review_status": "NOT_REVIEWED",
         "fallback_reason": (
             "MMM raw artifacts are not present in this local spike; used the "
             "configured JPM latest 10-Q fallback."
@@ -1163,6 +1353,11 @@ def write_narrative_finding() -> dict[str, Any]:
         f"- Filing date: {finding['filing_date']}",
         f"- Source URL: {finding['source_url']}",
         f"- Validation: {finding['validation_status']}",
+        f"- Human review: {finding['human_review_status']}",
+        f"- Title: {finding['title']}",
+        f"- Status text: {finding['status_text']}",
+        f"- Affected entity: {finding['affected_entity_text']}",
+        f"- Amount text: {finding['amount_text']}",
         f"- Fallback: {finding['fallback_reason']}",
         "",
         "## Evidence",
@@ -1206,7 +1401,7 @@ def raw_hashes() -> dict[str, str]:
     hashes: dict[str, str] = {}
     for path in sorted(RAW_DIR.rglob("*")):
         if path.is_file() and not path.name.endswith(".headers.json"):
-            hashes[str(path)] = sha256_file(path=path)
+            hashes[repo_relative_text(path=path)] = sha256_file(path=path)
     ibm_fixture_dir = (
         REPO_DIR
         / "artifacts"
@@ -1215,7 +1410,7 @@ def raw_hashes() -> dict[str, str]:
         / "demo"
     )
     for path in sorted(ibm_fixture_dir.glob("00[1-5]_*.txt")):
-        hashes[str(path)] = sha256_file(path=path)
+        hashes[repo_relative_text(path=path)] = sha256_file(path=path)
     return hashes
 
 
@@ -1236,12 +1431,16 @@ def redaction_check() -> dict[str, Any]:
             if not path.is_file():
                 continue
             text = path.read_text(encoding="utf-8", errors="ignore")
-            checked_paths.append(str(path))
+            checked_paths.append(repo_relative_text(path=path))
             lowered = text.lower()
             if query_key_token in lowered:
-                violations.append(f"{path}: contains API key query text")
+                violations.append(
+                    f"{repo_relative_text(path=path)}: contains API key query text",
+                )
             if re.search(pattern=r'"apikey"\s*:\s*"(?!REDACTED")', string=text):
-                violations.append(f"{path}: contains non-redacted apikey field")
+                violations.append(
+                    f"{repo_relative_text(path=path)}: contains non-redacted apikey field",
+                )
     return {
         "passed": len(violations) == 0,
         "checked_path_count": len(checked_paths),
@@ -1281,8 +1480,16 @@ def unresolved_mappings(*, rows: list[dict[str, str]]) -> list[dict[str, str]]:
     return unresolved
 
 
-def call_budget_summary() -> dict[str, Any]:
+def call_budget_summary(
+    *,
+    mode: str,
+    fetch_summary: dict[str, int],
+) -> dict[str, Any]:
     """Summarize cached raw endpoint coverage and current-run call count.
+
+    Args:
+        mode: online or offline report mode.
+        fetch_summary: Current run network call counts.
 
     Returns:
         Network call and cached raw coverage summary.
@@ -1299,9 +1506,9 @@ def call_budget_summary() -> dict[str, Any]:
         if "classification" in payload:
             av_errors.append(f"{path.name}: {payload['classification']}")
     return {
-        "current_run_online": False,
-        "av_call_count": 0,
-        "sec_call_count": 0,
+        "current_run_online": mode == "online",
+        "av_call_count": fetch_summary["av_call_count"],
+        "sec_call_count": fetch_summary["sec_call_count"],
         "default_av_live_call_budget": 10,
         "cached_av_manifest_count": len(av_manifests),
         "cached_av_success_count": av_success,
@@ -1317,6 +1524,7 @@ def write_run_summary(
     start_time: str,
     end_time: str,
     mode: str,
+    fetch_summary: dict[str, int],
 ) -> Path:
     """Write run_summary.json.
 
@@ -1325,6 +1533,7 @@ def write_run_summary(
         start_time: UTC start timestamp.
         end_time: UTC end timestamp.
         mode: online or offline.
+        fetch_summary: Current run network call counts.
 
     Returns:
         Summary path.
@@ -1349,7 +1558,10 @@ def write_run_summary(
         "company_count": len({row["company_key"] for row in rows}),
         "metric_count": len({row["canonical_metric"] for row in rows}),
         "status_counts": dict(status_counts(rows=rows)),
-        "call_budget": call_budget_summary(),
+        "call_budget": call_budget_summary(
+            mode=mode,
+            fetch_summary=fetch_summary,
+        ),
         "raw_hashes": raw_hashes(),
         "output_hashes": output_hashes(),
         "warnings": [
@@ -1383,11 +1595,16 @@ def current_commit_sha() -> str:
     return ref_path.read_text(encoding="utf-8").strip()
 
 
-def generate_reports(*, mode: str) -> list[dict[str, str]]:
+def generate_reports(
+    *,
+    mode: str,
+    fetch_summary: dict[str, int],
+) -> list[dict[str, str]]:
     """Generate all acceptance reports from local raw data.
 
     Args:
         mode: online or offline label for run summary.
+        fetch_summary: Current run network call counts.
 
     Returns:
         Acceptance matrix rows.
@@ -1405,6 +1622,7 @@ def generate_reports(*, mode: str) -> list[dict[str, str]]:
         start_time=start_time,
         end_time=end_time,
         mode=mode,
+        fetch_summary=fetch_summary,
     )
     return rows
 
@@ -1445,10 +1663,20 @@ def validate_matrix(*, rows: list[dict[str, str]]) -> list[str]:
         semantic_inputs = json.loads(row["semantic_key_inputs"])
         if "source_system" in semantic_inputs:
             errors.append("semantic key inputs contain source_system")
+        if "comparison_scope" in semantic_inputs:
+            errors.append("semantic key inputs contain comparison_scope")
+        for path_column in ("av_raw_file", "sec_raw_file"):
+            if Path(row[path_column]).is_absolute():
+                errors.append(f"{path_column} is absolute: {row[path_column]}")
         av_inputs = json.loads(row["av_observation_id_inputs"])
-        sec_inputs = json.loads(row["sec_observation_id_inputs"])
-        if "source_system" not in av_inputs or "source_system" not in sec_inputs:
-            errors.append("observation inputs missing source_system")
+        if "source_system" not in av_inputs:
+            errors.append("AV observation inputs missing source_system")
+        if row["sec_observation_id_inputs"] != "":
+            sec_inputs = json.loads(row["sec_observation_id_inputs"])
+            if "source_system" not in sec_inputs:
+                errors.append("SEC observation inputs missing source_system")
+        if row["sec_value"] == "" and row["sec_observation_id"] != "":
+            errors.append("missing SEC value produced observation_id")
     return errors
 
 
@@ -1498,7 +1726,7 @@ def validate_narrative_finding() -> list[str]:
     """
     errors: list[str] = []
     finding = read_json_file(path=REPORT_DIR / "narrative_finding.json")
-    normalized_path = Path(finding["normalized_text_path"])
+    normalized_path = repo_path_from_text(path_text=finding["normalized_text_path"])
     text = normalized_path.read_text(encoding="utf-8")
     start = finding["evidence_start"]
     end = finding["evidence_end"]
@@ -1509,8 +1737,17 @@ def validate_narrative_finding() -> list[str]:
         and finding["amount_text"] not in finding["evidence_text"]
     ):
         errors.append("amount_text is not present in evidence_text")
-    if finding["validation_status"] != "VERIFIED":
-        errors.append("narrative finding is not VERIFIED")
+    if finding["validation_status"] != "PROGRAMMATICALLY_VERIFIED":
+        errors.append("narrative finding is not programmatically verified")
+    required_fields = [
+        "title",
+        "status_text",
+        "affected_entity_text",
+        "amount_value",
+    ]
+    for field in required_fields:
+        if field not in finding:
+            errors.append(f"narrative finding missing {field}")
     return errors
 
 
@@ -1543,6 +1780,10 @@ def validate_run_summary() -> list[str]:
     if "call_budget" in summary:
         if summary["call_budget"]["av_call_count"] > 10:
             errors.append("AV call count exceeds default budget")
+    if "raw_hashes" in summary:
+        for path_text in summary["raw_hashes"]:
+            if Path(path_text).is_absolute():
+                errors.append(f"raw_hashes contains absolute path: {path_text}")
     return errors
 
 
@@ -1585,7 +1826,10 @@ def command_analyze(*, args: argparse.Namespace) -> None:
     Returns:
         None.
     """
-    generate_reports(mode="offline")
+    generate_reports(
+        mode="offline",
+        fetch_summary={"av_call_count": 0, "sec_call_count": 0},
+    )
     print(f"reports written to {REPORT_DIR}")
 
 
@@ -1599,7 +1843,10 @@ def command_verify(*, args: argparse.Namespace) -> None:
         None. Exits non-zero on validation errors.
     """
     mode = "offline" if args.offline else "offline"
-    generate_reports(mode=mode)
+    generate_reports(
+        mode=mode,
+        fetch_summary={"av_call_count": 0, "sec_call_count": 0},
+    )
     errors = validate_outputs()
     if errors:
         for error in errors:
@@ -1608,14 +1855,14 @@ def command_verify(*, args: argparse.Namespace) -> None:
     print("Step 0B offline verification passed")
 
 
-def command_fetch_av(*, args: argparse.Namespace) -> None:
+def command_fetch_av(*, args: argparse.Namespace) -> dict[str, int]:
     """Fetch missing Alpha Vantage raw files through the reusable client.
 
     Args:
         args: Parsed CLI arguments.
 
     Returns:
-        None.
+        Fetch summary with AV call count.
     """
     sync_work_raw()
     legacy = load_legacy_symbols()
@@ -1632,16 +1879,17 @@ def command_fetch_av(*, args: argparse.Namespace) -> None:
         delay_seconds=args.delay_seconds,
     )
     print(f"AV fetch summary: {summary}")
+    return {"av_call_count": summary["live_call_count"]}
 
 
-def command_fetch_sec(*, args: argparse.Namespace) -> None:
+def command_fetch_sec(*, args: argparse.Namespace) -> dict[str, int]:
     """Fetch missing SEC raw files through the reusable client.
 
     Args:
         args: Parsed CLI arguments.
 
     Returns:
-        None.
+        Fetch summary with SEC call count.
     """
     sync_work_raw()
     legacy = load_legacy_symbols()
@@ -1650,6 +1898,7 @@ def command_fetch_sec(*, args: argparse.Namespace) -> None:
     companies = models.load_companies()
     summary = fetch_sec_artifacts(companies=companies, refresh=args.refresh)
     print(f"SEC fetch summary: {summary}")
+    return {"sec_call_count": summary["sec_call_count"]}
 
 
 def command_run(*, args: argparse.Namespace) -> None:
@@ -1661,9 +1910,15 @@ def command_run(*, args: argparse.Namespace) -> None:
     Returns:
         None.
     """
-    command_fetch_av(args=args)
-    command_fetch_sec(args=args)
-    generate_reports(mode="online")
+    av_summary = command_fetch_av(args=args)
+    sec_summary = command_fetch_sec(args=args)
+    generate_reports(
+        mode="online",
+        fetch_summary={
+            "av_call_count": av_summary["av_call_count"],
+            "sec_call_count": sec_summary["sec_call_count"],
+        },
+    )
     errors = validate_outputs()
     if errors:
         for error in errors:
