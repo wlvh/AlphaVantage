@@ -1,0 +1,35 @@
+[
+  {
+    "company_id": "NYSE:IBM",
+    "company_key": "NYSE:IBM",
+    "name": "International Business Machines",
+    "symbol": "IBM",
+    "exchange": "NYSE",
+    "cik10": "0000051143",
+    "archetype": "technology_services",
+    "fiscal_year_end_month_day": "12-31",
+    "av_source": "existing_archive"
+  },
+  {
+    "company_id": "NYSE:JPM",
+    "company_key": "NYSE:JPM",
+    "name": "JPMorgan Chase & Co.",
+    "symbol": "JPM",
+    "exchange": "NYSE",
+    "cik10": "0000019617",
+    "archetype": "banking",
+    "fiscal_year_end_month_day": "12-31",
+    "av_source": "live_or_cached"
+  },
+  {
+    "company_id": "NYSE:CAT",
+    "company_key": "NYSE:CAT",
+    "name": "Caterpillar Inc.",
+    "symbol": "CAT",
+    "exchange": "NYSE",
+    "cik10": "0000018230",
+    "archetype": "capital_goods_manufacturing",
+    "fiscal_year_end_month_day": "12-31",
+    "av_source": "live_or_cached"
+  }
+]

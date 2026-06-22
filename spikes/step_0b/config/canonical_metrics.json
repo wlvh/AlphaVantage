@@ -1,0 +1,144 @@
+[
+  {
+    "canonical_metric": "financial.revenue",
+    "av_endpoint": "INCOME_STATEMENT",
+    "av_field": "totalRevenue",
+    "period_type": "duration",
+    "sec_candidates": [
+      "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "Revenues",
+      "SalesRevenueNet"
+    ],
+    "definition_risks": {
+      "banking": "AMBIGUOUS_MAPPING"
+    }
+  },
+  {
+    "canonical_metric": "financial.gross_profit",
+    "av_endpoint": "INCOME_STATEMENT",
+    "av_field": "grossProfit",
+    "period_type": "duration",
+    "sec_candidates": [
+      "GrossProfit"
+    ],
+    "definition_risks": {
+      "banking": "NOT_APPLICABLE"
+    }
+  },
+  {
+    "canonical_metric": "financial.operating_income",
+    "av_endpoint": "INCOME_STATEMENT",
+    "av_field": "operatingIncome",
+    "period_type": "duration",
+    "sec_candidates": [
+      "OperatingIncomeLoss"
+    ],
+    "definition_risks": {
+      "banking": "AMBIGUOUS_MAPPING"
+    }
+  },
+  {
+    "canonical_metric": "financial.net_income",
+    "av_endpoint": "INCOME_STATEMENT",
+    "av_field": "netIncome",
+    "period_type": "duration",
+    "sec_candidates": [
+      "NetIncomeLoss",
+      "ProfitLoss"
+    ],
+    "definition_risks": {}
+  },
+  {
+    "canonical_metric": "balance.total_assets",
+    "av_endpoint": "BALANCE_SHEET",
+    "av_field": "totalAssets",
+    "period_type": "instant",
+    "sec_candidates": [
+      "Assets"
+    ],
+    "definition_risks": {}
+  },
+  {
+    "canonical_metric": "balance.cash_and_equivalents",
+    "av_endpoint": "BALANCE_SHEET",
+    "av_field": "cashAndCashEquivalentsAtCarryingValue",
+    "period_type": "instant",
+    "sec_candidates": [
+      "CashAndCashEquivalentsAtCarryingValue"
+    ],
+    "definition_risks": {}
+  },
+  {
+    "canonical_metric": "balance.total_liabilities",
+    "av_endpoint": "BALANCE_SHEET",
+    "av_field": "totalLiabilities",
+    "period_type": "instant",
+    "sec_candidates": [
+      "Liabilities"
+    ],
+    "definition_risks": {}
+  },
+  {
+    "canonical_metric": "balance.total_equity",
+    "av_endpoint": "BALANCE_SHEET",
+    "av_field": "totalShareholderEquity",
+    "period_type": "instant",
+    "sec_candidates": [
+      "StockholdersEquity",
+      "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+    ],
+    "definition_risks": {}
+  },
+  {
+    "canonical_metric": "balance.total_debt",
+    "av_endpoint": "BALANCE_SHEET",
+    "av_field": "shortLongTermDebtTotal",
+    "period_type": "instant",
+    "sec_candidates": [
+      "LongTermDebtAndFinanceLeaseObligationsCurrent",
+      "LongTermDebtCurrent",
+      "ShortTermBorrowings",
+      "LongTermDebtAndFinanceLeaseObligationsNoncurrent",
+      "LongTermDebtNoncurrent",
+      "LongTermDebt",
+      "CurrentDebt"
+    ],
+    "requires_composition": true,
+    "definition_risks": {
+      "banking": "AMBIGUOUS_MAPPING"
+    }
+  },
+  {
+    "canonical_metric": "cashflow.operating_cash_flow",
+    "av_endpoint": "CASH_FLOW",
+    "av_field": "operatingCashflow",
+    "period_type": "duration",
+    "sec_candidates": [
+      "NetCashProvidedByUsedInOperatingActivities"
+    ],
+    "definition_risks": {}
+  },
+  {
+    "canonical_metric": "cashflow.capital_expenditure",
+    "av_endpoint": "CASH_FLOW",
+    "av_field": "capitalExpenditures",
+    "period_type": "duration",
+    "sec_candidates": [
+      "PaymentsToAcquirePropertyPlantAndEquipment",
+      "PaymentsToAcquireProductiveAssets",
+      "CapitalExpendituresIncurredButNotYetPaid"
+    ],
+    "normalization": "preserve_source_sign_explain_only",
+    "definition_risks": {}
+  },
+  {
+    "canonical_metric": "earnings.diluted_eps",
+    "av_endpoint": "EARNINGS",
+    "av_field": "reportedEPS",
+    "period_type": "duration",
+    "sec_candidates": [
+      "EarningsPerShareDiluted"
+    ],
+    "definition_risks": {}
+  }
+]

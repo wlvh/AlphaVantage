@@ -14,3 +14,5 @@ venv/
 .ruff_cache/
 .coverage
 htmlcov/
+
+spikes/step_0b/work/
