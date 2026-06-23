@@ -503,7 +503,6 @@ source artifact + source record + revision/value identity
 
 # 八、所有权和权限
 
-对象所有权交给 Group，不交给个人。Unity Catalog 权限可从 Catalog / Schema 向下继承。([docs.databricks.com][5])
 
 ## Owner
 
@@ -715,8 +714,7 @@ api_key = dbutils.secrets.get(
 print(api_key)
 ```
 
-Secret Scope 应按应用或角色划分。([docs.databricks.com][6])
-
+Secret Scope 应按应用或角色划分。
 ---
 
 # 十、上传本地 Fixture
@@ -740,7 +738,7 @@ fixtures/alphavantage/001_overview_ibm.txt
 alpha_vantage_exploration.zip
 ```
 
-共享数据必须进入项目 Volume，不进入个人 Workspace 路径。([docs.databricks.com][7])
+共享数据必须进入项目 Volume，不进入个人 Workspace 路径。
 
 ---
 
@@ -995,25 +993,6 @@ Warehouse 配置
 
 # 十六、给 Codex 的约束
 
-```text
-1. 使用 Unity Catalog，不使用 hive_metastore。
-2. 原始非表格文件进入 Managed Volume。
-3. Raw metadata 进入 bronze.source_artifact。
-4. API key 不进入代码、参数、表或日志。
-5. DDL 使用 CREATE ... IF NOT EXISTS。
-6. Migration 不使用 CREATE OR REPLACE TABLE。
-7. Backend 只能读取 Gold。
-8. Job 使用 sp-company-intel-jobs-dev。
-9. Owner 属于 Group，不属于个人。
-10. 时间使用 UTC。
-11. 财务数字后续使用 DECIMAL，不使用 float。
-12. 未通过 response classification 的响应不得进入 Silver。
-13. Step 0A 不创建 metric_observation。
-14. semantic_key 将来不包含 source_system。
-15. observation_id 将来必须包含 source identity。
-16. SEC 财务不属于 AV V1 生产流。
-```
-
 Codex 第一个 Ticket：
 
 ```text
@@ -1062,27 +1041,11 @@ Step 0A 完成后：
 
 不要因为 Step 0A 完成就认为业务数据模型已冻结。
 
----
 
-# 十八、团队说明
-
-```text
-我们正在建立 company-intel 的 Databricks 数据地基。
-
-Alpha Vantage 是 V1 公司与财务数据主源；SEC 当前不参与正式财务取数，
-后续优先用于 filing、法律、治理、风险因素、事件和原文证据。
-
-Step 0B 已经验证：系统必须把“同一个现实指标”与“不同来源的观测”
-分开建模，并保留期间、mapping、适用性和组合指标 lineage。
-因此 Step 0A 只搭平台、Raw、公司标识和 Gold 契约，
-正式 metric_observation 会在下一阶段按验证结果创建。
-
-Frontend 不直接访问 Databricks；Backend 只读取 Gold Snapshot。
-```
 
 ---
 
-# 十九、暂时不要做
+# 十八、暂时不要做
 
 ```text
 不要创建全部 production 表。
@@ -1122,13 +1085,3 @@ Step 0A 验收
 创建 Canonical Metric Foundation
 ```
 
-[1]: https://docs.databricks.com/aws/en/catalogs/create-catalog "Create catalogs | Databricks on AWS"
-[2]: https://docs.databricks.com/aws/en/volumes/utility-commands "Create and manage Unity Catalog volumes"
-[3]: https://docs.databricks.com/aws/en/compute/sql-warehouse/create "Create a SQL warehouse | Databricks on AWS"
-[4]: https://docs.databricks.com/aws/en/repos/ "Databricks Git folders | Databricks on AWS"
-[5]: https://docs.databricks.com/aws/en/data-governance/unity-catalog/manage-privileges/ "Manage privileges in Unity Catalog"
-[6]: https://docs.databricks.com/aws/en/security/secrets/ "Secret management | Databricks on AWS"
-[7]: https://docs.databricks.com/aws/en/volumes/volume-files "Work with files in Unity Catalog volumes"
-[8]: https://docs.databricks.com/aws/en/jobs/configure-job "Configure and edit Lakeflow Jobs"
-[9]: https://docs.databricks.com/aws/en/dev-tools/auth/oauth-m2m "Authorize service principal access with OAuth"
-[10]: https://docs.databricks.com/aws/en/dev-tools/bundles/ "Declarative Automation Bundles"
