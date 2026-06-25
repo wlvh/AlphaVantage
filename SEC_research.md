@@ -1,4 +1,4 @@
-# Alpha Vantage 与 SEC 财务数据一致性调研：终审澄清版
+# Alpha Vantage 与 SEC 财务数据一致性调研
 
 ## 一、本次任务
 覆盖团队最初关心的五类问题：
